@@ -1,0 +1,16 @@
+{
+  "header": {
+    "title": "TICF（日本語）",
+    "keywords": "キリスト教会,日本キリスト教会,東京キリスト教会,中国人キリスト教会,教会,池袋キリスト教会,上野キリスト教会,キリスト教,中国人教会,日本中国人教会,中国語キリスト教会,中国語教会,バイリンガル教会,トリリンガル教会",
+    "description": "TICFは、国際色豊かなプロテスタント教会、中国語と日本語のバイリンガルで毎週日曜日に礼拝を行っています。"
+  },
+  "language": {
+    "zh-CN": "简体中文",
+    "en": "English",
+    "ja": "日本語"
+  },
+  "footer": {
+    "copyright.line1": "Copyright \u00A9 2019-",
+    "copyright.line2": "TICF All Rights Reserved."
+  }
+}

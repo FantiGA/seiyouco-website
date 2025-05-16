@@ -1,0 +1,16 @@
+{
+  "header": {
+    "title": "TICF (English)",
+    "keywords": "Christian Church, Japan Christian Church, Tokyo Christian Church, Chinese Christian Church, Church, Ikebukuro Christian Church, Ueno Christian Church, Christianity, Chinese Church, Chinese Christian Church in Japan, Bilingual Church, Trilingual Church",
+    "description": "TICF is an international Protestant church with bilingual services in Chinese and Japanese every Sunday."
+  },
+  "language": {
+    "zh-CN": "简体中文",
+    "en": "English",
+    "ja": "日本語"
+  },
+  "footer": {
+    "copyright.line1": "Copyright \u00A9 2019-",
+    "copyright.line2": "TICF All Rights Reserved."
+  }
+}

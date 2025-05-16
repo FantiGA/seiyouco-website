@@ -1,0 +1,16 @@
+{
+  "header": {
+    "title": "TICF（东京国际基督徒团契）",
+    "keywords": "基督教会,日本基督教会,东京基督教会,华人基督教会,教会,池袋基督教会,上野基督教会,基督教,华人教会,日本华人教会,中文基督教会,中文教会,双语教会,三语教会",
+    "description": "TICF是一个正统的基督教会。本教会主要面向在日本居住的中国人、会中文的外国人、日本人，于每周日进行中日双语礼拜。"
+  },
+  "language": {
+    "zh-CN": "简体中文",
+    "en": "English",
+    "ja": "日本語"
+  },
+  "footer": {
+    "copyright.line1": "Copyright \u00A9 2019-",
+    "copyright.line2": "TICF All Rights Reserved."
+  }
+}
