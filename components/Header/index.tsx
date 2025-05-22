@@ -1,116 +1,425 @@
-import { useState, type FC } from "react";
-import type { TranslationKeys, TranslationSection } from "@/types";
+"use client";
+
+import { useState } from "react";
+import Link from "next/link";
 import clsx from "clsx";
 
-type Translations = {
-  [K in keyof TranslationKeys]: TranslationSection<K>;
-};
-
-interface Props {
-  translations: Translations;
-}
-
-export const Header: FC<Props> = () => {
-  const [isActive] = useState(false);
+export const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header
-      className={clsx(
-        "fixed top-0 left-0 right-0",
-        "flex items-center",
-        "text-[color:var(--default-color)] bg-[color:var(--background-color)]",
-        "py-[15px]",
-        "transition-all duration-500",
-        "z-[997]",
-      )}
-    >
+    <>
       <div
         className={clsx(
-          "relative flex items-center",
-          "max-w-[1140px] xl:max-w-[1320px]",
-          "w-full px-3 mx-auto",
+          "items-center",
+          "justify-between",
+          "relative",
+          "flex",
+          "[--bs-gutter-x:1.5rem] [--bs-gutter-y:0]",
+          "w-full",
+          "max-w-[1140px]",
+          "px-[calc(var(--bs-gutter-x)*.5)]",
+          "mx-auto",
         )}
       >
-        <a
-          href="index.html"
-          className={clsx("flex items-center", "mr-auto leading-0.5")}
-        >
-          {/* Uncomment the line below if you also wish to use an image logo */}
-          {/* <img src="assets/img/logo.png" alt="" /> */}
-          <h1 className="text-3xl m-0 font-medium text-[var(--heading-color)] tracking-[2px] uppercase">
-            Regna
+        <Link href="/" className={clsx("leading-none", "items-center", "flex")}>
+          <h1
+            className={clsx(
+              "text-3xl",
+              "font-normal",
+              "uppercase",
+              "text-[var(--heading-color)]",
+            )}
+          >
+            Seiyouco
           </h1>
-        </a>
+        </Link>
 
-        <nav id="navmenu" className="p-0">
-          <ul>
-            <li>
-              <a href="#hero" className="active">
+        <nav className="p-0 hidden lg:block">
+          <ul
+            className={clsx(
+              "m-0",
+              "p-0",
+              "flex",
+              "list-none",
+              "items-center",
+              "space-x-8",
+            )}
+          >
+            <li className={clsx("nowrap px-3.5 py-4", "relative")}>
+              <Link
+                href="#hero"
+                className={clsx(
+                  "text-[var(--nav-hover-color)]",
+                  "hover:text-[var(--nav-hover-color)]",
+                  "text-sm",
+                  "px-0.5",
+                  "[font-family:var(--nav-font)]",
+                  "font-normal",
+                  "flex",
+                  "items-center",
+                  "justify-between",
+                  "whitespace-nowrap",
+                  "transition-all",
+                  "duration-300",
+                  "relative",
+                  "uppercase",
+                  "before:content-['']",
+                  "before:absolute",
+                  "before:w-full",
+                  "before:h-0.5",
+                  "before:-bottom-1.5",
+                  "before:left-0",
+                  "before:bg-[var(--accent-color)]",
+                  "before:transition-all",
+                  "before:duration-300",
+                  "before:ease-in-out",
+                  "before:visible",
+                  "hover:before:visible",
+                )}
+              >
                 Home
-              </a>
+              </Link>
             </li>
-            <li>
-              <a href="#about">About</a>
+            <li className={clsx("nowrap px-3.5 py-4", "relative")}>
+              <Link
+                href="#about"
+                className={clsx(
+                  "!text-[var(--nav-color)]",
+                  "text-sm",
+                  "px-0.5",
+                  "[font-family:var(--nav-font)]",
+                  "font-normal",
+                  "flex",
+                  "items-center",
+                  "justify-between",
+                  "whitespace-nowrap",
+                  "transition-all",
+                  "duration-300",
+                  "relative",
+                  "uppercase",
+                  "before:content-['']",
+                  "before:absolute",
+                  "before:h-0.5",
+                  "before:-bottom-1.5",
+                  "before:left-0",
+                  "before:bg-[var(--accent-color)]",
+                  "before:transition-all",
+                  "before:duration-300",
+                  "before:ease-in-out",
+                  "before:invisible",
+                  "before:w-0",
+                  "hover:before:visible",
+                  "hover:before:w-full",
+                )}
+              >
+                About
+              </Link>
             </li>
-            <li>
-              <a href="#services">Services</a>
+            <li className={clsx("nowrap px-3.5 py-4", "relative")}>
+              <Link
+                href="#services"
+                className={clsx(
+                  "!text-[var(--nav-color)]",
+                  "text-sm",
+                  "px-0.5",
+                  "[font-family:var(--nav-font)]",
+                  "font-normal",
+                  "flex",
+                  "items-center",
+                  "justify-between",
+                  "whitespace-nowrap",
+                  "transition-all",
+                  "duration-300",
+                  "relative",
+                  "uppercase",
+                  "before:content-['']",
+                  "before:absolute",
+                  "before:h-0.5",
+                  "before:-bottom-1.5",
+                  "before:left-0",
+                  "before:bg-[var(--accent-color)]",
+                  "before:transition-all",
+                  "before:duration-300",
+                  "before:ease-in-out",
+                  "before:invisible",
+                  "before:w-0",
+                  "hover:before:visible",
+                  "hover:before:w-full",
+                )}
+              >
+                Services
+              </Link>
             </li>
-            <li>
-              <a href="#portfolio">Portfolio</a>
+            <li className={clsx("nowrap px-3.5 py-4", "relative")}>
+              <Link
+                href="#portfolio"
+                className={clsx(
+                  "!text-[var(--nav-color)]",
+                  "text-sm",
+                  "px-0.5",
+                  "[font-family:var(--nav-font)]",
+                  "font-normal",
+                  "flex",
+                  "items-center",
+                  "justify-between",
+                  "whitespace-nowrap",
+                  "transition-all",
+                  "duration-300",
+                  "relative",
+                  "uppercase",
+                  "before:content-['']",
+                  "before:absolute",
+                  "before:h-0.5",
+                  "before:-bottom-1.5",
+                  "before:left-0",
+                  "before:bg-[var(--accent-color)]",
+                  "before:transition-all",
+                  "before:duration-300",
+                  "before:ease-in-out",
+                  "before:invisible",
+                  "before:w-0",
+                  "hover:before:visible",
+                  "hover:before:w-full",
+                )}
+              >
+                Portfolio
+              </Link>
             </li>
-            <li>
-              <a href="#team">Team</a>
+            <li className={clsx("nowrap px-3.5 py-4", "relative")}>
+              <Link
+                href="#team"
+                className={clsx(
+                  "!text-[var(--nav-color)]",
+                  "text-sm",
+                  "px-0.5",
+                  "[font-family:var(--nav-font)]",
+                  "font-normal",
+                  "flex",
+                  "items-center",
+                  "justify-between",
+                  "whitespace-nowrap",
+                  "transition-all",
+                  "duration-300",
+                  "relative",
+                  "uppercase",
+                  "before:content-['']",
+                  "before:absolute",
+                  "before:h-0.5",
+                  "before:-bottom-1.5",
+                  "before:left-0",
+                  "before:bg-[var(--accent-color)]",
+                  "before:transition-all",
+                  "before:duration-300",
+                  "before:ease-in-out",
+                  "before:invisible",
+                  "before:w-0",
+                  "hover:before:visible",
+                  "hover:before:w-full",
+                )}
+              >
+                Team
+              </Link>
             </li>
-            <li className="dropdown">
-              <a href="#">
-                <span>Dropdown</span>{" "}
-                <i className="bi bi-chevron-down toggle-dropdown"></i>
-              </a>
-              <ul>
-                <li>
-                  <a href="#">Dropdown 1</a>
-                </li>
-                <li className="dropdown">
-                  <a href="#">
-                    <span>Deep Dropdown</span>{" "}
-                    <i className="bi bi-chevron-down toggle-dropdown"></i>
-                  </a>
-                  <ul>
-                    <li>
-                      <a href="#">Deep Dropdown 1</a>
-                    </li>
-                    <li>
-                      <a href="#">Deep Dropdown 2</a>
-                    </li>
-                    <li>
-                      <a href="#">Deep Dropdown 3</a>
-                    </li>
-                    <li>
-                      <a href="#">Deep Dropdown 4</a>
-                    </li>
-                    <li>
-                      <a href="#">Deep Dropdown 5</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">Dropdown 2</a>
-                </li>
-                <li>
-                  <a href="#">Dropdown 3</a>
-                </li>
-                <li>
-                  <a href="#">Dropdown 4</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
+            <li className={clsx("nowrap px-3.5 py-4", "relative")}>
+              <Link
+                href="#contact"
+                className={clsx(
+                  "!text-[var(--nav-color)]",
+                  "text-sm",
+                  "px-0.5",
+                  "[font-family:var(--nav-font)]",
+                  "font-normal",
+                  "flex",
+                  "items-center",
+                  "justify-between",
+                  "whitespace-nowrap",
+                  "transition-all",
+                  "duration-300",
+                  "relative",
+                  "uppercase",
+                  "before:content-['']",
+                  "before:absolute",
+                  "before:h-0.5",
+                  "before:-bottom-1.5",
+                  "before:left-0",
+                  "before:bg-[var(--accent-color)]",
+                  "before:transition-all",
+                  "before:duration-300",
+                  "before:ease-in-out",
+                  "before:invisible",
+                  "before:w-0",
+                  "hover:before:visible",
+                  "hover:before:w-full",
+                )}
+              >
+                Contact
+              </Link>
             </li>
           </ul>
-          <i className="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
+
+        {/* <button
+          className="lg:hidden text-2xl"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          <i className={`bi bi-${isMenuOpen ? "x" : "list"}`}></i>
+        </button> */}
       </div>
-    </header>
+
+      {/* Mobile Menu */}
+      {isMenuOpen && (
+        <div className="lg:hidden bg-white shadow-lg">
+          <nav className="container mx-auto px-4 py-4">
+            <ul className="space-y-4">
+              <li>
+                <Link
+                  href="#hero"
+                  className={clsx(
+                    "text-[var(--nav-color)]",
+                    "text-sm",
+                    "px-0.5",
+                    "[font-family:var(--nav-font)]",
+                    "font-normal",
+                    "flex",
+                    "items-center",
+                    "justify-between",
+                    "whitespace-nowrap",
+                    "transition-all",
+                    "duration-300",
+                    "relative",
+                    "uppercase",
+                    "hover:text-[var(--nav-hover-color)]",
+                  )}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#about"
+                  className={clsx(
+                    "text-[var(--nav-color)]",
+                    "text-sm",
+                    "px-0.5",
+                    "[font-family:var(--nav-font)]",
+                    "font-normal",
+                    "flex",
+                    "items-center",
+                    "justify-between",
+                    "whitespace-nowrap",
+                    "transition-all",
+                    "duration-300",
+                    "relative",
+                    "uppercase",
+                    "hover:text-[var(--nav-hover-color)]",
+                  )}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#services"
+                  className={clsx(
+                    "text-[var(--nav-color)]",
+                    "text-sm",
+                    "px-0.5",
+                    "[font-family:var(--nav-font)]",
+                    "font-normal",
+                    "flex",
+                    "items-center",
+                    "justify-between",
+                    "whitespace-nowrap",
+                    "transition-all",
+                    "duration-300",
+                    "relative",
+                    "uppercase",
+                    "hover:text-[var(--nav-hover-color)]",
+                  )}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#portfolio"
+                  className={clsx(
+                    "text-[var(--nav-color)]",
+                    "text-sm",
+                    "px-0.5",
+                    "[font-family:var(--nav-font)]",
+                    "font-normal",
+                    "flex",
+                    "items-center",
+                    "justify-between",
+                    "whitespace-nowrap",
+                    "transition-all",
+                    "duration-300",
+                    "relative",
+                    "uppercase",
+                    "hover:text-[var(--nav-hover-color)]",
+                  )}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Portfolio
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#team"
+                  className={clsx(
+                    "text-[var(--nav-color)]",
+                    "text-sm",
+                    "px-0.5",
+                    "[font-family:var(--nav-font)]",
+                    "font-normal",
+                    "flex",
+                    "items-center",
+                    "justify-between",
+                    "whitespace-nowrap",
+                    "transition-all",
+                    "duration-300",
+                    "relative",
+                    "uppercase",
+                    "hover:text-[var(--nav-hover-color)]",
+                  )}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Team
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#contact"
+                  className={clsx(
+                    "text-[var(--nav-color)]",
+                    "text-sm",
+                    "px-0.5",
+                    "[font-family:var(--nav-font)]",
+                    "font-normal",
+                    "flex",
+                    "items-center",
+                    "justify-between",
+                    "whitespace-nowrap",
+                    "transition-all",
+                    "duration-300",
+                    "relative",
+                    "uppercase",
+                    "hover:text-[var(--nav-hover-color)]",
+                  )}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      )}
+    </>
   );
 };

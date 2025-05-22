@@ -1,2 +1,7 @@
 export * from "./Header";
-export * from "./Footer";
+export * from "./Hero";
+export * from "./About";
+export * from "./Stats";
+export * from "./AOSInitializer";
+
+// export * from "./Footer";
