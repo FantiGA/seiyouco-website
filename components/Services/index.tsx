@@ -1,7 +1,10 @@
 "use client";
 
+import clsx from "clsx";
+import Link from "next/link";
+import type { FC } from "react";
+
 type Service = {
-  id: number;
   icon: string;
   title: string;
   description: string;
@@ -9,42 +12,36 @@ type Service = {
 
 const services: Service[] = [
   {
-    id: 1,
     icon: "bi bi-activity",
     title: "Nesciunt Mete",
     description:
       "Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.",
   },
   {
-    id: 2,
     icon: "bi bi-broadcast",
     title: "Eosle Commodi",
     description:
       "Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.",
   },
   {
-    id: 3,
     icon: "bi bi-easel",
     title: "Ledo Markt",
     description:
       "Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.",
   },
   {
-    id: 4,
     icon: "bi bi-bounding-box-circles",
     title: "Asperiores Commodit",
     description:
       "Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.",
   },
   {
-    id: 5,
     icon: "bi bi-calendar4-week",
     title: "Velit Doloremque",
     description:
       "Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.",
   },
   {
-    id: 6,
     icon: "bi bi-chat-square-text",
     title: "Dolori Architecto",
     description:
@@ -52,39 +49,132 @@ const services: Service[] = [
   },
 ];
 
+interface CardProps {
+  index: number;
+  service: Service;
+}
+
+const Card: FC<CardProps> = ({ index, service }) => {
+  return (
+    <div
+      key={index}
+      className={clsx(
+        "bg-[var(--surface-color)]",
+        "py-13 px-8",
+        "mt-9",
+        "transition-all duration-300 ease-in-out",
+        "relative",
+        "border border-[color-mix(in_srgb,var(--default-color),transparent_85%)]",
+        "text-center",
+        "hover:bg-[var(--background-color)]",
+        // "hover:cursor-pointer",
+        "group",
+      )}
+      data-aos="fade-up"
+      data-aos-delay={(index + 1) * 100}
+    >
+      <div
+        className={clsx(
+          "bg-[var(--accent-color)]",
+          "text-[var(--contrast-color)]",
+          "m-0",
+          "w-16 h-16",
+          "rounded-full",
+          "flex items-center justify-center",
+          "mb-5",
+          "text-3xl",
+          "transition-all duration-300 ease-in-out",
+          "absolute",
+          "-top-8",
+          "left-[calc(50%-32px)]",
+          "border-6 border-[var(--background-color)]",
+          "group-hover:bg-[var(--surface-color)]",
+          "group-hover:border-2",
+          "group-hover:border-[var(--accent-color)]",
+        )}
+      >
+        <i
+          className={clsx(
+            service.icon,
+            "inline-block",
+            "font-normal",
+            "not-italic",
+            "font-normal",
+            "normal-case",
+            "leading-none",
+            "align-[-0.125em]",
+            "antialiased",
+            "subpixel-antialiased",
+            "group-hover:text-[var(--accent-color)]",
+          )}
+        ></i>
+      </div>
+      <h3
+        className={clsx(
+          "text-2xl font-bold",
+          "mt-2.5 mb-4",
+          "transition-all duration-300 ease-in-out",
+          "group-hover:!text-[var(--accent-color)]",
+        )}
+      >
+        {service.title}
+      </h3>
+      <p className={clsx("text-sm", "leading-6", "mb-0")}>
+        {service.description}
+      </p>
+      <Link
+        href="#"
+        className={clsx(
+          "absolute",
+          "inset-0",
+          "z-[1]",
+          "after:content-['']",
+          "after:absolute",
+          "after:inset-0",
+          "after:z-[1]",
+        )}
+      />
+    </div>
+  );
+};
+
 export const Services = () => {
   return (
-    <section id="services" className="section">
-      <div className="container">
-        <div className="section-title" data-aos="fade-up">
-          <h2>Services</h2>
-          <p>
-            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-            consectetur velit
-          </p>
-        </div>
-
+    <section
+      id="services"
+      className={clsx(
+        "text-[var(--default-color)] bg-[var(--background-color)] py-16 scroll-mt-20 overflow-clip",
+      )}
+    >
+      <div
+        className={clsx(
+          "opacity-100 transform-none",
+          "transition-[opacity,transform]",
+          "ease-in-out duration-600",
+          "pointer-events-auto",
+          "text-center pb-16 relative",
+          "max-w-[1140px]",
+          "[--bs-gutter-x:1.5rem] [--bs-gutter-y:0]",
+          "w-full px-[calc(var(--bs-gutter-x)*.5)] mx-auto",
+        )}
+        data-aos="fade-up"
+      >
+        <h2 className="text-4xl font-bold mb-4 uppercase">Services</h2>
+        <p>
+          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+          consectetur velit
+        </p>
+      </div>
+      <div
+        className={clsx(
+          "max-w-[1140px]",
+          "[--bs-gutter-x:1.5rem] [--bs-gutter-y:0]",
+          "w-full px-[calc(var(--bs-gutter-x)*.5)] mx-auto",
+        )}
+      >
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service) => (
-            <div
-              key={service.id}
-              className="relative p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow"
-              data-aos="fade-up"
-              data-aos-delay={service.id * 100}
-            >
-              <div className="text-4xl text-primary mb-4">
-                <i className={service.icon}></i>
-              </div>
-              <h3 className="text-xl font-bold mb-2">
-                <a
-                  href="#"
-                  className="text-dark hover:text-primary transition-colors"
-                >
-                  {service.title}
-                </a>
-              </h3>
-              <p className="text-secondary">{service.description}</p>
-            </div>
+          {services.map((service, index) => (
+            <Card key={index} index={index} service={service} />
           ))}
         </div>
       </div>

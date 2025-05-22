@@ -1,6 +1,6 @@
 "use client";
 
-import { About, Header, Hero, Stats } from "@/components";
+import { About, Header, Hero, Services, Stats } from "@/components";
 import clsx from "clsx";
 import { useEffect, useState } from "react";
 
@@ -38,8 +38,8 @@ export default function EnPage() {
         <Hero />
         <About />
         <Stats />
-        {/* <Services />
-      <Portfolio />
+        <Services />
+        {/* <Portfolio />
       <Team />
       <Contact /> */}
         {/* Other sections will be added here */}
