@@ -8,5 +8,4 @@ export * from "./Services";
 // export * from "./Portfolio";
 export * from "./Team";
 export * from "./Contact";
-
 export * from "./Footer";
