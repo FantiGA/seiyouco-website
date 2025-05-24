@@ -1,7 +1,15 @@
 "use client";
 
-import { About, Header, Hero, Services, Stats } from "@/components";
-import clsx from "clsx";
+import {
+  About,
+  Contact,
+  Footer,
+  Header,
+  Hero,
+  Services,
+  Stats,
+  Team,
+} from "@/components";
 import { useEffect, useState } from "react";
 
 export default function EnPage() {
@@ -18,32 +26,18 @@ export default function EnPage() {
 
   return (
     <>
-      <header
-        className={clsx(
-          "[--default-color:#ffffff] [--heading-color:#ffffff]",
-          isScrolled
-            ? "![--background-color:#474d52] shadow-[0px_0_18px_rgba(0,0,0,0.1)]"
-            : "[--background-color:rgba(0,0,0,0)]",
-          "py-[15px] transition-all duration-500 z-[997]",
-          "items-center",
-          "flex",
-          "fixed top-0 left-0 right-0",
-          "text-[var(--default-color)]",
-          "bg-[var(--background-color)]",
-        )}
-      >
-        <Header />
-      </header>
+      <Header isScrolled={isScrolled} />
       <main>
         <Hero />
         <About />
         <Stats />
         <Services />
-        {/* <Portfolio />
-      <Team />
-      <Contact /> */}
-        {/* Other sections will be added here */}
+        {/* <CallToAction /> */}
+        {/* <Portfolio /> */}
+        <Team />
+        <Contact />
       </main>
+      <Footer />
     </>
   );
 }

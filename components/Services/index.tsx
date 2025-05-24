@@ -67,7 +67,6 @@ const Card: FC<CardProps> = ({ index, service }) => {
         "border border-[color-mix(in_srgb,var(--default-color),transparent_85%)]",
         "text-center",
         "hover:bg-[var(--background-color)]",
-        // "hover:cursor-pointer",
         "group",
       )}
       data-aos="fade-up"

@@ -1,14 +1,31 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type FC } from "react";
 import Link from "next/link";
 import clsx from "clsx";
 
-export const Header = () => {
+interface Props {
+  isScrolled: boolean;
+}
+
+export const Header: FC<Props> = ({ isScrolled }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <>
+    <header
+      className={clsx(
+        "[--default-color:#ffffff] [--heading-color:#ffffff]",
+        isScrolled
+          ? "![--background-color:#474d52] shadow-[0px_0_18px_rgba(0,0,0,0.1)]"
+          : "[--background-color:rgba(0,0,0,0)]",
+        "py-[15px] transition-all duration-500 z-[997]",
+        "items-center",
+        "flex",
+        "fixed top-0 left-0 right-0",
+        "text-[var(--default-color)]",
+        "bg-[var(--background-color)]",
+      )}
+    >
       <div
         className={clsx(
           "items-center",
@@ -420,6 +437,6 @@ export const Header = () => {
           </nav>
         </div>
       )}
-    </>
+    </header>
   );
 };

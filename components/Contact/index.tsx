@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import clsx from "clsx";
 
 type ContactInfo = {
   icon: string;
@@ -10,139 +10,93 @@ type ContactInfo = {
 
 const contactInfo: ContactInfo[] = [
   {
-    icon: "bi bi-geo-alt",
-    title: "Location",
+    icon: "",
+    title: "Address",
     value: "A108 Adam Street, New York, NY 535022",
   },
   {
-    icon: "bi bi-envelope",
-    title: "Email",
+    icon: "",
+    title: "Email Us",
     value: "info@example.com",
   },
   {
-    icon: "bi bi-phone",
-    title: "Call",
+    icon: "",
+    title: "Call Us",
     value: "+1 5589 55488 55",
   },
 ];
 
-type FormData = {
-  name: string;
-  email: string;
-  subject: string;
-  message: string;
-};
-
 export const Contact = () => {
-  const [formData, setFormData] = useState<FormData>({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission
-    console.log(formData);
-  };
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
-
   return (
-    <section id="contact" className="section">
-      <div className="container">
-        <div className="section-title" data-aos="fade-up">
-          <h2>Contact</h2>
-          <p>
-            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-            consectetur velit
-          </p>
+    <section
+      id="contact"
+      className={clsx(
+        "text-[var(--default-color)] bg-[var(--background-color)]",
+        "py-15",
+        "scroll-mt-20",
+        "overflow-clip",
+      )}
+    >
+      <div
+        className={clsx("text-center", "pb-15", "relative")}
+        data-aos="fade-up"
+      >
+        <h2 className={clsx("text-4xl font-bold mb-4 uppercase")}>Contact</h2>
+        <p>
+          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+          consectetur velit
+        </p>
+      </div>
+      <div
+        className={clsx(
+          "max-w-[1140px]",
+          "[--bs-gutter-x:1.5rem] [--bs-gutter-y:0]",
+          "w-full px-[calc(var(--bs-gutter-x)*.5)] mx-auto",
+        )}
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
+        <div className={clsx("mb-6")} data-aos="fade-up" data-aos-delay="200">
+          Maps
         </div>
-
-        <div className="grid lg:grid-cols-2 gap-8">
-          <div className="space-y-8" data-aos="fade-up">
-            {contactInfo.map((info, index) => (
-              <div
-                key={info.title}
-                className="flex items-start gap-4"
-                data-aos="fade-up"
-                data-aos-delay={index * 100}
-              >
-                <div className="w-12 h-12 flex items-center justify-center bg-primary text-white rounded-full">
-                  <i className={`${info.icon} text-xl`}></i>
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold mb-1">{info.title}</h3>
-                  <p className="text-secondary">{info.value}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <form
-            className="space-y-6"
-            onSubmit={handleSubmit}
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <input
-                  type="text"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary"
-                  placeholder="Your Name"
-                  required
-                />
-              </div>
-              <div>
-                <input
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary"
-                  placeholder="Your Email"
-                  required
-                />
-              </div>
-            </div>
-            <div>
-              <input
-                type="text"
-                name="subject"
-                value={formData.subject}
-                onChange={handleChange}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary"
-                placeholder="Subject"
-                required
-              />
-            </div>
-            <div>
-              <textarea
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary h-32 resize-none"
-                placeholder="Message"
-                required
-              ></textarea>
-            </div>
-            <button
-              type="submit"
-              className="px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors"
+        <div className="grid lg:grid-cols-3 gap-6">
+          {contactInfo.map((info, index) => (
+            <div
+              key={info.title}
+              className="flex items-start gap-4"
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
             >
-              Send Message
-            </button>
-          </form>
+              <i
+                className={clsx(
+                  `${info.icon}`,
+                  "text-[var(--contrast-color)]",
+                  "bg-[var(--accent-color)]",
+                  "text-xl",
+                  "w-11 h-11",
+                  "flex justify-center items-center",
+                  "rounded",
+                  "transition-all duration-300 ease-in-out",
+                  "mr-4",
+                  "flex-shrink-0",
+                  "before:inline-block",
+                  "before:font-normal",
+                  "before:not-italic",
+                  "before:not-font-bold",
+                  "before:not-uppercase",
+                  "before:leading-none",
+                  "before:align-[-0.125em]",
+                  "before:antialiased",
+                )}
+              />
+              <div>
+                <h3 className={clsx("p-0", "text-lg", "font-bold", "mb-1.5")}>
+                  {info.title}
+                </h3>
+                <p className={clsx("p-0", "mb-0", "text-sm")}>{info.value}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

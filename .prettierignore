@@ -3,8 +3,6 @@
 # Base your .prettierignore on .gitignore and .eslintignore (if you have one).
 # If your project isn’t ready to format, say, HTML files yet, add *.html.
 
-/.*
-
 # dependencies
 /node_modules
 
