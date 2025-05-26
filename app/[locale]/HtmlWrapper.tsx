@@ -1,7 +1,7 @@
 "use client";
 
 import { ReactNode, useEffect, useState } from "react";
-import Script from "next/script";
+// import Script from "next/script";
 import { loadMessages, locales } from "@/utils/i18n";
 
 export function HtmlWrapper({ children }: { children: ReactNode }) {
@@ -22,7 +22,7 @@ export function HtmlWrapper({ children }: { children: ReactNode }) {
 
   return (
     <>
-      <Script
+      {/* <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-L21FKDK6YT"
         strategy="afterInteractive"
       />
@@ -33,7 +33,7 @@ export function HtmlWrapper({ children }: { children: ReactNode }) {
           gtag('js', new Date());
           gtag('config', 'G-L21FKDK6YT');
         `}
-      </Script>
+      </Script> */}
       {children}
     </>
   );

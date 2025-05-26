@@ -2,8 +2,14 @@
 
 import Image from "next/image";
 import clsx from "clsx";
+import type { TranslationSection } from "@/types";
+import type { FC } from "react";
 
-export const Hero = () => {
+interface Props {
+  translations: TranslationSection<"hero">;
+}
+
+export const Hero: FC<Props> = ({ translations }) => {
   return (
     <section
       id="hero"
@@ -68,7 +74,7 @@ export const Hero = () => {
             )}
           >
             <h2 className={clsx("m-0", "text-5xl", "font-bold")}>
-              Welcome to Our Website
+              {translations.title}
             </h2>
             <p
               className={clsx(
@@ -77,8 +83,7 @@ export const Hero = () => {
                 "text-[var(--heading-color)]",
               )}
             >
-              We are team of talented designers making websites with Tailwind
-              CSS
+              {translations.description}
             </p>
             <a
               href="#about"
@@ -97,7 +102,7 @@ export const Hero = () => {
                 "border-[color-mix(in_srgb,var(--default-color),transparent_50%)]",
               )}
             >
-              Get Started
+              {translations.button}
             </a>
           </div>
         </div>

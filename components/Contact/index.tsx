@@ -1,32 +1,59 @@
 "use client";
 
+import type { TranslationSection } from "@/types";
 import clsx from "clsx";
+import type { FC } from "react";
 
-type ContactInfo = {
+interface CardProps {
+  index: number;
   icon: string;
   title: string;
   value: string;
+}
+
+const Card: FC<CardProps> = ({ index, icon, title, value }) => {
+  return (
+    <div
+      className="flex items-start gap-4"
+      data-aos="fade-up"
+      data-aos-delay={index * 100}
+    >
+      <i
+        className={clsx(
+          `${icon}`,
+          "text-[var(--contrast-color)]",
+          "bg-[var(--accent-color)]",
+          "text-xl",
+          "w-11 h-11",
+          "flex justify-center items-center",
+          "rounded",
+          "transition-all duration-300 ease-in-out",
+          "mr-4",
+          "flex-shrink-0",
+          "before:inline-block",
+          "before:font-normal",
+          "before:not-italic",
+          "before:not-font-bold",
+          "before:not-uppercase",
+          "before:leading-none",
+          "before:align-[-0.125em]",
+          "before:antialiased",
+        )}
+      />
+      <div>
+        <h3 className={clsx("p-0", "text-lg", "font-bold", "mb-1.5")}>
+          {title}
+        </h3>
+        <p className={clsx("p-0", "mb-0", "text-sm")}>{value}</p>
+      </div>
+    </div>
+  );
 };
+interface Props {
+  translations: TranslationSection<"contact">;
+}
 
-const contactInfo: ContactInfo[] = [
-  {
-    icon: "",
-    title: "Address",
-    value: "A108 Adam Street, New York, NY 535022",
-  },
-  {
-    icon: "",
-    title: "Email Us",
-    value: "info@example.com",
-  },
-  {
-    icon: "",
-    title: "Call Us",
-    value: "+1 5589 55488 55",
-  },
-];
-
-export const Contact = () => {
+export const Contact: FC<Props> = ({ translations }) => {
   return (
     <section
       id="contact"
@@ -41,11 +68,10 @@ export const Contact = () => {
         className={clsx("text-center", "pb-15", "relative")}
         data-aos="fade-up"
       >
-        <h2 className={clsx("text-4xl font-bold mb-4 uppercase")}>Contact</h2>
-        <p>
-          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-          consectetur velit
-        </p>
+        <h2 className={clsx("text-4xl font-bold mb-4 uppercase")}>
+          {translations.title}
+        </h2>
+        <p>{translations.description}</p>
       </div>
       <div
         className={clsx(
@@ -60,43 +86,24 @@ export const Contact = () => {
           Maps
         </div>
         <div className="grid lg:grid-cols-3 gap-6">
-          {contactInfo.map((info, index) => (
-            <div
-              key={info.title}
-              className="flex items-start gap-4"
-              data-aos="fade-up"
-              data-aos-delay={index * 100}
-            >
-              <i
-                className={clsx(
-                  `${info.icon}`,
-                  "text-[var(--contrast-color)]",
-                  "bg-[var(--accent-color)]",
-                  "text-xl",
-                  "w-11 h-11",
-                  "flex justify-center items-center",
-                  "rounded",
-                  "transition-all duration-300 ease-in-out",
-                  "mr-4",
-                  "flex-shrink-0",
-                  "before:inline-block",
-                  "before:font-normal",
-                  "before:not-italic",
-                  "before:not-font-bold",
-                  "before:not-uppercase",
-                  "before:leading-none",
-                  "before:align-[-0.125em]",
-                  "before:antialiased",
-                )}
-              />
-              <div>
-                <h3 className={clsx("p-0", "text-lg", "font-bold", "mb-1.5")}>
-                  {info.title}
-                </h3>
-                <p className={clsx("p-0", "mb-0", "text-sm")}>{info.value}</p>
-              </div>
-            </div>
-          ))}
+          <Card
+            index={0}
+            icon=""
+            title={translations["address-title"]}
+            value={translations["address-value"]}
+          />
+          <Card
+            index={1}
+            icon=""
+            title={translations["email-title"]}
+            value={translations["email-value"]}
+          />
+          <Card
+            index={2}
+            icon=""
+            title={translations["call-title"]}
+            value={translations["call-value"]}
+          />
         </div>
       </div>
     </section>

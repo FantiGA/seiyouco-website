@@ -1,87 +1,101 @@
 export type TranslationKeys = {
-  header: "title" | "keywords" | "description";
+  head: "title" | "keywords" | "description";
   language: "zh-CN" | "en" | "ja";
+  header:
+    | "title"
+    | "menu-home"
+    | "menu-about"
+    | "menu-services"
+    | "menu-team"
+    | "menu-contact";
   menu: "menu" | "close";
-  chapter:
-    | "our-mission"
-    | "our-vision"
-    | "our-core-value"
-    | "our-faith-statment"
-    | "worship-service-information"
-    | "contact";
-  "prayer-text":
-    | "corinthians15-3"
-    | "corinthians15-4"
-    | "corinthians15"
-    | "line1"
-    | "line2"
-    | "line3"
-    | "line4"
-    | "line5"
-    | "line6"
-    | "line7";
-  welcome: "title" | "title2" | "line1" | "line2" | "line3" | "line4";
-  "our-mission": "title" | "line1" | "line2" | "line3" | "line4";
-  "our-vision":
+  hero: "title" | "description" | "button";
+  about:
     | "title"
-    | "gathering"
-    | "growing"
-    | "going"
-    | "line1"
-    | "line2"
-    | "line3";
-  "our-core-value":
+    | "description"
+    | "item-title-1"
+    | "item-description-1"
+    | "item-title-2"
+    | "item-description-2"
+    | "item-title-3"
+    | "item-description-3";
+  stats:
+    | "stat-1-title"
+    | "stat-1-value"
+    | "stat-2-title"
+    | "stat-2-value"
+    | "stat-3-title"
+    | "stat-3-value"
+    | "stat-4-title"
+    | "stat-4-value";
+  services:
     | "title"
-    | "faith"
-    | "hope"
-    | "love"
-    | "line1"
-    | "line2"
-    | "line3"
-    | "line4"
-    | "line5"
-    | "line6"
-    | "line7"
-    | "line8"
-    | "line9"
-    | "line10";
-  "our-faith-statment":
+    | "description"
+    | "service-1-title"
+    | "service-1-description"
+    | "service-1-icon"
+    | "service-2-title"
+    | "service-2-description"
+    | "service-2-icon"
+    | "service-3-title"
+    | "service-3-description"
+    | "service-3-icon"
+    | "service-4-title"
+    | "service-4-description"
+    | "service-4-icon"
+    | "service-5-title"
+    | "service-5-description"
+    | "service-5-icon"
+    | "service-6-title"
+    | "service-6-description"
+    | "service-6-icon";
+
+  team:
     | "title"
-    | "the-scriptures"
-    | "god"
-    | "jesus-christ"
-    | "the-holy-spirit"
-    | "the-condition-of-people"
-    | "the-work-of-christ"
-    | "salvation"
-    | "the-church"
-    | "eternal-state"
-    | "line1"
-    | "line2"
-    | "line3"
-    | "line4"
-    | "line5"
-    | "line6"
-    | "line7"
-    | "line8"
-    | "line9"
-    | "line10"
-    | "line11"
-    | "line12";
-  "worship-service-information":
+    | "description"
+    | "team-1-name"
+    | "team-1-position"
+    | "team-1-description"
+    | "team-1-image"
+    | "team-1-social-x"
+    | "team-1-social-facebook"
+    | "team-1-social-instagram"
+    | "team-1-social-linkedin"
+    | "team-2-name"
+    | "team-2-position"
+    | "team-2-description"
+    | "team-2-image"
+    | "team-2-social-x"
+    | "team-2-social-facebook"
+    | "team-2-social-instagram"
+    | "team-2-social-linkedin"
+    | "team-3-name"
+    | "team-3-position"
+    | "team-3-description"
+    | "team-3-image"
+    | "team-3-social-x"
+    | "team-3-social-facebook"
+    | "team-3-social-instagram"
+    | "team-3-social-linkedin";
+  contact:
     | "title"
-    | "ticf-ueno-name"
-    | "ticf-ueno-time"
-    | "ticf-ueno-address-line1"
-    | "ticf-ueno-address-line2"
-    | "ticf-ueno-map"
-    | "ticf-ikebukuro-name"
-    | "ticf-ikebukuro-time"
-    | "ticf-ikebukuro-address-line1"
-    | "ticf-ikebukuro-address-line2"
-    | "ticf-ikebukuro-map";
-  contact: "title" | "email";
-  footer: "copyright.line1" | "copyright.line2";
+    | "description"
+    | "map-url"
+    | "address-title"
+    | "address-value"
+    | "email-title"
+    | "email-value"
+    | "call-title"
+    | "call-value";
+  footer:
+    | "title"
+    | "description"
+    | "social-x"
+    | "social-facebook"
+    | "social-instagram"
+    | "social-linkedin"
+    | "copyright.line1"
+    | "copyright.line2";
 };
 
 export type TranslationSection<T extends keyof TranslationKeys> = {

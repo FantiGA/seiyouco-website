@@ -1,3 +1,4 @@
+import type { TranslationSection } from "@/types";
 import clsx from "clsx";
 import type { FC } from "react";
 
@@ -7,35 +8,7 @@ type Social = {
   url: string;
 };
 
-const socialList: Social[] = [
-  {
-    name: "X",
-    icon: "",
-    url: "",
-  },
-  {
-    name: "Facebook",
-    icon: "",
-    url: "",
-  },
-  {
-    name: "Instagram",
-    icon: "",
-    url: "",
-  },
-  {
-    name: "Skype",
-    icon: "",
-    url: "",
-  },
-  {
-    name: "LinkedIn",
-    icon: "",
-    url: "",
-  },
-];
-
-const Social: FC<Social> = ({ icon, url }) => {
+const Social: FC<Social> = ({ name, icon, url }) => {
   return (
     <a
       href={url}
@@ -51,6 +24,7 @@ const Social: FC<Social> = ({ icon, url }) => {
         "w-9 h-9",
         "transition-all duration-300",
       )}
+      title={name}
     >
       <i
         className={clsx(
@@ -71,7 +45,11 @@ const Social: FC<Social> = ({ icon, url }) => {
   );
 };
 
-export const Footer: FC = () => {
+interface Props {
+  translations: TranslationSection<"footer">;
+}
+
+export const Footer: FC<Props> = ({ translations }) => {
   return (
     <footer
       className={clsx(
@@ -101,16 +79,32 @@ export const Footer: FC = () => {
         <h3
           className={clsx("text-4xl", "font-bold", "relative", "p-0", "mb-4")}
         >
-          Seiyouco
+          {translations.title}
         </h3>
         <p className={clsx("text-base", "italic", "p-0", "mb-8")}>
-          Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni
-          eligendi fuga maxime saepe commodi placeat.
+          {translations.description}
         </p>
         <div className={clsx("mb-8", "flex", "justify-center")}>
-          {socialList.map((social, index) => (
-            <Social key={index} {...social} />
-          ))}
+          <Social
+            name="X"
+            icon={translations["social-x"]}
+            url={translations["social-x"]}
+          />
+          <Social
+            name="Facebook"
+            icon={translations["social-facebook"]}
+            url={translations["social-facebook"]}
+          />
+          <Social
+            name="Instagram"
+            icon={translations["social-instagram"]}
+            url={translations["social-instagram"]}
+          />
+          <Social
+            name="LinkedIn"
+            icon={translations["social-linkedin"]}
+            url={translations["social-linkedin"]}
+          />
         </div>
         <div
           className={clsx(
@@ -129,9 +123,8 @@ export const Footer: FC = () => {
               "border-[color-mix(in_srgb,var(--default-color),transparent_90%)]",
             )}
           >
-            <span>Copyright</span>{" "}
-            <strong className={clsx("px-1")}>Regna</strong>{" "}
-            <span>All Rights Reserved</span>
+            {translations["copyright.line1"]}
+            {`${new Date().getFullYear()} ${translations["copyright.line2"]}`}
           </div>
         </div>
       </div>

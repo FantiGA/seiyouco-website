@@ -1,63 +1,20 @@
 "use client";
 
+import type { TranslationSection } from "@/types";
 import clsx from "clsx";
 import Link from "next/link";
 import type { FC } from "react";
 
-type Service = {
-  icon: string;
+interface CardProps {
   title: string;
   description: string;
-};
-
-const services: Service[] = [
-  {
-    icon: "bi bi-activity",
-    title: "Nesciunt Mete",
-    description:
-      "Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.",
-  },
-  {
-    icon: "bi bi-broadcast",
-    title: "Eosle Commodi",
-    description:
-      "Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.",
-  },
-  {
-    icon: "bi bi-easel",
-    title: "Ledo Markt",
-    description:
-      "Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.",
-  },
-  {
-    icon: "bi bi-bounding-box-circles",
-    title: "Asperiores Commodit",
-    description:
-      "Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.",
-  },
-  {
-    icon: "bi bi-calendar4-week",
-    title: "Velit Doloremque",
-    description:
-      "Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.",
-  },
-  {
-    icon: "bi bi-chat-square-text",
-    title: "Dolori Architecto",
-    description:
-      "Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.",
-  },
-];
-
-interface CardProps {
+  icon: string;
   index: number;
-  service: Service;
 }
 
-const Card: FC<CardProps> = ({ index, service }) => {
+const Card: FC<CardProps> = ({ title, description, icon, index }) => {
   return (
     <div
-      key={index}
       className={clsx(
         "bg-[var(--surface-color)]",
         "py-13 px-8",
@@ -94,7 +51,7 @@ const Card: FC<CardProps> = ({ index, service }) => {
       >
         <i
           className={clsx(
-            service.icon,
+            icon,
             "inline-block",
             "font-normal",
             "not-italic",
@@ -106,7 +63,7 @@ const Card: FC<CardProps> = ({ index, service }) => {
             "subpixel-antialiased",
             "group-hover:text-[var(--accent-color)]",
           )}
-        ></i>
+        />
       </div>
       <h3
         className={clsx(
@@ -116,11 +73,9 @@ const Card: FC<CardProps> = ({ index, service }) => {
           "group-hover:!text-[var(--accent-color)]",
         )}
       >
-        {service.title}
+        {title}
       </h3>
-      <p className={clsx("text-sm", "leading-6", "mb-0")}>
-        {service.description}
-      </p>
+      <p className={clsx("text-sm", "leading-6", "mb-0")}>{description}</p>
       <Link
         href="#"
         className={clsx(
@@ -137,7 +92,11 @@ const Card: FC<CardProps> = ({ index, service }) => {
   );
 };
 
-export const Services = () => {
+interface Props {
+  translations: TranslationSection<"services">;
+}
+
+export const Services: FC<Props> = ({ translations }) => {
   return (
     <section
       id="services"
@@ -158,11 +117,10 @@ export const Services = () => {
         )}
         data-aos="fade-up"
       >
-        <h2 className="text-4xl font-bold mb-4 uppercase">Services</h2>
-        <p>
-          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-          consectetur velit
-        </p>
+        <h2 className="text-4xl font-bold mb-4 uppercase">
+          {translations.title}
+        </h2>
+        <p>{translations.description}</p>
       </div>
       <div
         className={clsx(
@@ -172,8 +130,26 @@ export const Services = () => {
         )}
       >
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => (
-            <Card key={index} index={index} service={service} />
+          {[...Array(6)].map((_, index) => (
+            <Card
+              key={index}
+              title={
+                translations[
+                  `service-${index + 1}-title` as keyof TranslationSection<"services">
+                ]
+              }
+              description={
+                translations[
+                  `service-${index + 1}-description` as keyof TranslationSection<"services">
+                ]
+              }
+              icon={
+                translations[
+                  `service-${index + 1}-icon` as keyof TranslationSection<"services">
+                ]
+              }
+              index={index}
+            />
           ))}
         </div>
       </div>

@@ -3,12 +3,14 @@
 import { useState, type FC } from "react";
 import Link from "next/link";
 import clsx from "clsx";
+import type { TranslationSection } from "@/types";
 
 interface Props {
+  translations: TranslationSection<"header">;
   isScrolled: boolean;
 }
 
-export const Header: FC<Props> = ({ isScrolled }) => {
+export const Header: FC<Props> = ({ translations, isScrolled }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
@@ -48,7 +50,7 @@ export const Header: FC<Props> = ({ isScrolled }) => {
               "text-[var(--heading-color)]",
             )}
           >
-            Seiyouco
+            {translations.title}
           </h1>
         </Link>
 
@@ -95,7 +97,7 @@ export const Header: FC<Props> = ({ isScrolled }) => {
                   "hover:before:visible",
                 )}
               >
-                Home
+                {translations["menu-home"]}
               </Link>
             </li>
             <li className={clsx("nowrap px-3.5 py-4", "relative")}>
@@ -130,7 +132,7 @@ export const Header: FC<Props> = ({ isScrolled }) => {
                   "hover:before:w-full",
                 )}
               >
-                About
+                {translations["menu-about"]}
               </Link>
             </li>
             <li className={clsx("nowrap px-3.5 py-4", "relative")}>
@@ -165,42 +167,7 @@ export const Header: FC<Props> = ({ isScrolled }) => {
                   "hover:before:w-full",
                 )}
               >
-                Services
-              </Link>
-            </li>
-            <li className={clsx("nowrap px-3.5 py-4", "relative")}>
-              <Link
-                href="#portfolio"
-                className={clsx(
-                  "!text-[var(--nav-color)]",
-                  "text-sm",
-                  "px-0.5",
-                  "[font-family:var(--nav-font)]",
-                  "font-normal",
-                  "flex",
-                  "items-center",
-                  "justify-between",
-                  "whitespace-nowrap",
-                  "transition-all",
-                  "duration-300",
-                  "relative",
-                  "uppercase",
-                  "before:content-['']",
-                  "before:absolute",
-                  "before:h-0.5",
-                  "before:-bottom-1.5",
-                  "before:left-0",
-                  "before:bg-[var(--accent-color)]",
-                  "before:transition-all",
-                  "before:duration-300",
-                  "before:ease-in-out",
-                  "before:invisible",
-                  "before:w-0",
-                  "hover:before:visible",
-                  "hover:before:w-full",
-                )}
-              >
-                Portfolio
+                {translations["menu-services"]}
               </Link>
             </li>
             <li className={clsx("nowrap px-3.5 py-4", "relative")}>
@@ -235,7 +202,7 @@ export const Header: FC<Props> = ({ isScrolled }) => {
                   "hover:before:w-full",
                 )}
               >
-                Team
+                {translations["menu-team"]}
               </Link>
             </li>
             <li className={clsx("nowrap px-3.5 py-4", "relative")}>
@@ -270,7 +237,7 @@ export const Header: FC<Props> = ({ isScrolled }) => {
                   "hover:before:w-full",
                 )}
               >
-                Contact
+                {translations["menu-contact"]}
               </Link>
             </li>
           </ul>
@@ -310,7 +277,7 @@ export const Header: FC<Props> = ({ isScrolled }) => {
                   )}
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Home
+                  {translations["menu-home"]}
                 </Link>
               </li>
               <li>
@@ -334,7 +301,7 @@ export const Header: FC<Props> = ({ isScrolled }) => {
                   )}
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  About
+                  {translations["menu-about"]}
                 </Link>
               </li>
               <li>
@@ -358,31 +325,7 @@ export const Header: FC<Props> = ({ isScrolled }) => {
                   )}
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#portfolio"
-                  className={clsx(
-                    "text-[var(--nav-color)]",
-                    "text-sm",
-                    "px-0.5",
-                    "[font-family:var(--nav-font)]",
-                    "font-normal",
-                    "flex",
-                    "items-center",
-                    "justify-between",
-                    "whitespace-nowrap",
-                    "transition-all",
-                    "duration-300",
-                    "relative",
-                    "uppercase",
-                    "hover:text-[var(--nav-hover-color)]",
-                  )}
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Portfolio
+                  {translations["menu-services"]}
                 </Link>
               </li>
               <li>
@@ -406,7 +349,7 @@ export const Header: FC<Props> = ({ isScrolled }) => {
                   )}
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Team
+                  {translations["menu-team"]}
                 </Link>
               </li>
               <li>
@@ -430,7 +373,7 @@ export const Header: FC<Props> = ({ isScrolled }) => {
                   )}
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Contact
+                  {translations["menu-contact"]}
                 </Link>
               </li>
             </ul>

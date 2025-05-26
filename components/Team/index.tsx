@@ -3,70 +3,7 @@
 import Image from "next/image";
 import type { FC } from "react";
 import clsx from "clsx";
-
-type TeamMember = {
-  name: string;
-  position: string;
-  description: string;
-  image: string;
-  social: {
-    twitter?: string;
-    facebook?: string;
-    instagram?: string;
-    linkedin?: string;
-  };
-};
-
-const teamMembers: TeamMember[] = [
-  {
-    name: "Walter White",
-    position: "Chief Executive Officer",
-    description: "Explicabo voluptatem mollitia et repellat qui dolorum quasi",
-    image: "/img/team/team-1.jpg",
-    social: {
-      twitter: "#",
-      facebook: "#",
-      instagram: "#",
-      linkedin: "#",
-    },
-  },
-  {
-    name: "Sarah Jhonson",
-    position: "Product Manager",
-    description: "Explicabo voluptatem mollitia et repellat qui dolorum quasi",
-    image: "/img/team/team-2.jpg",
-    social: {
-      twitter: "#",
-      facebook: "#",
-      instagram: "#",
-      linkedin: "#",
-    },
-  },
-  {
-    name: "William Anderson",
-    position: "CTO",
-    description: "Explicabo voluptatem mollitia et repellat qui dolorum quasi",
-    image: "/img/team/team-3.jpg",
-    social: {
-      twitter: "#",
-      facebook: "#",
-      instagram: "#",
-      linkedin: "#",
-    },
-  },
-  {
-    name: "Amanda Jepson",
-    position: "Accountant",
-    description: "Explicabo voluptatem mollitia et repellat qui dolorum quasi",
-    image: "/img/team/team-4.jpg",
-    social: {
-      twitter: "#",
-      facebook: "#",
-      instagram: "#",
-      linkedin: "#",
-    },
-  },
-];
+import type { TranslationSection } from "@/types";
 
 interface SocialProps {
   icon: string;
@@ -93,10 +30,27 @@ const Social: FC<SocialProps> = ({ icon, url }) => {
 
 interface CardProps {
   index: number;
-  member: TeamMember;
+  name: string;
+  position: string;
+  description: string;
+  image: string;
+  social_x?: string;
+  social_facebook?: string;
+  social_instagram?: string;
+  social_linkedin?: string;
 }
 
-const Card: FC<CardProps> = ({ index, member }) => {
+const Card: FC<CardProps> = ({
+  index,
+  name,
+  position,
+  description,
+  image,
+  social_x,
+  social_facebook,
+  social_instagram,
+  social_linkedin,
+}) => {
   return (
     <div
       className={clsx(
@@ -123,8 +77,8 @@ const Card: FC<CardProps> = ({ index, member }) => {
         )}
       >
         <Image
-          src={member.image}
-          alt={member.name}
+          src={image}
+          alt={name}
           fill
           className={clsx(
             "transition-all duration-300 ease-in-out",
@@ -135,16 +89,16 @@ const Card: FC<CardProps> = ({ index, member }) => {
         />
       </div>
       <div className={clsx("pl-8")}>
-        <h4 className={clsx("font-bold", "mb-1", "text-xl")}>{member.name}</h4>
+        <h4 className={clsx("font-bold", "mb-1", "text-xl")}>{name}</h4>
         <span
           className={clsx(
             "block text-base pb-2.5 relative font-medium",
             "after:content-[''] after:absolute after:block after:w-14 after:h-px after:bg-[color-mix(in_srgb,var(--default-color),transparent_85%)] after:bottom-0 after:left-0",
           )}
         >
-          {member.position}
+          {position}
         </span>
-        <p className={clsx("mt-2.5", "text-sm")}>{member.description}</p>
+        <p className={clsx("mt-2.5", "text-sm")}>{description}</p>
         <div
           className={clsx(
             "mt-3",
@@ -152,25 +106,21 @@ const Card: FC<CardProps> = ({ index, member }) => {
             "w-full",
           )}
         >
-          {member.social.twitter && (
-            <Social icon={""} url={member.social.twitter} />
-          )}
-          {member.social.facebook && (
-            <Social icon={""} url={member.social.facebook} />
-          )}
-          {member.social.instagram && (
-            <Social icon={""} url={member.social.instagram} />
-          )}
-          {member.social.linkedin && (
-            <Social icon={""} url={member.social.linkedin} />
-          )}
+          {social_x && <Social icon={""} url={social_x} />}
+          {social_facebook && <Social icon={""} url={social_facebook} />}
+          {social_instagram && <Social icon={""} url={social_instagram} />}
+          {social_linkedin && <Social icon={""} url={social_linkedin} />}
         </div>
       </div>
     </div>
   );
 };
 
-export const Team = () => {
+interface Props {
+  translations: TranslationSection<"team">;
+}
+
+export const Team: FC<Props> = ({ translations }) => {
   return (
     <section
       id="team"
@@ -185,11 +135,10 @@ export const Team = () => {
         className={clsx("text-center", "pb-15", "relative")}
         data-aos="fade-up"
       >
-        <h2 className={clsx("text-4xl font-bold mb-4 uppercase")}>Team</h2>
-        <p>
-          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-          consectetur velit
-        </p>
+        <h2 className={clsx("text-4xl font-bold mb-4 uppercase")}>
+          {translations.title}
+        </h2>
+        <p>{translations.description}</p>
       </div>
 
       <div
@@ -200,8 +149,51 @@ export const Team = () => {
         )}
       >
         <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-6">
-          {teamMembers.map((member: TeamMember, index: number) => (
-            <Card key={index} index={index} member={member} />
+          {[...Array(3)].map((_, index) => (
+            <Card
+              key={index}
+              index={index}
+              name={
+                translations[
+                  `team-${index + 1}-name` as keyof TranslationSection<"team">
+                ]
+              }
+              position={
+                translations[
+                  `team-${index + 1}-position` as keyof TranslationSection<"team">
+                ]
+              }
+              description={
+                translations[
+                  `team-${index + 1}-description` as keyof TranslationSection<"team">
+                ]
+              }
+              image={
+                translations[
+                  `team-${index + 1}-image` as keyof TranslationSection<"team">
+                ]
+              }
+              social_x={
+                translations[
+                  `team-${index + 1}-social-x` as keyof TranslationSection<"team">
+                ]
+              }
+              social_facebook={
+                translations[
+                  `team-${index + 1}-social-facebook` as keyof TranslationSection<"team">
+                ]
+              }
+              social_instagram={
+                translations[
+                  `team-${index + 1}-social-instagram` as keyof TranslationSection<"team">
+                ]
+              }
+              social_linkedin={
+                translations[
+                  `team-${index + 1}-social-linkedin` as keyof TranslationSection<"team">
+                ]
+              }
+            />
           ))}
         </div>
       </div>

@@ -1,5 +1,5 @@
 {
-  "header": {
+  "head": {
     "title": "TICF (English)",
     "keywords": "Christian Church, Japan Christian Church, Tokyo Christian Church, Chinese Christian Church, Church, Ikebukuro Christian Church, Ueno Christian Church, Christianity, Chinese Church, Chinese Christian Church in Japan, Bilingual Church, Trilingual Church",
     "description": "TICF is an international Protestant church with bilingual services in Chinese and Japanese every Sunday."
@@ -9,8 +9,108 @@
     "en": "English",
     "ja": "日本語"
   },
+  "header": {
+    "title": "Seiyou",
+    "menu-home": "Home",
+    "menu-about": "About",
+    "menu-services": "Services",
+    "menu-team": "Team",
+    "menu-contact": "Contact"
+  },
+  "hero": {
+    "title": "Welcome to Our Website",
+    "description": "We are team of talented designers making websites with Tailwind CSS",
+    "button": "Get Started"
+  },
+  "about": {
+    "title": "About Us",
+    "description": "We are team of talented designers making websites with Tailwind CSS",
+    "item-title-1": "Ullamco laboris nisi ut aliquip consequat",
+    "item-description-1": "Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade",
+    "item-title-2": "Magnam soluta odio exercitationem reprehenderi",
+    "item-description-2": "Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi",
+    "item-title-3": "Voluptatem et qui exercitationem",
+    "item-description-3": "Et velit et eos maiores est tempora et quos dolorem autem tempora incidunt maxime veniam"
+  },
+  "stats": {
+    "stat-1-title": "Clients",
+    "stat-1-value": 232,
+    "stat-2-title": "Projects",
+    "stat-2-value": 521,
+    "stat-3-title": "Hours Of Support",
+    "stat-3-value": 1463,
+    "stat-4-title": "Workers",
+    "stat-4-value": 15
+  },
+  "services": {
+    "title": "Services",
+    "description": "We are team of talented designers making websites with Tailwind CSS",
+    "service-1-title": "Nesciunt Mete",
+    "service-1-description": "Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.",
+    "service-1-icon": "bi bi-activity",
+    "service-2-title": "Eosle Commodi",
+    "service-2-description": "Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.",
+    "service-2-icon": "bi bi-broadcast",
+    "service-3-title": "Ledo Markt",
+    "service-3-description": "Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.",
+    "service-3-icon": "bi bi-easel",
+    "service-4-title": "Asperiores Commodit",
+    "service-4-description": "Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.",
+    "service-4-icon": "bi bi-bounding-box-circles",
+    "service-5-title": "Veritatis Debitis",
+    "service-5-description": "Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka",
+    "service-5-icon": "bi bi-calendar4-week",
+    "service-6-title": "Itaque quisquam",
+    "service-6-description": "Et velit et eos maiores est tempora et quos dolorem autem tempora incidunt maxime veniam",
+    "service-6-icon": "bi bi-chat-square-text"
+  },
+  "team": {
+    "title": "Team",
+    "description": "We are team of talented designers making websites with Tailwind CSS",
+    "team-1-name": "Xuetao Yang",
+    "team-1-position": "Chief Executive Officer",
+    "team-1-description": "Explicabo voluptatem mollitia et repellat qui dolorum quasi",
+    "team-1-image": "/img/team/team-1.jpg",
+    "team-1-social-x": "",
+    "team-1-social-facebook": "",
+    "team-1-social-instagram": "",
+    "team-1-social-linkedin": "",
+    "team-2-name": "Jun Wu",
+    "team-2-position": "Chief Technology Officer",
+    "team-2-description": "Explicabo voluptatem mollitia et repellat qui dolorum quasi",
+    "team-2-image": "/img/team/team-2.jpg",
+    "team-2-social-x": "https://x.com/fantiga",
+    "team-2-social-facebook": "https://facebook.com/fantiga",
+    "team-2-social-instagram": "https://instagram.com/fantiga",
+    "team-2-social-linkedin": "https://linkedin.com/in/fantiga",
+    "team-3-name": "Martus Gaku",
+    "team-3-position": "Chief Operating Officer",
+    "team-3-description": "Explicabo voluptatem mollitia et repellat qui dolorum quasi",
+    "team-3-image": "/img/team/team-3.jpg",
+    "team-3-social-x": "",
+    "team-3-social-facebook": "",
+    "team-3-social-instagram": "",
+    "team-3-social-linkedin": ""
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit",
+    "map-url": "",
+    "address-title": "Address",
+    "address-value": "A108 Adam Street, New York, NY 535022",
+    "email-title": "Email Us",
+    "email-value": "info@seiyouco.com",
+    "call-title": "Call Us",
+    "call-value": "+81 03-5946-9159"
+  },
   "footer": {
-    "copyright.line1": "Copyright \u00A9 2019-",
-    "copyright.line2": "TICF All Rights Reserved."
+    "title": "Seiyou",
+    "description": "Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.",
+    "social-x": "",
+    "social-facebook": "",
+    "social-instagram": "",
+    "social-linkedin": "",
+    "copyright.line1": "Copyright \u00A9 2023-",
+    "copyright.line2": "Seiyou Co, Ltd. All Rights Reserved."
   }
 }

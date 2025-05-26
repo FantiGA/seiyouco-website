@@ -1,10 +1,15 @@
 "use client";
 
+import type { TranslationSection } from "@/types";
 import clsx from "clsx";
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useState, useEffect, type FC } from "react";
 
-export const About = () => {
+interface Props {
+  translations: TranslationSection<"about">;
+}
+
+export const About: FC<Props> = ({ translations }) => {
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
@@ -68,7 +73,7 @@ export const About = () => {
           >
             <Image
               src="/img/about.jpg"
-              alt="About Us"
+              alt={translations.title}
               fill
               className={clsx(
                 "aos-init aos-animate",
@@ -78,14 +83,7 @@ export const About = () => {
                 "!h-auto !left-auto !right-auto !top-auto !bottom-auto !static",
               )}
             />
-            {/* <a
-              href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
-              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-primary/90 rounded-full flex items-center justify-center text-white text-2xl hover:bg-primary transition-colors"
-            >
-              <i className="bi bi-play-fill"></i>
-            </a> */}
           </div>
-
           <div
             className={clsx(
               "opacity-100",
@@ -104,13 +102,8 @@ export const About = () => {
             data-aos="fade-up"
             data-aos-delay="100"
           >
-            <h3 className={clsx("text-3xl font-bold")}>About Us</h3>
-            <p>
-              Dolor iure expedita id fuga asperiores qui sunt consequatur
-              minima. Quidem voluptas deleniti. Sit quia molestiae quia quas qui
-              magnam itaque veritatis dolores. Corrupti totam ut eius incidunt
-              reiciendis veritatis asperiores placeat.
-            </p>
+            <h3 className={clsx("text-3xl font-bold")}>{translations.title}</h3>
+            <p>{translations.description}</p>
             <ul className={clsx("list-none", "p-0")}>
               <li className={clsx("flex", "items-start", "mt-10")}>
                 <i
@@ -120,11 +113,10 @@ export const About = () => {
                 ></i>
                 <div>
                   <h5 className={clsx("text-lg", "font-bold")}>
-                    Ullamco laboris nisi ut aliquip consequat
+                    {translations["item-title-1"]}
                   </h5>
                   <p className={clsx("text-base")}>
-                    Magni facilis facilis repellendus cum excepturi quaerat
-                    praesentium libre trade
+                    {translations["item-description-1"]}
                   </p>
                 </div>
               </li>
@@ -136,11 +128,10 @@ export const About = () => {
                 ></i>
                 <div>
                   <h5 className={clsx("text-lg", "font-bold")}>
-                    Magnam soluta odio exercitationem reprehenderi
+                    {translations["item-title-2"]}
                   </h5>
                   <p className={clsx("text-base")}>
-                    Quo totam dolorum at pariatur aut distinctio dolorum
-                    laudantium illo direna pasata redi
+                    {translations["item-description-2"]}
                   </p>
                 </div>
               </li>
@@ -152,11 +143,10 @@ export const About = () => {
                 ></i>
                 <div>
                   <h5 className={clsx("text-lg", "font-bold")}>
-                    Voluptatem et qui exercitationem
+                    {translations["item-title-3"]}
                   </h5>
                   <p className={clsx("text-base", "mb-0")}>
-                    Et velit et eos maiores est tempora et quos dolorem autem
-                    tempora incidunt maxime veniam
+                    {translations["item-description-3"]}
                   </p>
                 </div>
               </li>

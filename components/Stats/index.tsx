@@ -3,6 +3,7 @@
 import { useEffect, type FC, type ReactNode } from "react";
 import clsx from "clsx";
 import type { PureCounterOptions } from "@srexi/purecounterjs";
+import type { TranslationSection } from "@/types";
 
 interface LabelProps {
   children: ReactNode;
@@ -44,7 +45,11 @@ const Label: FC<LabelProps> = ({ children }) => {
   );
 };
 
-export const Stats = () => {
+interface Props {
+  translations: TranslationSection<"stats">;
+}
+
+export const Stats: FC<Props> = ({ translations }) => {
   useEffect(() => {
     const initCounter = async () => {
       const { default: PureCounter } = await import("@srexi/purecounterjs");
@@ -77,23 +82,23 @@ export const Stats = () => {
       >
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           <div>
-            <Counter end={232} delay={100} />
-            <Label>Clients</Label>
+            <Counter end={Number(translations["stat-1-value"])} delay={100} />
+            <Label>{translations["stat-1-title"]}</Label>
           </div>
 
           <div>
-            <Counter end={521} delay={200} />
-            <Label>Projects</Label>
+            <Counter end={Number(translations["stat-2-value"])} delay={200} />
+            <Label>{translations["stat-2-title"]}</Label>
           </div>
 
           <div>
-            <Counter end={1463} delay={300} />
-            <Label>Hours Of Support</Label>
+            <Counter end={Number(translations["stat-3-value"])} delay={300} />
+            <Label>{translations["stat-3-title"]}</Label>
           </div>
 
           <div>
-            <Counter end={15} delay={400} />
-            <Label>Workers</Label>
+            <Counter end={Number(translations["stat-4-value"])} delay={400} />
+            <Label>{translations["stat-4-title"]}</Label>
           </div>
         </div>
       </div>

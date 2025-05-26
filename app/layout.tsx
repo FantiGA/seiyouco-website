@@ -1,11 +1,12 @@
+"use client";
+
 import { ReactNode } from "react";
-// import { HtmlWrapper } from "./[locale]/HtmlWrapper";
-// import { locales } from "@/utils/i18n";
-// import { usePathname } from "next/navigation";
-import "./globals.css";
-import type { Metadata } from "next";
+import { HtmlWrapper } from "./[locale]/HtmlWrapper";
+import { locales } from "@/utils/i18n";
+import { usePathname } from "next/navigation";
 import { Roboto, Poppins } from "next/font/google";
 import { AOSInitializer } from "@/components";
+import "./globals.css";
 
 const roboto = Roboto({
   weight: ["100", "300", "400", "500", "700", "900"],
@@ -21,24 +22,13 @@ const poppins = Poppins({
   variable: "--font-poppins",
 });
 
-export const metadata: Metadata = {
-  title: "Seiyouco",
-  description: "Seiyouco website",
-};
-
 export default function RootLayout({ children }: { children: ReactNode }) {
-  // const pathname = usePathname();
-  // const locale =
-  //   locales.find((locale) => pathname.startsWith(`/${locale}`)) || "en";
+  const pathname = usePathname();
+  const locale =
+    locales.find((locale) => pathname.startsWith(`/${locale}`)) || "en";
 
   return (
-    <html lang="en">
-      <head>
-        {/* <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-        /> */}
-      </head>
+    <html lang={locale}>
       <body
         className={`${roboto.variable} ${poppins.variable}`}
         data-aos-easing="ease-in-out"
@@ -46,7 +36,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         data-aos-delay="0"
       >
         <AOSInitializer />
-        {children}
+        <HtmlWrapper>{children}</HtmlWrapper>
       </body>
     </html>
   );
