@@ -47,22 +47,22 @@
     "description": "我们提供全方位的专业服务",
     "service-1-title": "网站开发",
     "service-1-description": "提供专业的网站开发服务，包括前端和后端开发，确保网站的高性能和用户体验。",
-    "service-1-icon": "bi bi-activity",
+    "service-1-icon": "globe-alt",
     "service-2-title": "移动应用",
     "service-2-description": "开发高质量的移动应用程序，支持iOS和Android平台，满足不同用户的需求。",
-    "service-2-icon": "bi bi-broadcast",
+    "service-2-icon": "device-phone-mobile",
     "service-3-title": "UI/UX设计",
     "service-3-description": "提供专业的用户界面和用户体验设计，创造直观、美观且易用的产品。",
-    "service-3-icon": "bi bi-easel",
+    "service-3-icon": "cursor-arrow-rays",
     "service-4-title": "云服务",
     "service-4-description": "提供可靠的云计算服务，确保您的业务数据安全且高效运行。",
-    "service-4-icon": "bi bi-bounding-box-circles",
+    "service-4-icon": "cloud",
     "service-5-title": "技术咨询",
     "service-5-description": "提供专业的技术咨询服务，帮助您做出明智的技术决策。",
-    "service-5-icon": "bi bi-calendar4-week",
+    "service-5-icon": "chat-bubble-bottom-center-text",
     "service-6-title": "维护支持",
     "service-6-description": "提供全面的技术支持和维护服务，确保您的系统持续稳定运行。",
-    "service-6-icon": "bi bi-chat-square-text"
+    "service-6-icon": "musical-note"
   },
   "team": {
     "title": "团队",
@@ -106,10 +106,10 @@
   "footer": {
     "title": "Seiyou",
     "description": "致力于为客户提供最优质的服务和解决方案",
-    "social-x": "",
-    "social-facebook": "",
-    "social-instagram": "",
-    "social-linkedin": "",
+    "social-x": "https://x.com/fantiga",
+    "social-facebook": "https://facebook.com/fantiga",
+    "social-instagram": "https://instagram.com/fantiga",
+    "social-linkedin": "https://linkedin.com/in/fantiga",
     "copyright.line1": "版权所有 © 2023-",
     "copyright.line2": "Seiyou Co, Ltd. 保留所有权利。"
   }

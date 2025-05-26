@@ -1,9 +1,26 @@
 "use client";
 
 import type { TranslationSection } from "@/types";
+import {
+  GlobeAltIcon,
+  MusicalNoteIcon,
+  DevicePhoneMobileIcon,
+  CursorArrowRaysIcon,
+  CloudIcon,
+  ChatBubbleBottomCenterTextIcon,
+} from "@heroicons/react/24/outline";
 import clsx from "clsx";
 import Link from "next/link";
 import type { FC } from "react";
+
+const iconMap: Record<string, FC<{ className?: string }>> = {
+  "globe-alt": GlobeAltIcon,
+  "device-phone-mobile": DevicePhoneMobileIcon,
+  "cursor-arrow-rays": CursorArrowRaysIcon,
+  cloud: CloudIcon,
+  "chat-bubble-bottom-center-text": ChatBubbleBottomCenterTextIcon,
+  "musical-note": MusicalNoteIcon,
+};
 
 interface CardProps {
   title: string;
@@ -13,6 +30,8 @@ interface CardProps {
 }
 
 const Card: FC<CardProps> = ({ title, description, icon, index }) => {
+  const IconComponent = iconMap[icon] || GlobeAltIcon;
+
   return (
     <div
       className={clsx(
@@ -51,7 +70,6 @@ const Card: FC<CardProps> = ({ title, description, icon, index }) => {
       >
         <i
           className={clsx(
-            icon,
             "inline-block",
             "font-normal",
             "not-italic",
@@ -63,7 +81,9 @@ const Card: FC<CardProps> = ({ title, description, icon, index }) => {
             "subpixel-antialiased",
             "group-hover:text-[var(--accent-color)]",
           )}
-        />
+        >
+          <IconComponent className="size-7" />
+        </i>
       </div>
       <h3
         className={clsx(

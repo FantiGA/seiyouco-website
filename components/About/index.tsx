@@ -1,6 +1,11 @@
 "use client";
 
 import type { TranslationSection } from "@/types";
+import {
+  FaceSmileIcon,
+  LightBulbIcon,
+  UserGroupIcon,
+} from "@heroicons/react/24/outline";
 import clsx from "clsx";
 import Image from "next/image";
 import { useState, useEffect, type FC } from "react";
@@ -110,7 +115,9 @@ export const About: FC<Props> = ({ translations }) => {
                   className={clsx(
                     "flex-shrink-0 text-5xl text-[var(--accent-color)] mr-5 leading-none",
                   )}
-                ></i>
+                >
+                  <UserGroupIcon className="size-12 mr-1" />
+                </i>
                 <div>
                   <h5 className={clsx("text-lg", "font-bold")}>
                     {translations["item-title-1"]}
@@ -125,7 +132,9 @@ export const About: FC<Props> = ({ translations }) => {
                   className={clsx(
                     "flex-shrink-0 text-5xl text-[var(--accent-color)] mr-5 leading-none",
                   )}
-                ></i>
+                >
+                  <LightBulbIcon className="size-12 mr-1" />
+                </i>
                 <div>
                   <h5 className={clsx("text-lg", "font-bold")}>
                     {translations["item-title-2"]}
@@ -140,7 +149,9 @@ export const About: FC<Props> = ({ translations }) => {
                   className={clsx(
                     "flex-shrink-0 text-5xl text-[var(--accent-color)] mr-5 leading-none",
                   )}
-                ></i>
+                >
+                  <FaceSmileIcon className="size-12 mr-1" />
+                </i>
                 <div>
                   <h5 className={clsx("text-lg", "font-bold")}>
                     {translations["item-title-3"]}

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState, type FC } from "react";
 import Link from "next/link";
 import clsx from "clsx";
@@ -47,24 +48,24 @@ export const Header: FC<Props> = ({
           "mx-auto",
         )}
       >
-        <Link href="/" className={clsx("leading-none", "items-center", "flex")}>
-          <h1
-            className={clsx(
-              "text-3xl",
-              "font-normal",
-              "uppercase",
-              "text-[var(--heading-color)]",
-            )}
-          >
-            {translations.title}
-          </h1>
+        <Link
+          href="/"
+          className={clsx("leading-none", "items-center", "flex", "ml-10")}
+        >
+          <Image
+            src="/img/logo.svg"
+            alt={translations.title}
+            width={48}
+            height={48}
+            priority
+          />
         </Link>
 
         <nav className="p-0 hidden lg:block">
           <ul
             className={clsx(
-              "m-0",
-              "p-0",
+              "!m-0",
+              "!p-0",
               "flex",
               "list-none",
               "items-center",

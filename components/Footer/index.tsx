@@ -1,17 +1,34 @@
 import type { TranslationSection } from "@/types";
 import clsx from "clsx";
 import type { FC } from "react";
+import {
+  XIcon,
+  InstagramIcon,
+  FacebookIcon,
+  LinkedInIcon,
+} from "@/components/common/Icon";
 
-type Social = {
+const iconMap: Record<string, FC> = {
+  x: XIcon,
+  facebook: FacebookIcon,
+  instagram: InstagramIcon,
+  linkedin: LinkedInIcon,
+};
+
+interface SocialProps {
   name: string;
   icon: string;
   url: string;
-};
+}
 
-const Social: FC<Social> = ({ name, icon, url }) => {
+const Social: FC<SocialProps> = ({ name, icon, url }) => {
+  const IconComponent = iconMap[icon];
+
   return (
     <a
       href={url}
+      title={name}
+      target="_blank"
       className={clsx(
         "text-base",
         "flex items-center justify-center",
@@ -24,22 +41,17 @@ const Social: FC<Social> = ({ name, icon, url }) => {
         "w-9 h-9",
         "transition-all duration-300",
       )}
-      title={name}
     >
       <i
         className={clsx(
-          "before:inline-block",
-          "before:font-normal",
-          "before:not-italic",
-          "before:not-font-bold",
-          "before:not-uppercase",
-          "before:leading-none",
-          "before:align-[-0.125em]",
-          "before:antialiased",
-          "before:subpixel-antialiased",
+          "w-4 h-4",
+          "content-['']",
+          "transition-all duration-300 ease-in-out",
+          "[&>svg]:fill-[color-mix(in_srgb,var(--default-color),transparent_20%)]",
+          "group-hover:[&>svg]:fill-[var(--contrast-color)]",
         )}
       >
-        {icon}
+        <IconComponent />
       </i>
     </a>
   );
@@ -85,26 +97,30 @@ export const Footer: FC<Props> = ({ translations }) => {
           {translations.description}
         </p>
         <div className={clsx("mb-8", "flex", "justify-center")}>
-          <Social
-            name="X"
-            icon={translations["social-x"]}
-            url={translations["social-x"]}
-          />
-          <Social
-            name="Facebook"
-            icon={translations["social-facebook"]}
-            url={translations["social-facebook"]}
-          />
-          <Social
-            name="Instagram"
-            icon={translations["social-instagram"]}
-            url={translations["social-instagram"]}
-          />
-          <Social
-            name="LinkedIn"
-            icon={translations["social-linkedin"]}
-            url={translations["social-linkedin"]}
-          />
+          {translations["social-x"] && (
+            <Social name="X" icon="x" url={translations["social-x"]} />
+          )}
+          {translations["social-facebook"] && (
+            <Social
+              name="Facebook"
+              icon="facebook"
+              url={translations["social-facebook"]}
+            />
+          )}
+          {translations["social-instagram"] && (
+            <Social
+              name="Instagram"
+              icon="instagram"
+              url={translations["social-instagram"]}
+            />
+          )}
+          {translations["social-linkedin"] && (
+            <Social
+              name="LinkedIn"
+              icon="linkedin"
+              url={translations["social-linkedin"]}
+            />
+          )}
         </div>
         <div
           className={clsx(

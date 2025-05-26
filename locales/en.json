@@ -47,22 +47,22 @@
     "description": "We are team of talented designers making websites with Tailwind CSS",
     "service-1-title": "Nesciunt Mete",
     "service-1-description": "Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.",
-    "service-1-icon": "bi bi-activity",
+    "service-1-icon": "globe-alt",
     "service-2-title": "Eosle Commodi",
     "service-2-description": "Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.",
-    "service-2-icon": "bi bi-broadcast",
+    "service-2-icon": "device-phone-mobile",
     "service-3-title": "Ledo Markt",
     "service-3-description": "Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.",
-    "service-3-icon": "bi bi-easel",
+    "service-3-icon": "cursor-arrow-rays",
     "service-4-title": "Asperiores Commodit",
     "service-4-description": "Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.",
-    "service-4-icon": "bi bi-bounding-box-circles",
+    "service-4-icon": "cloud",
     "service-5-title": "Veritatis Debitis",
     "service-5-description": "Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka",
-    "service-5-icon": "bi bi-calendar4-week",
+    "service-5-icon": "chat-bubble-bottom-center-text",
     "service-6-title": "Itaque quisquam",
     "service-6-description": "Et velit et eos maiores est tempora et quos dolorem autem tempora incidunt maxime veniam",
-    "service-6-icon": "bi bi-chat-square-text"
+    "service-6-icon": "musical-note"
   },
   "team": {
     "title": "Team",
@@ -106,10 +106,10 @@
   "footer": {
     "title": "Seiyou",
     "description": "Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.",
-    "social-x": "",
-    "social-facebook": "",
-    "social-instagram": "",
-    "social-linkedin": "",
+    "social-x": "https://x.com/fantiga",
+    "social-facebook": "https://facebook.com/fantiga",
+    "social-instagram": "https://instagram.com/fantiga",
+    "social-linkedin": "https://linkedin.com/in/fantiga",
     "copyright.line1": "Copyright \u00A9 2023-",
     "copyright.line2": "Seiyou Co, Ltd. All Rights Reserved."
   }

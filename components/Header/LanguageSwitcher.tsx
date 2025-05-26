@@ -1,10 +1,11 @@
 "use client";
 
-import { useCallback, useEffect, useState, type FC } from "react";
+import { useCallback, useEffect, useRef, useState, type FC } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import clsx from "clsx";
 import type { TranslationSection } from "@/types";
 import { locales, type Locale } from "@/utils/i18n";
+import { LanguageIcon } from "@heroicons/react/24/outline";
 
 interface Props {
   languageTranslations: TranslationSection<"language">;
@@ -15,6 +16,7 @@ export const LanguageSwitcher: FC<Props> = ({ languageTranslations }) => {
   const [currentLocale, setCurrentLocale] = useState<Locale>("en");
   const router = useRouter();
   const pathname = usePathname();
+  const menuRef = useRef<HTMLDivElement>(null);
 
   const handleLanguageChange = useCallback(
     (locale: Locale) => {
@@ -35,8 +37,24 @@ export const LanguageSwitcher: FC<Props> = ({ languageTranslations }) => {
     }
   }, [pathname]);
 
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setIsLanguageMenuOpen(false);
+      }
+    };
+
+    if (isLanguageMenuOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isLanguageMenuOpen]);
+
   return (
-    <div className="relative">
+    <div className="relative" ref={menuRef}>
       <button
         onClick={() => setIsLanguageMenuOpen(!isLanguageMenuOpen)}
         className={clsx(
@@ -56,6 +74,7 @@ export const LanguageSwitcher: FC<Props> = ({ languageTranslations }) => {
           "hover:text-[var(--nav-hover-color)]",
         )}
       >
+        <LanguageIcon className="size-6 mr-1" />
         {getLanguageName(currentLocale as Locale)}
         <i className="bi bi-chevron-down ml-1"></i>
       </button>

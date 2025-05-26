@@ -4,26 +4,53 @@ import Image from "next/image";
 import type { FC } from "react";
 import clsx from "clsx";
 import type { TranslationSection } from "@/types";
+import {
+  XIcon,
+  InstagramIcon,
+  FacebookIcon,
+  LinkedInIcon,
+} from "@/components/common/Icon";
+
+const iconMap: Record<string, FC> = {
+  x: XIcon,
+  facebook: FacebookIcon,
+  instagram: InstagramIcon,
+  linkedin: LinkedInIcon,
+};
 
 interface SocialProps {
+  name: string;
   icon: string;
   url: string;
 }
 
-const Social: FC<SocialProps> = ({ icon, url }) => {
+const Social: FC<SocialProps> = ({ name, icon, url }) => {
+  const IconComponent = iconMap[icon];
+
   return (
     <a
       href={url}
+      title={name}
+      target="_blank"
       className={clsx(
         "bg-[color-mix(in_srgb,var(--default-color),transparent_94%)]",
         "transition-all duration-300 ease-in-out",
         "flex items-center justify-center",
         "rounded-full",
-        "w-9 h-9",
         "hover:bg-[var(--accent-color)]",
+        "group",
       )}
     >
-      <i>{icon}</i>
+      <i
+        className={clsx(
+          "w-4 h-4",
+          "transition-all duration-300 ease-in-out",
+          "[&>svg]:fill-[color-mix(in_srgb,var(--default-color),transparent_20%)]",
+          "group-hover:[&>svg]:fill-[var(--contrast-color)]",
+        )}
+      >
+        <IconComponent />
+      </i>
     </a>
   );
 };
@@ -63,7 +90,6 @@ const Card: FC<CardProps> = ({
         "h-full",
         "flex items-start",
         "hover:-translate-y-2.5",
-        "group",
       )}
       data-aos="fade-up"
       data-aos-delay={(index + 1) * 100}
@@ -106,10 +132,16 @@ const Card: FC<CardProps> = ({
             "w-full",
           )}
         >
-          {social_x && <Social icon={""} url={social_x} />}
-          {social_facebook && <Social icon={""} url={social_facebook} />}
-          {social_instagram && <Social icon={""} url={social_instagram} />}
-          {social_linkedin && <Social icon={""} url={social_linkedin} />}
+          {social_x && <Social name="X" icon="x" url={social_x} />}
+          {social_facebook && (
+            <Social name="Facebook" icon="facebook" url={social_facebook} />
+          )}
+          {social_instagram && (
+            <Social name="Instagram" icon="instagram" url={social_instagram} />
+          )}
+          {social_linkedin && (
+            <Social name="LinkedIn" icon="linkedin" url={social_linkedin} />
+          )}
         </div>
       </div>
     </div>

@@ -47,22 +47,22 @@
     "description": "包括的な専門サービスを提供しています",
     "service-1-title": "ウェブ開発",
     "service-1-description": "フロントエンドとバックエンドの開発を含む専門的なウェブ開発サービスを提供し、高性能で使いやすいウェブサイトを実現します。",
-    "service-1-icon": "bi bi-activity",
+    "service-1-icon": "globe-alt",
     "service-2-title": "モバイルアプリ",
     "service-2-description": "iOSとAndroidプラットフォームをサポートする高品質なモバイルアプリケーションを開発し、様々なユーザーニーズに対応します。",
-    "service-2-icon": "bi bi-broadcast",
+    "service-2-icon": "device-phone-mobile",
     "service-3-title": "UI/UXデザイン",
     "service-3-description": "直感的で美しく使いやすい製品を創造するための専門的なユーザーインターフェースとユーザーエクスペリエンスデザインを提供します。",
-    "service-3-icon": "bi bi-easel",
+    "service-3-icon": "cursor-arrow-rays",
     "service-4-title": "クラウドサービス",
     "service-4-description": "ビジネスデータを安全かつ効率的に運用するための信頼性の高いクラウドコンピューティングサービスを提供します。",
-    "service-4-icon": "bi bi-bounding-box-circles",
+    "service-4-icon": "cloud",
     "service-5-title": "技術コンサルティング",
     "service-5-description": "適切な技術的決定を下すための専門的な技術コンサルティングサービスを提供します。",
-    "service-5-icon": "bi bi-calendar4-week",
+    "service-5-icon": "chat-bubble-bottom-center-text",
     "service-6-title": "メンテナンスサポート",
     "service-6-description": "システムの継続的な安定運用を確保するための包括的な技術サポートとメンテナンスサービスを提供します。",
-    "service-6-icon": "bi bi-chat-square-text"
+    "service-6-icon": "musical-note"
   },
   "team": {
     "title": "チーム",
@@ -106,10 +106,10 @@
   "footer": {
     "title": "Seiyou",
     "description": "お客様に最高品質のサービスとソリューションを提供することに努めています",
-    "social-x": "",
-    "social-facebook": "",
-    "social-instagram": "",
-    "social-linkedin": "",
+    "social-x": "https://x.com/fantiga",
+    "social-facebook": "https://facebook.com/fantiga",
+    "social-instagram": "https://instagram.com/fantiga",
+    "social-linkedin": "https://linkedin.com/in/fantiga",
     "copyright.line1": "著作権 © 2023-",
     "copyright.line2": "Seiyou Co, Ltd. All Rights Reserved."
   }

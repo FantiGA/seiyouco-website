@@ -1,8 +1,19 @@
 "use client";
 
 import type { TranslationSection } from "@/types";
+import {
+  EnvelopeIcon,
+  MapPinIcon,
+  PhoneIcon,
+} from "@heroicons/react/24/outline";
 import clsx from "clsx";
 import type { FC } from "react";
+
+const iconMap: Record<string, FC<{ className?: string }>> = {
+  "map-pin": MapPinIcon,
+  envelope: EnvelopeIcon,
+  phone: PhoneIcon,
+};
 
 interface CardProps {
   index: number;
@@ -12,6 +23,8 @@ interface CardProps {
 }
 
 const Card: FC<CardProps> = ({ index, icon, title, value }) => {
+  const IconComponent = iconMap[icon];
+
   return (
     <div
       className="flex items-start gap-4"
@@ -39,7 +52,9 @@ const Card: FC<CardProps> = ({ index, icon, title, value }) => {
           "before:align-[-0.125em]",
           "before:antialiased",
         )}
-      />
+      >
+        <IconComponent className="size-5" />
+      </i>
       <div>
         <h3 className={clsx("p-0", "text-lg", "font-bold", "mb-1.5")}>
           {title}
@@ -88,19 +103,19 @@ export const Contact: FC<Props> = ({ translations }) => {
         <div className="grid lg:grid-cols-3 gap-6">
           <Card
             index={0}
-            icon=""
+            icon="map-pin"
             title={translations["address-title"]}
             value={translations["address-value"]}
           />
           <Card
             index={1}
-            icon=""
+            icon="envelope"
             title={translations["email-title"]}
             value={translations["email-value"]}
           />
           <Card
             index={2}
-            icon=""
+            icon="phone"
             title={translations["call-title"]}
             value={translations["call-value"]}
           />
