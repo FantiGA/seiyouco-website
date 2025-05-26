@@ -1,16 +1,116 @@
 {
-  "header": {
-    "title": "TICF（日本語）",
-    "keywords": "キリスト教会,日本キリスト教会,東京キリスト教会,中国人キリスト教会,教会,池袋キリスト教会,上野キリスト教会,キリスト教,中国人教会,日本中国人教会,中国語キリスト教会,中国語教会,バイリンガル教会,トリリンガル教会",
-    "description": "TICFは、国際色豊かなプロテスタント教会、中国語と日本語のバイリンガルで毎週日曜日に礼拝を行っています。"
+  "head": {
+    "title": "TICF (日本語)",
+    "keywords": "キリスト教会, 日本キリスト教会, 東京キリスト教会, 中国語キリスト教会, 教会, 池袋キリスト教会, 上野キリスト教会, キリスト教, 中国語教会, 日本中国語キリスト教会, バイリンガル教会, トリリンガル教会",
+    "description": "TICFは、毎週日曜日に中国語と日本語のバイリンガルサービスを提供する国際的なプロテスタント教会です。"
   },
   "language": {
     "zh-CN": "简体中文",
     "en": "English",
     "ja": "日本語"
   },
+  "header": {
+    "title": "Seiyou",
+    "menu-home": "ホーム",
+    "menu-about": "会社概要",
+    "menu-services": "サービス",
+    "menu-team": "チーム",
+    "menu-contact": "お問い合わせ"
+  },
+  "hero": {
+    "title": "ウェブサイトへようこそ",
+    "description": "私たちはTailwind CSSを使用してウェブサイトを作成する才能あるデザイナーチームです",
+    "button": "始める"
+  },
+  "about": {
+    "title": "会社概要",
+    "description": "私たちはTailwind CSSを使用してウェブサイトを作成する才能あるデザイナーチームです",
+    "item-title-1": "専門チームによる質の高いサービス",
+    "item-description-1": "お客様に最高品質のサービスとソリューションを提供することに努めています",
+    "item-title-2": "革新的な技術による発展",
+    "item-description-2": "革新的な技術を通じて、ビジネスの発展と進歩を推進しています",
+    "item-title-3": "お客様第一のサービス理念",
+    "item-description-3": "常にお客様のニーズを最優先に考え、最高のサービス体験を提供します"
+  },
+  "stats": {
+    "stat-1-title": "クライアント",
+    "stat-1-value": 232,
+    "stat-2-title": "プロジェクト",
+    "stat-2-value": 521,
+    "stat-3-title": "サポート時間",
+    "stat-3-value": 1463,
+    "stat-4-title": "スタッフ",
+    "stat-4-value": 15
+  },
+  "services": {
+    "title": "サービス",
+    "description": "包括的な専門サービスを提供しています",
+    "service-1-title": "ウェブ開発",
+    "service-1-description": "フロントエンドとバックエンドの開発を含む専門的なウェブ開発サービスを提供し、高性能で使いやすいウェブサイトを実現します。",
+    "service-1-icon": "bi bi-activity",
+    "service-2-title": "モバイルアプリ",
+    "service-2-description": "iOSとAndroidプラットフォームをサポートする高品質なモバイルアプリケーションを開発し、様々なユーザーニーズに対応します。",
+    "service-2-icon": "bi bi-broadcast",
+    "service-3-title": "UI/UXデザイン",
+    "service-3-description": "直感的で美しく使いやすい製品を創造するための専門的なユーザーインターフェースとユーザーエクスペリエンスデザインを提供します。",
+    "service-3-icon": "bi bi-easel",
+    "service-4-title": "クラウドサービス",
+    "service-4-description": "ビジネスデータを安全かつ効率的に運用するための信頼性の高いクラウドコンピューティングサービスを提供します。",
+    "service-4-icon": "bi bi-bounding-box-circles",
+    "service-5-title": "技術コンサルティング",
+    "service-5-description": "適切な技術的決定を下すための専門的な技術コンサルティングサービスを提供します。",
+    "service-5-icon": "bi bi-calendar4-week",
+    "service-6-title": "メンテナンスサポート",
+    "service-6-description": "システムの継続的な安定運用を確保するための包括的な技術サポートとメンテナンスサービスを提供します。",
+    "service-6-icon": "bi bi-chat-square-text"
+  },
+  "team": {
+    "title": "チーム",
+    "description": "専門的で経験豊富なチームを擁しています",
+    "team-1-name": "楊学涛",
+    "team-1-position": "最高経営責任者",
+    "team-1-description": "豊富な管理経験と業界洞察力を持つ",
+    "team-1-image": "/img/team/team-1.jpg",
+    "team-1-social-x": "",
+    "team-1-social-facebook": "",
+    "team-1-social-instagram": "",
+    "team-1-social-linkedin": "",
+    "team-2-name": "呉俊",
+    "team-2-position": "最高技術責任者",
+    "team-2-description": "革新的なソリューションに焦点を当てた技術専門家",
+    "team-2-image": "/img/team/team-2.jpg",
+    "team-2-social-x": "https://x.com/fantiga",
+    "team-2-social-facebook": "https://facebook.com/fantiga",
+    "team-2-social-instagram": "https://instagram.com/fantiga",
+    "team-2-social-linkedin": "https://linkedin.com/in/fantiga",
+    "team-3-name": "学楽",
+    "team-3-position": "最高執行責任者",
+    "team-3-description": "会社の日常運営と事業開発を担当",
+    "team-3-image": "/img/team/team-3.jpg",
+    "team-3-social-x": "",
+    "team-3-social-facebook": "",
+    "team-3-social-instagram": "",
+    "team-3-social-linkedin": ""
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "description": "お客様とのコミュニケーションをお待ちしております",
+    "map-url": "",
+    "address-title": "住所",
+    "address-value": "東京都豊島区池袋2-1-1",
+    "email-title": "メール",
+    "email-value": "info@seiyouco.com",
+    "call-title": "電話",
+    "call-value": "+81 03-5946-9159"
+  },
   "footer": {
-    "copyright.line1": "Copyright \u00A9 2019-",
-    "copyright.line2": "TICF All Rights Reserved."
+    "title": "Seiyou",
+    "description": "お客様に最高品質のサービスとソリューションを提供することに努めています",
+    "social-x": "",
+    "social-facebook": "",
+    "social-instagram": "",
+    "social-linkedin": "",
+    "copyright.line1": "著作権 © 2023-",
+    "copyright.line2": "Seiyou Co, Ltd. All Rights Reserved."
   }
 }

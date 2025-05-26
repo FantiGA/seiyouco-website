@@ -1,16 +1,116 @@
 {
-  "header": {
-    "title": "TICF（东京国际基督徒团契）",
-    "keywords": "基督教会,日本基督教会,东京基督教会,华人基督教会,教会,池袋基督教会,上野基督教会,基督教,华人教会,日本华人教会,中文基督教会,中文教会,双语教会,三语教会",
-    "description": "TICF是一个正统的基督教会。本教会主要面向在日本居住的中国人、会中文的外国人、日本人，于每周日进行中日双语礼拜。"
+  "head": {
+    "title": "TICF (中文)",
+    "keywords": "基督教教会, 日本基督教教会, 东京基督教教会, 华人基督教教会, 教会, 池袋基督教教会, 上野基督教教会, 基督教, 华人教会, 日本华人基督教教会, 双语教会, 三语教会",
+    "description": "TICF是一个国际性的新教教会，每周日提供中文和日语的双语服务。"
   },
   "language": {
     "zh-CN": "简体中文",
     "en": "English",
     "ja": "日本語"
   },
+  "header": {
+    "title": "Seiyou",
+    "menu-home": "首页",
+    "menu-about": "关于我们",
+    "menu-services": "服务",
+    "menu-team": "团队",
+    "menu-contact": "联系我们"
+  },
+  "hero": {
+    "title": "欢迎访问我们的网站",
+    "description": "我们是一支充满才华的设计师团队，使用Tailwind CSS制作网站",
+    "button": "开始使用"
+  },
+  "about": {
+    "title": "关于我们",
+    "description": "我们是一支充满才华的设计师团队，使用Tailwind CSS制作网站",
+    "item-title-1": "专业团队提供优质服务",
+    "item-description-1": "我们致力于为客户提供最优质的服务和解决方案",
+    "item-title-2": "创新技术驱动发展",
+    "item-description-2": "通过创新技术，我们不断推动业务发展和进步",
+    "item-title-3": "客户至上服务理念",
+    "item-description-3": "始终将客户需求放在首位，提供最优质的服务体验"
+  },
+  "stats": {
+    "stat-1-title": "客户",
+    "stat-1-value": 232,
+    "stat-2-title": "项目",
+    "stat-2-value": 521,
+    "stat-3-title": "支持时间",
+    "stat-3-value": 1463,
+    "stat-4-title": "员工",
+    "stat-4-value": 15
+  },
+  "services": {
+    "title": "服务",
+    "description": "我们提供全方位的专业服务",
+    "service-1-title": "网站开发",
+    "service-1-description": "提供专业的网站开发服务，包括前端和后端开发，确保网站的高性能和用户体验。",
+    "service-1-icon": "bi bi-activity",
+    "service-2-title": "移动应用",
+    "service-2-description": "开发高质量的移动应用程序，支持iOS和Android平台，满足不同用户的需求。",
+    "service-2-icon": "bi bi-broadcast",
+    "service-3-title": "UI/UX设计",
+    "service-3-description": "提供专业的用户界面和用户体验设计，创造直观、美观且易用的产品。",
+    "service-3-icon": "bi bi-easel",
+    "service-4-title": "云服务",
+    "service-4-description": "提供可靠的云计算服务，确保您的业务数据安全且高效运行。",
+    "service-4-icon": "bi bi-bounding-box-circles",
+    "service-5-title": "技术咨询",
+    "service-5-description": "提供专业的技术咨询服务，帮助您做出明智的技术决策。",
+    "service-5-icon": "bi bi-calendar4-week",
+    "service-6-title": "维护支持",
+    "service-6-description": "提供全面的技术支持和维护服务，确保您的系统持续稳定运行。",
+    "service-6-icon": "bi bi-chat-square-text"
+  },
+  "team": {
+    "title": "团队",
+    "description": "我们拥有一支专业且富有经验的团队",
+    "team-1-name": "杨 学涛",
+    "team-1-position": "CEO",
+    "team-1-description": "拥有丰富的管理经验和行业洞察力",
+    "team-1-image": "/img/team/team-1.jpg",
+    "team-1-social-x": "",
+    "team-1-social-facebook": "",
+    "team-1-social-instagram": "",
+    "team-1-social-linkedin": "",
+    "team-2-name": "吴 军",
+    "team-2-position": "CTO",
+    "team-2-description": "技术专家，专注于创新解决方案",
+    "team-2-image": "/img/team/team-2.jpg",
+    "team-2-social-x": "https://x.com/fantiga",
+    "team-2-social-facebook": "https://facebook.com/fantiga",
+    "team-2-social-instagram": "https://instagram.com/fantiga",
+    "team-2-social-linkedin": "https://linkedin.com/in/fantiga",
+    "team-3-name": "学乐",
+    "team-3-position": "COO",
+    "team-3-description": "负责公司日常运营和业务发展",
+    "team-3-image": "/img/team/team-3.jpg",
+    "team-3-social-x": "",
+    "team-3-social-facebook": "",
+    "team-3-social-instagram": "",
+    "team-3-social-linkedin": ""
+  },
+  "contact": {
+    "title": "联系我们",
+    "description": "我们期待与您沟通交流",
+    "map-url": "",
+    "address-title": "地址",
+    "address-value": "东京都丰岛区池袋2-1-1",
+    "email-title": "电子邮件",
+    "email-value": "info@seiyouco.com",
+    "call-title": "电话",
+    "call-value": "+81 03-5946-9159"
+  },
   "footer": {
-    "copyright.line1": "Copyright \u00A9 2019-",
-    "copyright.line2": "TICF All Rights Reserved."
+    "title": "Seiyou",
+    "description": "致力于为客户提供最优质的服务和解决方案",
+    "social-x": "",
+    "social-facebook": "",
+    "social-instagram": "",
+    "social-linkedin": "",
+    "copyright.line1": "版权所有 © 2023-",
+    "copyright.line2": "Seiyou Co, Ltd. 保留所有权利。"
   }
 }

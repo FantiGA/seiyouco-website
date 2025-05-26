@@ -34,7 +34,11 @@ export default function ClientPage({ initialTranslations }: ClientPageProps) {
 
   return (
     <>
-      <Header translations={translations["header"]} isScrolled={isScrolled} />
+      <Header
+        translations={translations["header"]}
+        isScrolled={isScrolled}
+        languageTranslations={translations["language"]}
+      />
       <main>
         <Hero translations={translations["hero"]} />
         <About translations={translations["about"]} />

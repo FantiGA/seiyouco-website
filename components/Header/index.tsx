@@ -4,13 +4,19 @@ import { useState, type FC } from "react";
 import Link from "next/link";
 import clsx from "clsx";
 import type { TranslationSection } from "@/types";
+import { LanguageSwitcher } from "./LanguageSwitcher";
 
 interface Props {
   translations: TranslationSection<"header">;
   isScrolled: boolean;
+  languageTranslations: TranslationSection<"language">;
 }
 
-export const Header: FC<Props> = ({ translations, isScrolled }) => {
+export const Header: FC<Props> = ({
+  translations,
+  isScrolled,
+  languageTranslations,
+}) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
@@ -240,15 +246,18 @@ export const Header: FC<Props> = ({ translations, isScrolled }) => {
                 {translations["menu-contact"]}
               </Link>
             </li>
+            <li className={clsx("nowrap px-3.5 py-4", "relative")}>
+              <LanguageSwitcher languageTranslations={languageTranslations} />
+            </li>
           </ul>
         </nav>
 
-        {/* <button
+        <button
           className="lg:hidden text-2xl"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           <i className={`bi bi-${isMenuOpen ? "x" : "list"}`}></i>
-        </button> */}
+        </button>
       </div>
 
       {/* Mobile Menu */}
@@ -375,6 +384,9 @@ export const Header: FC<Props> = ({ translations, isScrolled }) => {
                 >
                   {translations["menu-contact"]}
                 </Link>
+              </li>
+              <li>
+                <LanguageSwitcher languageTranslations={languageTranslations} />
               </li>
             </ul>
           </nav>
