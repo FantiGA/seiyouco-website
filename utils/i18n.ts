@@ -1,5 +1,5 @@
 // Supported languages list
-export const locales = ["en", "ja", "zh-CN"] as const;
+export const locales = ["en", "ja", "zh-CN", "zh-TW", "zh-HK", "ko"] as const;
 export type Locale = (typeof locales)[number];
 
 // Default language

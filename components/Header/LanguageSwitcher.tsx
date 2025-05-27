@@ -84,7 +84,7 @@ export const LanguageSwitcher: FC<Props> = ({ languageTranslations }) => {
             "absolute",
             "right-0",
             "mt-2",
-            "w-32",
+            "w-36",
             "bg-white",
             "rounded-md",
             "shadow-lg",

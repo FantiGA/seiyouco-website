@@ -1,0 +1,119 @@
+{
+  "head": {
+    "title": "TICF (繁體中文)",
+    "keywords": "基督教教會, 日本基督教教會, 東京基督教教會, 華人基督教教會, 教會, 池袋基督教教會, 上野基督教教會, 基督教, 華人教會, 日本華人基督教教會, 雙語教會, 三語教會",
+    "description": "TICF是一個國際性的新教教會，每週日提供中文和日語的雙語服務。"
+  },
+  "language": {
+    "zh-CN": "简体中文",
+    "zh-TW": "繁體中文（台灣）",
+    "zh-HK": "繁體中文（香港）",
+    "en": "English",
+    "ja": "日本語",
+    "ko": "한국어"
+  },
+  "header": {
+    "title": "Seiyou",
+    "menu-home": "首頁",
+    "menu-about": "關於我們",
+    "menu-services": "服務",
+    "menu-team": "團隊",
+    "menu-contact": "聯絡我們"
+  },
+  "hero": {
+    "title": "歡迎訪問我們的網站",
+    "description": "我們是一支充滿才華的設計師團隊，使用Tailwind CSS製作網站",
+    "button": "開始使用"
+  },
+  "about": {
+    "title": "關於我們",
+    "description": "我們是一支充滿才華的設計師團隊，使用Tailwind CSS製作網站",
+    "item-title-1": "專業團隊提供優質服務",
+    "item-description-1": "我們致力於為客戶提供最優質的服務和解決方案",
+    "item-title-2": "創新技術驅動發展",
+    "item-description-2": "通過創新技術，我們不斷推動業務發展和進步",
+    "item-title-3": "客戶至上服務理念",
+    "item-description-3": "始終將客戶需求放在首位，提供最優質的服務體驗"
+  },
+  "stats": {
+    "stat-1-title": "客戶",
+    "stat-1-value": 232,
+    "stat-2-title": "專案",
+    "stat-2-value": 521,
+    "stat-3-title": "支援時間",
+    "stat-3-value": 1463,
+    "stat-4-title": "員工",
+    "stat-4-value": 15
+  },
+  "services": {
+    "title": "服務",
+    "description": "我們提供全方位的專業服務",
+    "service-1-title": "網站開發",
+    "service-1-description": "提供專業的網站開發服務，包括前端和後端開發，確保網站的高性能和用戶體驗。",
+    "service-1-icon": "globe-alt",
+    "service-2-title": "行動應用",
+    "service-2-description": "開發高品質的行動應用程式，支援iOS和Android平台，滿足不同用戶的需求。",
+    "service-2-icon": "device-phone-mobile",
+    "service-3-title": "UI/UX設計",
+    "service-3-description": "提供專業的用戶介面和用戶體驗設計，創造直觀、美觀且易用的產品。",
+    "service-3-icon": "cursor-arrow-rays",
+    "service-4-title": "雲端服務",
+    "service-4-description": "提供可靠的雲端運算服務，確保您的業務資料安全且高效運行。",
+    "service-4-icon": "cloud",
+    "service-5-title": "技術諮詢",
+    "service-5-description": "提供專業的技術諮詢服務，幫助您做出明智的技術決策。",
+    "service-5-icon": "chat-bubble-bottom-center-text",
+    "service-6-title": "維護支援",
+    "service-6-description": "提供全面的技術支援和維護服務，確保您的系統持續穩定運行。",
+    "service-6-icon": "musical-note"
+  },
+  "team": {
+    "title": "團隊",
+    "description": "我們擁有一支專業且富有經驗的團隊",
+    "team-1-name": "楊 學濤",
+    "team-1-position": "執行長",
+    "team-1-description": "擁有豐富的管理經驗和行業洞察力",
+    "team-1-image": "/img/team/team-1.jpg",
+    "team-1-social-x": "",
+    "team-1-social-facebook": "",
+    "team-1-social-instagram": "",
+    "team-1-social-linkedin": "",
+    "team-2-name": "吳 軍",
+    "team-2-position": "技術長",
+    "team-2-description": "技術專家，專注於創新解決方案",
+    "team-2-image": "/img/team/team-2.jpg",
+    "team-2-social-x": "https://x.com/fantiga",
+    "team-2-social-facebook": "https://facebook.com/fantiga",
+    "team-2-social-instagram": "https://instagram.com/fantiga",
+    "team-2-social-linkedin": "https://linkedin.com/in/fantiga",
+    "team-3-name": "學樂",
+    "team-3-position": "營運長",
+    "team-3-description": "負責公司日常營運和業務發展",
+    "team-3-image": "/img/team/team-3.jpg",
+    "team-3-social-x": "",
+    "team-3-social-facebook": "",
+    "team-3-social-instagram": "",
+    "team-3-social-linkedin": ""
+  },
+  "contact": {
+    "title": "聯絡我們",
+    "description": "我們期待與您溝通交流",
+    "map-url": "",
+    "address-title": "地址",
+    "address-value": "東京都豐島區池袋2-1-1",
+    "email-title": "電子郵件",
+    "email-value": "info@seiyouco.com",
+    "call-title": "電話",
+    "call-value": "+81 03-5946-9159"
+  },
+  "footer": {
+    "title": "Seiyou",
+    "description": "致力於為客戶提供最優質的服務和解決方案",
+    "social-x": "https://x.com/fantiga",
+    "social-facebook": "https://facebook.com/fantiga",
+    "social-instagram": "https://instagram.com/fantiga",
+    "social-linkedin": "https://linkedin.com/in/fantiga",
+    "copyright.line1": "版權所有 © 2023-",
+    "copyright.line2": "Seiyou Co, Ltd. 保留所有權利。"
+  }
+}

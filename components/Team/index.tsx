@@ -37,6 +37,7 @@ const Social: FC<SocialProps> = ({ name, icon, url }) => {
         "transition-all duration-300 ease-in-out",
         "flex items-center justify-center",
         "rounded-full",
+        "w-9 h-9",
         "hover:bg-[var(--accent-color)]",
         "group",
       )}

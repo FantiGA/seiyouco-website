@@ -1,6 +1,6 @@
 export type TranslationKeys = {
   head: "title" | "keywords" | "description";
-  language: "zh-CN" | "en" | "ja";
+  language: "zh-CN" | "zh-TW" | "zh-HK" | "en" | "ja" | "ko";
   header:
     | "title"
     | "menu-home"

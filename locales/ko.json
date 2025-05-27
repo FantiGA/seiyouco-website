@@ -1,0 +1,119 @@
+{
+  "head": {
+    "title": "TICF (한국어)",
+    "keywords": "기독교 교회, 일본 기독교 교회, 도쿄 기독교 교회, 중국인 기독교 교회, 교회, 이케부쿠로 기독교 교회, 우에노 기독교 교회, 기독교, 중국인 교회, 일본 중국인 기독교 교회, 이중 언어 교회, 삼중 언어 교회",
+    "description": "TICF는 매주 일요일 중국어와 일본어로 이중 언어 예배를 제공하는 국제적인 개신교 교회입니다."
+  },
+  "language": {
+    "zh-CN": "简体中文",
+    "zh-TW": "繁體中文（台灣）",
+    "zh-HK": "繁體中文（香港）",
+    "en": "English",
+    "ja": "日本語",
+    "ko": "한국어"
+  },
+  "header": {
+    "title": "Seiyou",
+    "menu-home": "홈",
+    "menu-about": "회사 소개",
+    "menu-services": "서비스",
+    "menu-team": "팀",
+    "menu-contact": "연락처"
+  },
+  "hero": {
+    "title": "저희 웹사이트에 오신 것을 환영합니다",
+    "description": "저희는 Tailwind CSS를 사용하여 웹사이트를 제작하는 재능 있는 디자이너 팀입니다",
+    "button": "시작하기"
+  },
+  "about": {
+    "title": "회사 소개",
+    "description": "저희는 Tailwind CSS를 사용하여 웹사이트를 제작하는 재능 있는 디자이너 팀입니다",
+    "item-title-1": "전문 팀의 우수한 서비스",
+    "item-description-1": "저희는 고객에게 최상의 서비스와 솔루션을 제공하기 위해 노력합니다",
+    "item-title-2": "혁신적인 기술로 발전",
+    "item-description-2": "혁신적인 기술을 통해 비즈니스 발전과 진보를 지속적으로 추진합니다",
+    "item-title-3": "고객 중심 서비스 철학",
+    "item-description-3": "항상 고객의 요구를 최우선으로 하여 최상의 서비스 경험을 제공합니다"
+  },
+  "stats": {
+    "stat-1-title": "고객",
+    "stat-1-value": 232,
+    "stat-2-title": "프로젝트",
+    "stat-2-value": 521,
+    "stat-3-title": "지원 시간",
+    "stat-3-value": 1463,
+    "stat-4-title": "직원",
+    "stat-4-value": 15
+  },
+  "services": {
+    "title": "서비스",
+    "description": "저희는 포괄적인 전문 서비스를 제공합니다",
+    "service-1-title": "웹 개발",
+    "service-1-description": "프론트엔드와 백엔드 개발을 포함한 전문적인 웹 개발 서비스를 제공하여 웹사이트의 고성능과 사용자 경험을 보장합니다.",
+    "service-1-icon": "globe-alt",
+    "service-2-title": "모바일 앱",
+    "service-2-description": "iOS와 Android 플랫폼을 지원하는 고품질 모바일 애플리케이션을 개발하여 다양한 사용자의 요구를 충족시킵니다.",
+    "service-2-icon": "device-phone-mobile",
+    "service-3-title": "UI/UX 디자인",
+    "service-3-description": "직관적이고 아름답고 사용하기 쉬운 제품을 만드는 전문적인 사용자 인터페이스와 사용자 경험 디자인을 제공합니다.",
+    "service-3-icon": "cursor-arrow-rays",
+    "service-4-title": "클라우드 서비스",
+    "service-4-description": "비즈니스 데이터가 안전하고 효율적으로 운영되도록 보장하는 신뢰할 수 있는 클라우드 컴퓨팅 서비스를 제공합니다.",
+    "service-4-icon": "cloud",
+    "service-5-title": "기술 컨설팅",
+    "service-5-description": "현명한 기술적 결정을 내리는 데 도움을 주는 전문적인 기술 컨설팅 서비스를 제공합니다.",
+    "service-5-icon": "chat-bubble-bottom-center-text",
+    "service-6-title": "유지보수 지원",
+    "service-6-description": "시스템이 지속적으로 안정적으로 운영되도록 보장하는 포괄적인 기술 지원 및 유지보수 서비스를 제공합니다.",
+    "service-6-icon": "musical-note"
+  },
+  "team": {
+    "title": "팀",
+    "description": "저희는 전문적이고 경험이 풍부한 팀을 보유하고 있습니다",
+    "team-1-name": "양 학도",
+    "team-1-position": "CEO",
+    "team-1-description": "풍부한 관리 경험과 업계 통찰력을 보유",
+    "team-1-image": "/img/team/team-1.jpg",
+    "team-1-social-x": "",
+    "team-1-social-facebook": "",
+    "team-1-social-instagram": "",
+    "team-1-social-linkedin": "",
+    "team-2-name": "오 군",
+    "team-2-position": "CTO",
+    "team-2-description": "혁신적인 솔루션에 중점을 둔 기술 전문가",
+    "team-2-image": "/img/team/team-2.jpg",
+    "team-2-social-x": "https://x.com/fantiga",
+    "team-2-social-facebook": "https://facebook.com/fantiga",
+    "team-2-social-instagram": "https://instagram.com/fantiga",
+    "team-2-social-linkedin": "https://linkedin.com/in/fantiga",
+    "team-3-name": "학락",
+    "team-3-position": "COO",
+    "team-3-description": "회사의 일상적인 운영과 비즈니스 발전을 담당",
+    "team-3-image": "/img/team/team-3.jpg",
+    "team-3-social-x": "",
+    "team-3-social-facebook": "",
+    "team-3-social-instagram": "",
+    "team-3-social-linkedin": ""
+  },
+  "contact": {
+    "title": "연락처",
+    "description": "귀하와의 소통을 기대합니다",
+    "map-url": "",
+    "address-title": "주소",
+    "address-value": "도쿄도 도시마구 이케부쿠로 2-1-1",
+    "email-title": "이메일",
+    "email-value": "info@seiyouco.com",
+    "call-title": "전화",
+    "call-value": "+81 03-5946-9159"
+  },
+  "footer": {
+    "title": "Seiyou",
+    "description": "고객에게 최상의 서비스와 솔루션을 제공하기 위해 노력합니다",
+    "social-x": "https://x.com/fantiga",
+    "social-facebook": "https://facebook.com/fantiga",
+    "social-instagram": "https://instagram.com/fantiga",
+    "social-linkedin": "https://linkedin.com/in/fantiga",
+    "copyright.line1": "저작권 © 2023-",
+    "copyright.line2": "Seiyou Co, Ltd. 모든 권리 보유."
+  }
+}
