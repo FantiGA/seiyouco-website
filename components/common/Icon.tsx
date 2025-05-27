@@ -1,3 +1,25 @@
+import { ComponentType, SVGProps } from "react";
+
+interface IconProps extends SVGProps<SVGSVGElement> {
+  icon: ComponentType<SVGProps<SVGSVGElement>>;
+  wrapperClassName?: string;
+}
+
+export const Icon = ({
+  icon: IconComponent,
+  className,
+  wrapperClassName,
+  ...props
+}: IconProps) => {
+  return wrapperClassName ? (
+    <i className={wrapperClassName}>
+      <IconComponent className={className} {...props} />
+    </i>
+  ) : (
+    <IconComponent className={className} {...props} />
+  );
+};
+
 export const XIcon = () => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">

@@ -8,32 +8,24 @@ import {
 } from "@heroicons/react/24/outline";
 import clsx from "clsx";
 import type { FC } from "react";
-
-const iconMap: Record<string, FC<{ className?: string }>> = {
-  "map-pin": MapPinIcon,
-  envelope: EnvelopeIcon,
-  phone: PhoneIcon,
-};
+import { Icon } from "@/components/common/Icon";
 
 interface CardProps {
   index: number;
-  icon: string;
+  icon: FC;
   title: string;
   value: string;
 }
 
 const Card: FC<CardProps> = ({ index, icon, title, value }) => {
-  const IconComponent = iconMap[icon];
-
   return (
     <div
       className="flex items-start gap-4"
       data-aos="fade-up"
       data-aos-delay={index * 100}
     >
-      <i
+      <div
         className={clsx(
-          `${icon}`,
           "text-[var(--contrast-color)]",
           "bg-[var(--accent-color)]",
           "text-xl",
@@ -43,18 +35,17 @@ const Card: FC<CardProps> = ({ index, icon, title, value }) => {
           "transition-all duration-300 ease-in-out",
           "mr-4",
           "flex-shrink-0",
-          "before:inline-block",
-          "before:font-normal",
-          "before:not-italic",
-          "before:not-font-bold",
-          "before:not-uppercase",
-          "before:leading-none",
-          "before:align-[-0.125em]",
-          "before:antialiased",
         )}
       >
-        <IconComponent className="size-5" />
-      </i>
+        <Icon
+          icon={icon}
+          className={clsx(
+            "size-5",
+            "transition-all duration-300 ease-in-out",
+            "text-[var(--contrast-color)]",
+          )}
+        />
+      </div>
       <div>
         <h3 className={clsx("p-0", "text-lg", "font-bold", "mb-1.5")}>
           {title}
@@ -64,6 +55,7 @@ const Card: FC<CardProps> = ({ index, icon, title, value }) => {
     </div>
   );
 };
+
 interface Props {
   translations: TranslationSection<"contact">;
 }
@@ -103,19 +95,19 @@ export const Contact: FC<Props> = ({ translations }) => {
         <div className="grid lg:grid-cols-3 gap-6">
           <Card
             index={0}
-            icon="map-pin"
+            icon={MapPinIcon}
             title={translations["address-title"]}
             value={translations["address-value"]}
           />
           <Card
             index={1}
-            icon="envelope"
+            icon={EnvelopeIcon}
             title={translations["email-title"]}
             value={translations["email-value"]}
           />
           <Card
             index={2}
-            icon="phone"
+            icon={PhoneIcon}
             title={translations["call-title"]}
             value={translations["call-value"]}
           />

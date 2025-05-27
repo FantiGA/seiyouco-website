@@ -10,28 +10,17 @@ import {
   ChatBubbleBottomCenterTextIcon,
 } from "@heroicons/react/24/outline";
 import clsx from "clsx";
-import Link from "next/link";
 import type { FC } from "react";
-
-const iconMap: Record<string, FC<{ className?: string }>> = {
-  "globe-alt": GlobeAltIcon,
-  "device-phone-mobile": DevicePhoneMobileIcon,
-  "cursor-arrow-rays": CursorArrowRaysIcon,
-  cloud: CloudIcon,
-  "chat-bubble-bottom-center-text": ChatBubbleBottomCenterTextIcon,
-  "musical-note": MusicalNoteIcon,
-};
+import { Icon } from "@/components/common/Icon";
 
 interface CardProps {
   title: string;
   description: string;
-  icon: string;
+  icon: FC;
   index: number;
 }
 
 const Card: FC<CardProps> = ({ title, description, icon, index }) => {
-  const IconComponent = iconMap[icon] || GlobeAltIcon;
-
   return (
     <div
       className={clsx(
@@ -68,22 +57,15 @@ const Card: FC<CardProps> = ({ title, description, icon, index }) => {
           "group-hover:border-[var(--accent-color)]",
         )}
       >
-        <i
+        <Icon
+          icon={icon}
           className={clsx(
-            "inline-block",
-            "font-normal",
-            "not-italic",
-            "font-normal",
-            "normal-case",
-            "leading-none",
-            "align-[-0.125em]",
-            "antialiased",
-            "subpixel-antialiased",
+            "size-7",
+            "transition-all duration-300 ease-in-out",
+            "text-[var(--contrast-color)]",
             "group-hover:text-[var(--accent-color)]",
           )}
-        >
-          <IconComponent className="size-7" />
-        </i>
+        />
       </div>
       <h3
         className={clsx(
@@ -96,18 +78,6 @@ const Card: FC<CardProps> = ({ title, description, icon, index }) => {
         {title}
       </h3>
       <p className={clsx("text-sm", "leading-6", "mb-0")}>{description}</p>
-      <Link
-        href="#"
-        className={clsx(
-          "absolute",
-          "inset-0",
-          "z-[1]",
-          "after:content-['']",
-          "after:absolute",
-          "after:inset-0",
-          "after:z-[1]",
-        )}
-      />
     </div>
   );
 };
@@ -150,27 +120,42 @@ export const Services: FC<Props> = ({ translations }) => {
         )}
       >
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {[...Array(6)].map((_, index) => (
-            <Card
-              key={index}
-              title={
-                translations[
-                  `service-${index + 1}-title` as keyof TranslationSection<"services">
-                ]
-              }
-              description={
-                translations[
-                  `service-${index + 1}-description` as keyof TranslationSection<"services">
-                ]
-              }
-              icon={
-                translations[
-                  `service-${index + 1}-icon` as keyof TranslationSection<"services">
-                ]
-              }
-              index={index}
-            />
-          ))}
+          <Card
+            title={translations["service-1-title"]}
+            description={translations["service-1-description"]}
+            icon={GlobeAltIcon}
+            index={0}
+          />
+          <Card
+            title={translations["service-2-title"]}
+            description={translations["service-2-description"]}
+            icon={DevicePhoneMobileIcon}
+            index={1}
+          />
+          <Card
+            title={translations["service-3-title"]}
+            description={translations["service-3-description"]}
+            icon={CursorArrowRaysIcon}
+            index={2}
+          />
+          <Card
+            title={translations["service-4-title"]}
+            description={translations["service-4-description"]}
+            icon={CloudIcon}
+            index={3}
+          />
+          <Card
+            title={translations["service-5-title"]}
+            description={translations["service-5-description"]}
+            icon={ChatBubbleBottomCenterTextIcon}
+            index={4}
+          />
+          <Card
+            title={translations["service-6-title"]}
+            description={translations["service-6-description"]}
+            icon={MusicalNoteIcon}
+            index={5}
+          />
         </div>
       </div>
     </section>

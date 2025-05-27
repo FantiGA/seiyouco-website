@@ -9,6 +9,7 @@ import {
 import clsx from "clsx";
 import Image from "next/image";
 import { useState, useEffect, type FC } from "react";
+import { Icon } from "@/components/common/Icon";
 
 interface Props {
   translations: TranslationSection<"about">;
@@ -111,13 +112,20 @@ export const About: FC<Props> = ({ translations }) => {
             <p>{translations.description}</p>
             <ul className={clsx("list-none", "p-0")}>
               <li className={clsx("flex", "items-start", "mt-10")}>
-                <i
+                <div
                   className={clsx(
                     "flex-shrink-0 text-5xl text-[var(--accent-color)] mr-5 leading-none",
                   )}
                 >
-                  <UserGroupIcon className="size-12 mr-1" />
-                </i>
+                  <Icon
+                    icon={UserGroupIcon}
+                    className={clsx(
+                      "size-12",
+                      "transition-all duration-300 ease-in-out",
+                      "text-[var(--accent-color)]",
+                    )}
+                  />
+                </div>
                 <div>
                   <h5 className={clsx("text-lg", "font-bold")}>
                     {translations["item-title-1"]}
@@ -128,13 +136,20 @@ export const About: FC<Props> = ({ translations }) => {
                 </div>
               </li>
               <li className={clsx("flex", "items-start", "mt-10")}>
-                <i
+                <div
                   className={clsx(
                     "flex-shrink-0 text-5xl text-[var(--accent-color)] mr-5 leading-none",
                   )}
                 >
-                  <LightBulbIcon className="size-12 mr-1" />
-                </i>
+                  <Icon
+                    icon={LightBulbIcon}
+                    className={clsx(
+                      "size-12",
+                      "transition-all duration-300 ease-in-out",
+                      "text-[var(--accent-color)]",
+                    )}
+                  />
+                </div>
                 <div>
                   <h5 className={clsx("text-lg", "font-bold")}>
                     {translations["item-title-2"]}
@@ -145,13 +160,20 @@ export const About: FC<Props> = ({ translations }) => {
                 </div>
               </li>
               <li className={clsx("flex", "items-start", "mt-10")}>
-                <i
+                <div
                   className={clsx(
                     "flex-shrink-0 text-5xl text-[var(--accent-color)] mr-5 leading-none",
                   )}
                 >
-                  <FaceSmileIcon className="size-12 mr-1" />
-                </i>
+                  <Icon
+                    icon={FaceSmileIcon}
+                    className={clsx(
+                      "size-12",
+                      "transition-all duration-300 ease-in-out",
+                      "text-[var(--accent-color)]",
+                    )}
+                  />
+                </div>
                 <div>
                   <h5 className={clsx("text-lg", "font-bold")}>
                     {translations["item-title-3"]}

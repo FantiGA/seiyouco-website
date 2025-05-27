@@ -5,28 +5,20 @@ import type { FC } from "react";
 import clsx from "clsx";
 import type { TranslationSection } from "@/types";
 import {
+  Icon,
   XIcon,
   InstagramIcon,
   FacebookIcon,
   LinkedInIcon,
 } from "@/components/common/Icon";
 
-const iconMap: Record<string, FC> = {
-  x: XIcon,
-  facebook: FacebookIcon,
-  instagram: InstagramIcon,
-  linkedin: LinkedInIcon,
-};
-
 interface SocialProps {
   name: string;
-  icon: string;
+  icon: FC;
   url: string;
 }
 
 const Social: FC<SocialProps> = ({ name, icon, url }) => {
-  const IconComponent = iconMap[icon];
-
   return (
     <a
       href={url}
@@ -42,16 +34,15 @@ const Social: FC<SocialProps> = ({ name, icon, url }) => {
         "group",
       )}
     >
-      <i
-        className={clsx(
+      <Icon
+        icon={icon}
+        wrapperClassName={clsx(
           "w-4 h-4",
           "transition-all duration-300 ease-in-out",
           "[&>svg]:fill-[color-mix(in_srgb,var(--default-color),transparent_20%)]",
           "group-hover:[&>svg]:fill-[var(--contrast-color)]",
         )}
-      >
-        <IconComponent />
-      </i>
+      />
     </a>
   );
 };
@@ -133,15 +124,19 @@ const Card: FC<CardProps> = ({
             "w-full",
           )}
         >
-          {social_x && <Social name="X" icon="x" url={social_x} />}
+          {social_x && <Social name="X" icon={XIcon} url={social_x} />}
           {social_facebook && (
-            <Social name="Facebook" icon="facebook" url={social_facebook} />
+            <Social name="Facebook" icon={FacebookIcon} url={social_facebook} />
           )}
           {social_instagram && (
-            <Social name="Instagram" icon="instagram" url={social_instagram} />
+            <Social
+              name="Instagram"
+              icon={InstagramIcon}
+              url={social_instagram}
+            />
           )}
           {social_linkedin && (
-            <Social name="LinkedIn" icon="linkedin" url={social_linkedin} />
+            <Social name="LinkedIn" icon={LinkedInIcon} url={social_linkedin} />
           )}
         </div>
       </div>
