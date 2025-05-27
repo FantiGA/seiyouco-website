@@ -92,6 +92,7 @@ const Card: FC<CardProps> = ({
           "w-[150px]",
           "rounded-full",
           "flex-shrink-0",
+          "relative",
         )}
       >
         <Image
