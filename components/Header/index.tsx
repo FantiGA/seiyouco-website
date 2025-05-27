@@ -6,6 +6,8 @@ import Link from "next/link";
 import clsx from "clsx";
 import type { TranslationSection } from "@/types";
 import { LanguageSwitcher } from "./LanguageSwitcher";
+import { usePathname } from "next/navigation";
+import { locales } from "@/utils/i18n";
 
 interface Props {
   translations: TranslationSection<"header">;
@@ -19,6 +21,9 @@ export const Header: FC<Props> = ({
   languageTranslations,
 }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
+  const locale =
+    locales.find((locale) => pathname.startsWith(`/${locale}`)) || "en";
 
   return (
     <header
@@ -109,7 +114,7 @@ export const Header: FC<Props> = ({
             </li>
             <li className={clsx("nowrap px-3.5 py-4", "relative")}>
               <Link
-                href="#about"
+                href={`/${locale}/about`}
                 className={clsx(
                   "!text-[var(--nav-color)]",
                   "text-sm",
@@ -144,7 +149,7 @@ export const Header: FC<Props> = ({
             </li>
             <li className={clsx("nowrap px-3.5 py-4", "relative")}>
               <Link
-                href="#services"
+                href={`/${locale}/services`}
                 className={clsx(
                   "!text-[var(--nav-color)]",
                   "text-sm",
@@ -179,7 +184,7 @@ export const Header: FC<Props> = ({
             </li>
             <li className={clsx("nowrap px-3.5 py-4", "relative")}>
               <Link
-                href="#team"
+                href={`/${locale}/about#team`}
                 className={clsx(
                   "!text-[var(--nav-color)]",
                   "text-sm",
@@ -214,7 +219,7 @@ export const Header: FC<Props> = ({
             </li>
             <li className={clsx("nowrap px-3.5 py-4", "relative")}>
               <Link
-                href="#contact"
+                href={`/${locale}/contact`}
                 className={clsx(
                   "!text-[var(--nav-color)]",
                   "text-sm",
@@ -292,7 +297,7 @@ export const Header: FC<Props> = ({
               </li>
               <li>
                 <Link
-                  href="#about"
+                  href={`/${locale}/about`}
                   className={clsx(
                     "text-[var(--nav-color)]",
                     "text-sm",
@@ -316,7 +321,7 @@ export const Header: FC<Props> = ({
               </li>
               <li>
                 <Link
-                  href="#services"
+                  href={`/${locale}/services`}
                   className={clsx(
                     "text-[var(--nav-color)]",
                     "text-sm",
@@ -340,7 +345,7 @@ export const Header: FC<Props> = ({
               </li>
               <li>
                 <Link
-                  href="#team"
+                  href={`/${locale}/about#team`}
                   className={clsx(
                     "text-[var(--nav-color)]",
                     "text-sm",
@@ -364,7 +369,7 @@ export const Header: FC<Props> = ({
               </li>
               <li>
                 <Link
-                  href="#contact"
+                  href={`/${locale}/contact`}
                   className={clsx(
                     "text-[var(--nav-color)]",
                     "text-sm",
