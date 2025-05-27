@@ -1,5 +1,5 @@
+import { ClientPage } from "@/components";
 import { loadMessages, generateStaticParams } from "@/utils/i18n";
-import ClientPage from "./ClientPage";
 import { Locale } from "@/utils/i18n";
 import { Metadata } from "next";
 

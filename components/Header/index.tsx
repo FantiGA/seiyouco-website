@@ -63,7 +63,7 @@ export const Header: FC<Props> = ({
         )}
       >
         <Link
-          href="/"
+          href={`/${locale}/`}
           className={clsx("leading-none", "items-center", "flex", "ml-10")}
         >
           <Image
@@ -88,7 +88,7 @@ export const Header: FC<Props> = ({
           >
             <li className={clsx("nowrap px-3.5 py-4", "relative")}>
               <Link
-                href="/"
+                href={`/${locale}/`}
                 className={clsx(
                   isActive("#hero")
                     ? "text-[var(--nav-hover-color)]"

@@ -1,8 +1,7 @@
 import { loadMessages, generateStaticParams } from "@/utils/i18n";
 import { Locale } from "@/utils/i18n";
 import { Metadata } from "next";
-import { About, Team } from "@/components";
-import ClientPage from "../ClientPage";
+import { About, ClientPage, Team } from "@/components";
 
 interface PageProps {
   params: Promise<{ locale: Locale }>;

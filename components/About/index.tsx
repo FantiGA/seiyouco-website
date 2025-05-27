@@ -37,6 +37,16 @@ export const About: FC<Props> = ({ translations }) => {
       data-aos-offset="200"
     >
       <div
+        className={clsx("text-center", "pb-15", "relative")}
+        data-aos="fade-up"
+      >
+        <h2 className={clsx("text-4xl font-bold mb-4 uppercase")}>
+          {translations.title}
+        </h2>
+        <p>{translations.description}</p>
+      </div>
+
+      <div
         className={clsx(
           "max-w-[960px]",
           "[--bs-gutter-x:1.5rem] [--bs-gutter-y:0]",
@@ -108,8 +118,6 @@ export const About: FC<Props> = ({ translations }) => {
             data-aos="fade-up"
             data-aos-delay="100"
           >
-            <h3 className={clsx("text-3xl font-bold")}>{translations.title}</h3>
-            <p>{translations.description}</p>
             <ul className={clsx("list-none", "p-0")}>
               <li className={clsx("flex", "items-start", "mt-10")}>
                 <div

@@ -2,26 +2,18 @@
 
 import { useEffect, useState, ReactNode } from "react";
 import { TranslationKeys, TranslationSection } from "@/types";
-import {
-  About,
-  Contact,
-  Footer,
-  Header,
-  Hero,
-  Services,
-  Stats,
-  Team,
-} from "@/components";
+import { Footer, Header, Hero } from "@/components";
+import clsx from "clsx";
 
-type ClientPageProps = {
+interface ClientPageProps {
   initialTranslations: {
     [K in keyof TranslationKeys]: TranslationSection<K>;
   };
   isHomePage?: boolean;
   children?: ReactNode;
-};
+}
 
-export default function ClientPage({
+export function ClientPage({
   initialTranslations,
   isHomePage,
   children,
@@ -50,17 +42,8 @@ export default function ClientPage({
         isScrolled={isScrolled}
         languageTranslations={translations["language"]}
       />
-      <main>
-        {children || (
-          <>
-            <Hero translations={translations["hero"]} />
-            <About translations={translations["about"]} />
-            <Stats translations={translations["stats"]} />
-            <Services translations={translations["services"]} />
-            <Team translations={translations["team"]} />
-            <Contact translations={translations["contact"]} />
-          </>
-        )}
+      <main className={clsx(!isHomePage && "mt-28")}>
+        {children || <Hero translations={translations["hero"]} />}
       </main>
       <Footer translations={translations["footer"]} />
     </>

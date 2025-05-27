@@ -1,11 +1,10 @@
 "use client";
 
 import { ReactNode } from "react";
-import { HtmlWrapper } from "./[locale]/HtmlWrapper";
 import { locales } from "@/utils/i18n";
 import { usePathname } from "next/navigation";
 import { Roboto, Poppins } from "next/font/google";
-import { AOSInitializer } from "@/components";
+import { AOSInitializer, HtmlWrapper } from "@/components";
 import "./globals.css";
 
 const roboto = Roboto({
