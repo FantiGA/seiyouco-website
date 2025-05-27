@@ -18,7 +18,8 @@
     "menu-about": "会社概要",
     "menu-services": "サービス",
     "menu-team": "チーム",
-    "menu-contact": "お問い合わせ"
+    "menu-contact": "お問い合わせ",
+    "menu-careers": "採用情報"
   },
   "hero": {
     "title": "ウェブサイトへようこそ",
@@ -47,24 +48,24 @@
   },
   "services": {
     "title": "サービス",
-    "description": "包括的な専門サービスを提供しています",
-    "service-1-title": "ウェブ開発",
-    "service-1-description": "フロントエンドとバックエンドの開発を含む専門的なウェブ開発サービスを提供し、高性能で使いやすいウェブサイトを実現します。",
+    "description": "総合的な専門サービスを提供いたします",
+    "service-1-title": "ITシステム開発",
+    "service-1-description": "企業管理システムや業務プロセスシステムなど、高性能で信頼性の高いITシステム開発サービスを提供いたします。",
     "service-1-icon": "globe-alt",
-    "service-2-title": "モバイルアプリ",
-    "service-2-description": "iOSとAndroidプラットフォームをサポートする高品質なモバイルアプリケーションを開発し、様々なユーザーニーズに対応します。",
+    "service-2-title": "電子決済システム",
+    "service-2-description": "安全で便利な電子決済システムの開発、複数の決済方法をサポートし、様々な決済シーンに対応いたします。",
     "service-2-icon": "device-phone-mobile",
-    "service-3-title": "UI/UXデザイン",
-    "service-3-description": "直感的で美しく使いやすい製品を創造するための専門的なユーザーインターフェースとユーザーエクスペリエンスデザインを提供します。",
+    "service-3-title": "国際決済サービス",
+    "service-3-description": "安全で効率的な国際資金移動を実現する、専門的な国際決済ソリューションを提供いたします。",
     "service-3-icon": "cursor-arrow-rays",
-    "service-4-title": "クラウドサービス",
-    "service-4-description": "ビジネスデータを安全かつ効率的に運用するための信頼性の高いクラウドコンピューティングサービスを提供します。",
+    "service-4-title": "宗教団体支援サービス",
+    "service-4-description": "ウェブサイト構築、イベント管理、会員サービスなど、宗教団体向けの総合的な技術支援とサービスを提供いたします。",
     "service-4-icon": "cloud",
     "service-5-title": "技術コンサルティング",
-    "service-5-description": "適切な技術的決定を下すための専門的な技術コンサルティングサービスを提供します。",
+    "service-5-description": "適切な技術判断をサポートする、専門的な技術コンサルティングサービスを提供いたします。",
     "service-5-icon": "chat-bubble-bottom-center-text",
-    "service-6-title": "メンテナンスサポート",
-    "service-6-description": "システムの継続的な安定運用を確保するための包括的な技術サポートとメンテナンスサービスを提供します。",
+    "service-6-title": "保守サポート",
+    "service-6-description": "システムの安定した継続的な運用を確保する、総合的な技術サポートと保守サービスを提供いたします。",
     "service-6-icon": "musical-note"
   },
   "team": {
@@ -100,11 +101,19 @@
     "description": "お客様とのコミュニケーションをお待ちしております",
     "map-url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12956.010348132288!2d139.6605155!3d35.7261549!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018ed6cc7051291%3A0xfc3cfeeed2df6495!2z44OR44Os44O744OJ44O844Or6LGK546J5YyX!5e0!3m2!1sja!2sjp!4v1748316573203!5m2!1sja!2sjp",
     "address-title": "住所",
-    "address-value": "東京都豊島区池袋2-1-1",
+    "address-value": "〒176-0012 東京都練馬区豊玉北３ー１ー３パレ・ドール豊玉北４０１",
     "email-title": "メール",
     "email-value": "info@seiyouco.com",
     "call-title": "電話",
     "call-value": "+81 03-5946-9159"
+  },
+  "careers": {
+    "title": "採用情報",
+    "description": "私たちと一緒に未来を創りましょう",
+    "item-title-1": "総務担当",
+    "item-description-1": "会社の日常的な総務業務を担当し、各部門の業務をサポートし、会社の運営を円滑に進めます。要件：中日英三ヶ国語に堪能、2年以上の総務経験、オフィスソフトの熟練、優れたコミュニケーション能力。",
+    "item-title-2": "UXデザイナー",
+    "item-description-2": "製品のユーザーエクスペリエンスデザインを担当し、直感的で美しく使いやすいインターフェースを作成します。要件：3年以上のUI/UXデザイン経験、Figmaの熟練、優れたデザインセンス、チーム協力能力。"
   },
   "footer": {
     "title": "Seiyou",

@@ -7,5 +7,6 @@ export * from "./Services";
 // export * from "./Portfolio";
 export * from "./Team";
 export * from "./Contact";
+export * from "./Careers";
 export * from "./Footer";
 export * from "./common";

@@ -7,7 +7,8 @@ export type TranslationKeys = {
     | "menu-about"
     | "menu-services"
     | "menu-team"
-    | "menu-contact";
+    | "menu-contact"
+    | "menu-careers";
   menu: "menu" | "close";
   hero: "title" | "description" | "button";
   about:
@@ -87,6 +88,13 @@ export type TranslationKeys = {
     | "email-value"
     | "call-title"
     | "call-value";
+  careers:
+    | "title"
+    | "description"
+    | "item-title-1"
+    | "item-description-1"
+    | "item-title-2"
+    | "item-description-2";
   footer:
     | "title"
     | "description"

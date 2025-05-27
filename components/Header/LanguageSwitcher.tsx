@@ -6,7 +6,7 @@ import clsx from "clsx";
 import type { TranslationSection } from "@/types";
 import { locales, type Locale } from "@/utils/i18n";
 import { LanguageIcon } from "@heroicons/react/24/outline";
-import { Icon } from "../common";
+import { Icon } from "..";
 
 interface Props {
   languageTranslations: TranslationSection<"language">;

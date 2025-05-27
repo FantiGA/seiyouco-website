@@ -18,7 +18,8 @@
     "menu-about": "关于我们",
     "menu-services": "服务",
     "menu-team": "团队",
-    "menu-contact": "联系我们"
+    "menu-contact": "联系我们",
+    "menu-careers": "招聘"
   },
   "hero": {
     "title": "欢迎访问我们的网站",
@@ -48,17 +49,17 @@
   "services": {
     "title": "服务",
     "description": "我们提供全方位的专业服务",
-    "service-1-title": "网站开发",
-    "service-1-description": "提供专业的网站开发服务，包括前端和后端开发，确保网站的高性能和用户体验。",
+    "service-1-title": "IT系统开发",
+    "service-1-description": "提供专业的IT系统开发服务，包括企业管理系统、业务流程系统等，确保系统的高性能和可靠性。",
     "service-1-icon": "globe-alt",
-    "service-2-title": "移动应用",
-    "service-2-description": "开发高质量的移动应用程序，支持iOS和Android平台，满足不同用户的需求。",
+    "service-2-title": "电子支付系统",
+    "service-2-description": "开发安全、便捷的电子支付系统，支持多种支付方式，满足不同场景的支付需求。",
     "service-2-icon": "device-phone-mobile",
-    "service-3-title": "UI/UX设计",
-    "service-3-description": "提供专业的用户界面和用户体验设计，创造直观、美观且易用的产品。",
+    "service-3-title": "跨境结算服务",
+    "service-3-description": "提供专业的跨境结算解决方案，帮助企业实现安全、高效的跨境资金流转。",
     "service-3-icon": "cursor-arrow-rays",
-    "service-4-title": "云服务",
-    "service-4-description": "提供可靠的云计算服务，确保您的业务数据安全且高效运行。",
+    "service-4-title": "宗教团体支援服务",
+    "service-4-description": "为宗教团体提供全方位的技术支持和服务，包括网站建设、活动管理、会员服务等。",
     "service-4-icon": "cloud",
     "service-5-title": "技术咨询",
     "service-5-description": "提供专业的技术咨询服务，帮助您做出明智的技术决策。",
@@ -100,11 +101,19 @@
     "description": "我们期待与您沟通交流",
     "map-url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12956.010356264482!2d139.66051554999999!3d35.72615485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018ed6cc7051291%3A0xfc3cfeeed2df6495!2z44OR44Os44O744OJ44O844Or6LGK546J5YyX!5e0!3m2!1szh-CN!2sjp!4v1748316163528!5m2!1szh-CN!2sjp",
     "address-title": "地址",
-    "address-value": "东京都丰岛区池袋2-1-1",
+    "address-value": "〒176-0012 东京都练马区丰玉北3-1-3 401",
     "email-title": "电子邮件",
     "email-value": "info@seiyouco.com",
     "call-title": "电话",
     "call-value": "+81 03-5946-9159"
+  },
+  "careers": {
+    "title": "招贤纳士",
+    "description": "加入我们，共创美好未来",
+    "item-title-1": "行政专员",
+    "item-description-1": "负责公司日常行政事务，协助各部门工作，确保公司运营顺畅。要求：中日英三语流利，2年以上行政工作经验，熟练使用办公软件，良好的沟通能力。",
+    "item-title-2": "用户体验设计师",
+    "item-description-2": "负责产品用户体验设计，创建直观、美观且易用的用户界面。要求：3年以上UI/UX设计经验，熟练使用Figma，良好的设计审美，团队协作能力。"
   },
   "footer": {
     "title": "Seiyou",

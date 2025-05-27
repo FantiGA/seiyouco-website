@@ -18,7 +18,8 @@
     "menu-about": "關於我們",
     "menu-services": "服務",
     "menu-team": "團隊",
-    "menu-contact": "聯絡我們"
+    "menu-contact": "聯絡我們",
+    "menu-careers": "招聘"
   },
   "hero": {
     "title": "歡迎瀏覽我們的網站",
@@ -48,17 +49,17 @@
   "services": {
     "title": "服務",
     "description": "我們提供全方位的專業服務",
-    "service-1-title": "網站開發",
-    "service-1-description": "提供專業的網站開發服務，包括前端和後端開發，確保網站的高性能和用戶體驗。",
+    "service-1-title": "IT系統開發",
+    "service-1-description": "提供專業的IT系統開發服務，包括企業管理系統、業務流程系統等，確保系統的高性能和可靠性。",
     "service-1-icon": "globe-alt",
-    "service-2-title": "流動應用",
-    "service-2-description": "開發高質素的流動應用程式，支援iOS和Android平台，滿足不同用戶的需求。",
+    "service-2-title": "電子支付系統",
+    "service-2-description": "開發安全、便捷的電子支付系統，支援多種支付方式，滿足不同場景的支付需求。",
     "service-2-icon": "device-phone-mobile",
-    "service-3-title": "UI/UX設計",
-    "service-3-description": "提供專業的用戶介面和用戶體驗設計，創造直觀、美觀且易用的產品。",
+    "service-3-title": "跨境結算服務",
+    "service-3-description": "提供專業的跨境結算解決方案，幫助企業實現安全、高效的跨境資金流轉。",
     "service-3-icon": "cursor-arrow-rays",
-    "service-4-title": "雲端服務",
-    "service-4-description": "提供可靠的雲端運算服務，確保您的業務資料安全且高效運行。",
+    "service-4-title": "宗教團體支援服務",
+    "service-4-description": "為宗教團體提供全方位的技術支援和服務，包括網站建設、活動管理、會員服務等。",
     "service-4-icon": "cloud",
     "service-5-title": "技術諮詢",
     "service-5-description": "提供專業的技術諮詢服務，幫助您做出明智的技術決策。",
@@ -100,11 +101,19 @@
     "description": "我們期待與您溝通交流",
     "map-url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12956.010348132288!2d139.6605155!3d35.7261549!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018ed6cc7051291%3A0xfc3cfeeed2df6495!2z44OR44Os44O744OJ44O844Or6LGK546J5YyX!5e0!3m2!1szh-TW!2sjp!4v1748316815729!5m2!1szh-HK!2sjp",
     "address-title": "地址",
-    "address-value": "東京都豐島區池袋2-1-1",
+    "address-value": "〒176-0012 東京都練馬區豐玉北3-1-3 401",
     "email-title": "電郵",
     "email-value": "info@seiyouco.com",
     "call-title": "電話",
     "call-value": "+81 03-5946-9159"
+  },
+  "careers": {
+    "title": "招賢納士",
+    "description": "加入我們，共創美好未來",
+    "item-title-1": "行政專員",
+    "item-description-1": "負責公司日常行政事務，協助各部門工作，確保公司營運順暢。要求：中日英三語流利，2年以上行政工作經驗，熟練使用辦公軟件，良好的溝通能力。",
+    "item-title-2": "用戶體驗設計師",
+    "item-description-2": "負責產品用戶體驗設計，創建直觀、美觀且易用的用戶界面。要求：3年以上UI/UX設計經驗，熟練使用Figma，良好的設計審美，團隊協作能力。"
   },
   "footer": {
     "title": "Seiyou",

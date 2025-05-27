@@ -18,7 +18,8 @@
     "menu-about": "회사 소개",
     "menu-services": "서비스",
     "menu-team": "팀",
-    "menu-contact": "연락처"
+    "menu-contact": "연락처",
+    "menu-careers": "채용정보"
   },
   "hero": {
     "title": "저희 웹사이트에 오신 것을 환영합니다",
@@ -47,24 +48,24 @@
   },
   "services": {
     "title": "서비스",
-    "description": "저희는 포괄적인 전문 서비스를 제공합니다",
-    "service-1-title": "웹 개발",
-    "service-1-description": "프론트엔드와 백엔드 개발을 포함한 전문적인 웹 개발 서비스를 제공하여 웹사이트의 고성능과 사용자 경험을 보장합니다.",
+    "description": "종합적인 전문 서비스를 제공합니다",
+    "service-1-title": "IT 시스템 개발",
+    "service-1-description": "기업 관리 시스템 및 업무 프로세스 시스템 등 고성능과 신뢰성을 갖춘 IT 시스템 개발 서비스를 제공합니다.",
     "service-1-icon": "globe-alt",
-    "service-2-title": "모바일 앱",
-    "service-2-description": "iOS와 Android 플랫폼을 지원하는 고품질 모바일 애플리케이션을 개발하여 다양한 사용자의 요구를 충족시킵니다.",
+    "service-2-title": "전자 결제 시스템",
+    "service-2-description": "안전하고 편리한 전자 결제 시스템 개발, 다양한 결제 방식을 지원하여 다양한 결제 시나리오에 대응합니다.",
     "service-2-icon": "device-phone-mobile",
-    "service-3-title": "UI/UX 디자인",
-    "service-3-description": "직관적이고 아름답고 사용하기 쉬운 제품을 만드는 전문적인 사용자 인터페이스와 사용자 경험 디자인을 제공합니다.",
+    "service-3-title": "국제 결제 서비스",
+    "service-3-description": "안전하고 효율적인 국제 자금 이체를 실현하는 전문적인 국제 결제 솔루션을 제공합니다.",
     "service-3-icon": "cursor-arrow-rays",
-    "service-4-title": "클라우드 서비스",
-    "service-4-description": "비즈니스 데이터가 안전하고 효율적으로 운영되도록 보장하는 신뢰할 수 있는 클라우드 컴퓨팅 서비스를 제공합니다.",
+    "service-4-title": "종교 단체 지원 서비스",
+    "service-4-description": "웹사이트 구축, 이벤트 관리, 회원 서비스 등 종교 단체를 위한 종합적인 기술 지원과 서비스를 제공합니다.",
     "service-4-icon": "cloud",
     "service-5-title": "기술 컨설팅",
-    "service-5-description": "현명한 기술적 결정을 내리는 데 도움을 주는 전문적인 기술 컨설팅 서비스를 제공합니다.",
+    "service-5-description": "적절한 기술적 결정을 지원하는 전문적인 기술 컨설팅 서비스를 제공합니다.",
     "service-5-icon": "chat-bubble-bottom-center-text",
     "service-6-title": "유지보수 지원",
-    "service-6-description": "시스템이 지속적으로 안정적으로 운영되도록 보장하는 포괄적인 기술 지원 및 유지보수 서비스를 제공합니다.",
+    "service-6-description": "시스템의 안정적인 지속적인 운영을 보장하는 종합적인 기술 지원과 유지보수 서비스를 제공합니다.",
     "service-6-icon": "musical-note"
   },
   "team": {
@@ -100,11 +101,19 @@
     "description": "귀하와의 소통을 기대합니다",
     "map-url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12956.010348132288!2d139.6605155!3d35.7261549!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018ed6cc7051291%3A0xfc3cfeeed2df6495!2z44OR44Os44O744OJ44O844Or6LGK546J5YyX!5e0!3m2!1sko!2sjp!4v1748316613954!5m2!1sko!2sjp",
     "address-title": "주소",
-    "address-value": "도쿄도 도시마구 이케부쿠로 2-1-1",
+    "address-value": "〒176-0012 도쿄도 네리마구 토요타마키타 3-1-3 401",
     "email-title": "이메일",
     "email-value": "info@seiyouco.com",
     "call-title": "전화",
     "call-value": "+81 03-5946-9159"
+  },
+  "careers": {
+    "title": "채용정보",
+    "description": "우리와 함께 미래를 만들어가세요",
+    "item-title-1": "행정 전문가",
+    "item-description-1": "회사의 일상적인 행정 업무를 담당하고, 각 부서의 업무를 지원하여 회사 운영을 원활하게 합니다. 요구사항: 중일영 3개국어 유창, 2년 이상의 행정 경험, 오피스 소프트웨어 숙련, 우수한 커뮤니케이션 능력.",
+    "item-title-2": "UX 디자이너",
+    "item-description-2": "제품 사용자 경험 디자인을 담당하고, 직관적이고 아름답고 사용하기 쉬운 인터페이스를 만듭니다. 요구사항: 3년 이상의 UI/UX 디자인 경험, Figma 숙련, 우수한 디자인 감각, 팀 협업 능력."
   },
   "footer": {
     "title": "Seiyou",
