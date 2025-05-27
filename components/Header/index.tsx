@@ -25,6 +25,15 @@ export const Header: FC<Props> = ({
   const locale =
     locales.find((locale) => pathname.startsWith(`/${locale}`)) || "en";
 
+  const isActive = (path: string) => {
+    if (path === "#hero") {
+      return pathname === `/${locale}` || pathname === `/${locale}/`;
+    }
+    const normalizedPathname = pathname.replace(/\/$/, "");
+    const normalizedPath = path.replace(/\/$/, "");
+    return normalizedPathname === normalizedPath;
+  };
+
   return (
     <header
       className={clsx(
@@ -79,10 +88,11 @@ export const Header: FC<Props> = ({
           >
             <li className={clsx("nowrap px-3.5 py-4", "relative")}>
               <Link
-                href="#hero"
+                href="/"
                 className={clsx(
-                  "text-[var(--nav-hover-color)]",
-                  "hover:text-[var(--nav-hover-color)]",
+                  isActive("#hero")
+                    ? "text-[var(--nav-hover-color)]"
+                    : "!text-[var(--nav-color)]",
                   "text-sm",
                   "px-0.5",
                   "[font-family:var(--nav-font)]",
@@ -97,7 +107,6 @@ export const Header: FC<Props> = ({
                   "uppercase",
                   "before:content-['']",
                   "before:absolute",
-                  "before:w-full",
                   "before:h-0.5",
                   "before:-bottom-1.5",
                   "before:left-0",
@@ -105,8 +114,11 @@ export const Header: FC<Props> = ({
                   "before:transition-all",
                   "before:duration-300",
                   "before:ease-in-out",
-                  "before:visible",
+                  isActive("#hero")
+                    ? "before:visible before:w-full"
+                    : "before:invisible before:w-0",
                   "hover:before:visible",
+                  "hover:before:w-full",
                 )}
               >
                 {translations["menu-home"]}
@@ -116,7 +128,9 @@ export const Header: FC<Props> = ({
               <Link
                 href={`/${locale}/about`}
                 className={clsx(
-                  "!text-[var(--nav-color)]",
+                  isActive(`/${locale}/about`)
+                    ? "text-[var(--nav-hover-color)]"
+                    : "!text-[var(--nav-color)]",
                   "text-sm",
                   "px-0.5",
                   "[font-family:var(--nav-font)]",
@@ -138,8 +152,9 @@ export const Header: FC<Props> = ({
                   "before:transition-all",
                   "before:duration-300",
                   "before:ease-in-out",
-                  "before:invisible",
-                  "before:w-0",
+                  isActive(`/${locale}/about`)
+                    ? "before:visible before:w-full"
+                    : "before:invisible before:w-0",
                   "hover:before:visible",
                   "hover:before:w-full",
                 )}
@@ -151,7 +166,9 @@ export const Header: FC<Props> = ({
               <Link
                 href={`/${locale}/services`}
                 className={clsx(
-                  "!text-[var(--nav-color)]",
+                  isActive(`/${locale}/services`)
+                    ? "text-[var(--nav-hover-color)]"
+                    : "!text-[var(--nav-color)]",
                   "text-sm",
                   "px-0.5",
                   "[font-family:var(--nav-font)]",
@@ -173,8 +190,9 @@ export const Header: FC<Props> = ({
                   "before:transition-all",
                   "before:duration-300",
                   "before:ease-in-out",
-                  "before:invisible",
-                  "before:w-0",
+                  isActive(`/${locale}/services`)
+                    ? "before:visible before:w-full"
+                    : "before:invisible before:w-0",
                   "hover:before:visible",
                   "hover:before:w-full",
                 )}
@@ -186,7 +204,9 @@ export const Header: FC<Props> = ({
               <Link
                 href={`/${locale}/about#team`}
                 className={clsx(
-                  "!text-[var(--nav-color)]",
+                  isActive(`/${locale}/about#team`)
+                    ? "text-[var(--nav-hover-color)]"
+                    : "!text-[var(--nav-color)]",
                   "text-sm",
                   "px-0.5",
                   "[font-family:var(--nav-font)]",
@@ -208,8 +228,9 @@ export const Header: FC<Props> = ({
                   "before:transition-all",
                   "before:duration-300",
                   "before:ease-in-out",
-                  "before:invisible",
-                  "before:w-0",
+                  isActive(`/${locale}/about#team`)
+                    ? "before:visible before:w-full"
+                    : "before:invisible before:w-0",
                   "hover:before:visible",
                   "hover:before:w-full",
                 )}
@@ -221,7 +242,9 @@ export const Header: FC<Props> = ({
               <Link
                 href={`/${locale}/contact`}
                 className={clsx(
-                  "!text-[var(--nav-color)]",
+                  isActive(`/${locale}/contact`)
+                    ? "text-[var(--nav-hover-color)]"
+                    : "!text-[var(--nav-color)]",
                   "text-sm",
                   "px-0.5",
                   "[font-family:var(--nav-font)]",
@@ -243,8 +266,9 @@ export const Header: FC<Props> = ({
                   "before:transition-all",
                   "before:duration-300",
                   "before:ease-in-out",
-                  "before:invisible",
-                  "before:w-0",
+                  isActive(`/${locale}/contact`)
+                    ? "before:visible before:w-full"
+                    : "before:invisible before:w-0",
                   "hover:before:visible",
                   "hover:before:w-full",
                 )}
@@ -276,6 +300,7 @@ export const Header: FC<Props> = ({
                   href="#hero"
                   className={clsx(
                     "text-[var(--nav-color)]",
+                    isActive("#hero") && "text-[var(--nav-hover-color)]",
                     "text-sm",
                     "px-0.5",
                     "[font-family:var(--nav-font)]",
@@ -300,6 +325,8 @@ export const Header: FC<Props> = ({
                   href={`/${locale}/about`}
                   className={clsx(
                     "text-[var(--nav-color)]",
+                    isActive(`/${locale}/about`) &&
+                      "text-[var(--nav-hover-color)]",
                     "text-sm",
                     "px-0.5",
                     "[font-family:var(--nav-font)]",
@@ -324,6 +351,8 @@ export const Header: FC<Props> = ({
                   href={`/${locale}/services`}
                   className={clsx(
                     "text-[var(--nav-color)]",
+                    isActive(`/${locale}/services`) &&
+                      "text-[var(--nav-hover-color)]",
                     "text-sm",
                     "px-0.5",
                     "[font-family:var(--nav-font)]",
@@ -348,6 +377,8 @@ export const Header: FC<Props> = ({
                   href={`/${locale}/about#team`}
                   className={clsx(
                     "text-[var(--nav-color)]",
+                    isActive(`/${locale}/about#team`) &&
+                      "text-[var(--nav-hover-color)]",
                     "text-sm",
                     "px-0.5",
                     "[font-family:var(--nav-font)]",
@@ -372,6 +403,8 @@ export const Header: FC<Props> = ({
                   href={`/${locale}/contact`}
                   className={clsx(
                     "text-[var(--nav-color)]",
+                    isActive(`/${locale}/contact`) &&
+                      "text-[var(--nav-hover-color)]",
                     "text-sm",
                     "px-0.5",
                     "[font-family:var(--nav-font)]",
