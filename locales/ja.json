@@ -1,8 +1,8 @@
 {
   "head": {
-    "title": "TICF (日本語)",
-    "keywords": "キリスト教会, 日本キリスト教会, 東京キリスト教会, 中国語キリスト教会, 教会, 池袋キリスト教会, 上野キリスト教会, キリスト教, 中国語教会, 日本中国語キリスト教会, バイリンガル教会, トリリンガル教会",
-    "description": "TICFは、毎週日曜日に中国語と日本語のバイリンガルサービスを提供する国際的なプロテスタント教会です。"
+    "title": "晟楊 - 革新的なITソリューション企業",
+    "keywords": "ITソリューション, システム開発, 電子決済, 国際決済, デジタル変革, 日本IT企業, 東京IT企業, 企業管理システム, 業務プロセスシステム, 宗教団体支援",
+    "description": "晟楊は、システム開発、電子決済、国際決済など、企業のデジタル変革を支援する総合ITソリューション企業です。"
   },
   "language": {
     "zh-CN": "简体中文",
@@ -22,19 +22,19 @@
     "menu-careers": "採用情報"
   },
   "hero": {
-    "title": "ウェブサイトへようこそ",
-    "description": "私たちはTailwind CSSを使用してウェブサイトを作成する才能あるデザイナーチームです",
-    "button": "始める"
+    "title": "革新的な技術で、未来をつなぐ",
+    "description": "企業のデジタル変革を支援する総合ITソリューション",
+    "button": "詳しく見る"
   },
   "about": {
     "title": "会社概要",
-    "description": "私たちはTailwind CSSを使用してウェブサイトを作成する才能あるデザイナーチームです",
+    "description": "晟楊は、企業のデジタル変革を支援する総合ITソリューション企業です",
     "item-title-1": "専門チームによる質の高いサービス",
-    "item-description-1": "お客様に最高品質のサービスとソリューションを提供することに努めています",
+    "item-description-1": "経験豊富な技術チームが、専門的で信頼性の高いITソリューションを提供いたします",
     "item-title-2": "革新的な技術による発展",
-    "item-description-2": "革新的な技術を通じて、ビジネスの発展と進歩を推進しています",
+    "item-description-2": "継続的なイノベーションを核とし、先進技術を通じて企業の成長を支援します",
     "item-title-3": "お客様第一のサービス理念",
-    "item-description-3": "常にお客様のニーズを最優先に考え、最高のサービス体験を提供します"
+    "item-description-3": "お客様のニーズに焦点を当て、カスタマイズされたソリューションと総合的な技術サポートを提供いたします"
   },
   "stats": {
     "stat-1-title": "クライアント",
@@ -68,28 +68,40 @@
     "service-6-description": "システムの安定した継続的な運用を確保する、総合的な技術サポートと保守サービスを提供いたします。",
     "service-6-icon": "musical-note"
   },
+  "history": {
+    "title": "沿革",
+    "description": "私たちの成長と進歩の軌跡",
+    "item-title-1": "2023年4月",
+    "item-description-1": "株式会社晟楊を設立し、創業の道を歩み始める。",
+    "item-title-2": "2023年6月",
+    "item-description-2": "初の海外受注を獲得し、グローバル展開を開始。",
+    "item-title-3": "2025年4月",
+    "item-description-3": "宗教団体支援サービスを開始し、宗教活動の発展に貢献。",
+    "item-title-4": "2025年5月",
+    "item-description-4": "ITシステム開発事業を展開し、総合的な技術ソリューションを提供。"
+  },
   "team": {
     "title": "チーム",
     "description": "専門的で経験豊富なチームを擁しています",
-    "team-1-name": "楊学涛",
+    "team-1-name": "Xuetao Yang (楊 学涛)",
     "team-1-position": "最高経営責任者",
-    "team-1-description": "豊富な管理経験と業界洞察力を持つ",
+    "team-1-description": "保険業界での豊富な管理経験を持ち、AIGアメリカンインターナショナルグループ、リバティミューチュアル保険（中国）本社での勤務を経て、中国太平財産保険の戦略顧客部ディレクターを務めました。インターネット保険サービス会社と保険ブローカー会社を成功裏に設立し、大手オンラインプラットフォーム、国際企業、重要顧客向けの専門的な保険ソリューションの提供に注力しています。",
     "team-1-image": "/img/team/team-1.jpg",
     "team-1-social-x": "",
     "team-1-social-facebook": "",
     "team-1-social-instagram": "",
     "team-1-social-linkedin": "",
-    "team-2-name": "呉俊",
+    "team-2-name": "Jun Wu (ウー ジュン)",
     "team-2-position": "最高技術責任者",
-    "team-2-description": "革新的なソリューションに焦点を当てた技術専門家",
+    "team-2-description": "IT業界で25年以上の実務経験を持ち、フルスタック開発20年以上、UXデザイン10年以上の経験を有する。テンセントおよびVIPSHOP（中国大手ECサイト）のシニアエンジニアを経て、錦江国際グループのプロダクト開発部シニアディレクターとして活躍。",
     "team-2-image": "/img/team/team-2.jpg",
     "team-2-social-x": "https://x.com/fantiga",
     "team-2-social-facebook": "https://facebook.com/fantiga",
     "team-2-social-instagram": "https://instagram.com/fantiga",
     "team-2-social-linkedin": "https://linkedin.com/in/fantiga",
-    "team-3-name": "学楽",
+    "team-3-name": "Yiwei Yue (ガク イウェイ)",
     "team-3-position": "最高執行責任者",
-    "team-3-description": "会社の日常運営と事業開発を担当",
+    "team-3-description": "15年以上の教会奉仕経験を持ち、立教大学キリスト教研究科博士前期課程（修士号）を修了。3年以上のWeb開発経験を有し、宗教団体向けのデジタルソリューション開発に精通。",
     "team-3-image": "/img/team/team-3.jpg",
     "team-3-social-x": "",
     "team-3-social-facebook": "",
@@ -116,13 +128,13 @@
     "item-description-2": "製品のユーザーエクスペリエンスデザインを担当し、直感的で美しく使いやすいインターフェースを作成します。要件：3年以上のUI/UXデザイン経験、Figmaの熟練、優れたデザインセンス、チーム協力能力。"
   },
   "footer": {
-    "title": "Seiyou",
-    "description": "お客様に最高品質のサービスとソリューションを提供することに努めています",
+    "title": "晟楊",
+    "description": "革新的な技術で企業のデジタル変革を支援し、お客様に最高品質のITソリューションを提供いたします",
     "social-x": "",
     "social-facebook": "",
     "social-instagram": "",
     "social-linkedin": "",
-    "copyright.line1": "著作権 © 2023-",
+    "copyright.line1": "Copyright © 2023-",
     "copyright.line2": "Seiyou Co, Ltd. All Rights Reserved."
   }
 }

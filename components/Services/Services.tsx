@@ -77,7 +77,9 @@ const Card: FC<CardProps> = ({ title, description, icon, index }) => {
       >
         {title}
       </h3>
-      <p className={clsx("text-sm", "leading-6", "mb-0")}>{description}</p>
+      <p className={clsx("text-sm", "leading-6", "mb-0", "text-left")}>
+        {description}
+      </p>
     </div>
   );
 };
@@ -150,12 +152,12 @@ export const Services: FC<Props> = ({ translations }) => {
             icon={ChatBubbleBottomCenterTextIcon}
             index={4}
           />
-            <Card
+          <Card
             title={translations["service-6-title"]}
             description={translations["service-6-description"]}
             icon={MusicalNoteIcon}
             index={5}
-            />
+          />
         </div>
       </div>
     </section>

@@ -1,8 +1,8 @@
 {
   "head": {
-    "title": "TICF (English)",
-    "keywords": "Christian Church, Japan Christian Church, Tokyo Christian Church, Chinese Christian Church, Church, Ikebukuro Christian Church, Ueno Christian Church, Christianity, Chinese Church, Chinese Christian Church in Japan, Bilingual Church, Trilingual Church",
-    "description": "TICF is an international Protestant church with bilingual services in Chinese and Japanese every Sunday."
+    "title": "Seiyou - Innovative IT Solutions Provider",
+    "keywords": "IT solutions, system development, electronic payment, cross-border settlement, digital transformation, Japanese IT company, Tokyo IT company, enterprise management system, business process system, religious organization support",
+    "description": "Seiyou is a Japanese IT company specializing in comprehensive solutions including system development, electronic payment, and cross-border settlement services to help businesses achieve digital transformation."
   },
   "language": {
     "zh-CN": "简体中文",
@@ -22,19 +22,19 @@
     "menu-careers": "Careers"
   },
   "hero": {
-    "title": "Welcome to Our Website",
-    "description": "We are team of talented designers making websites with Tailwind CSS",
-    "button": "Get Started"
+    "title": "Innovative Technology, Connected Future",
+    "description": "Providing comprehensive IT solutions for your digital transformation",
+    "button": "Learn More"
   },
   "about": {
     "title": "About Us",
-    "description": "We are team of talented designers making websites with Tailwind CSS",
-    "item-title-1": "Ullamco laboris nisi ut aliquip consequat",
-    "item-description-1": "Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade",
-    "item-title-2": "Magnam soluta odio exercitationem reprehenderi",
-    "item-description-2": "Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi",
-    "item-title-3": "Voluptatem et qui exercitationem",
-    "item-description-3": "Et velit et eos maiores est tempora et quos dolorem autem tempora incidunt maxime veniam"
+    "description": "Seiyou is a Japanese IT company specializing in comprehensive digital transformation solutions for businesses",
+    "item-title-1": "Professional Team, Quality Service",
+    "item-description-1": "Our experienced technical team provides professional and reliable IT solutions",
+    "item-title-2": "Innovation-Driven Development",
+    "item-description-2": "Continuous innovation is our core philosophy, helping businesses achieve growth through advanced technology",
+    "item-title-3": "Customer-Centric Service",
+    "item-description-3": "We focus on customer needs, delivering customized solutions and comprehensive technical support"
   },
   "stats": {
     "stat-1-title": "Clients",
@@ -68,12 +68,24 @@
     "service-6-description": "Comprehensive technical support and maintenance services to ensure your systems run smoothly and continuously.",
     "service-6-icon": "musical-note"
   },
+  "history": {
+    "title": "Our Journey",
+    "description": "Witness our growth and progress",
+    "item-title-1": "April 2023",
+    "item-description-1": "Seiyou Co., Ltd. was officially established, marking the beginning of our entrepreneurial journey.",
+    "item-title-2": "June 2023",
+    "item-description-2": "Successfully secured our first overseas order, initiating our international expansion.",
+    "item-title-3": "April 2025",
+    "item-description-3": "Launched religious organization support services, contributing to religious development.",
+    "item-title-4": "May 2025",
+    "item-description-4": "Expanded into IT system development, providing comprehensive technical solutions."
+  },
   "team": {
     "title": "Team",
     "description": "We are team of talented designers making websites with Tailwind CSS",
     "team-1-name": "Xuetao Yang",
     "team-1-position": "Chief Executive Officer",
-    "team-1-description": "Explicabo voluptatem mollitia et repellat qui dolorum quasi",
+    "team-1-description": "With extensive experience in insurance industry management, having worked at AIG American International Group and Liberty Mutual Insurance (China) headquarters, and served as Director of Strategic Clients at China Taiping Property Insurance. Successfully founded an internet insurance service company and an insurance brokerage firm, focusing on providing professional insurance solutions for major online platforms, international enterprises, and key clients.",
     "team-1-image": "/img/team/team-1.jpg",
     "team-1-social-x": "",
     "team-1-social-facebook": "",
@@ -81,15 +93,15 @@
     "team-1-social-linkedin": "",
     "team-2-name": "Jun Wu",
     "team-2-position": "Chief Technology Officer",
-    "team-2-description": "Explicabo voluptatem mollitia et repellat qui dolorum quasi",
+    "team-2-description": "With over 25 years of IT industry experience, including 20+ years in full-stack development and 10+ years in UX design. Former Senior Engineer at Tencent and VIPSHOP (major Chinese e-commerce platform), and Senior Director of Product Development at Jinjiang International Group.",
     "team-2-image": "/img/team/team-2.jpg",
     "team-2-social-x": "https://x.com/fantiga",
     "team-2-social-facebook": "https://facebook.com/fantiga",
     "team-2-social-instagram": "https://instagram.com/fantiga",
     "team-2-social-linkedin": "https://linkedin.com/in/fantiga",
-    "team-3-name": "Martus Gaku",
+    "team-3-name": "Yiwei Yue",
     "team-3-position": "Chief Operating Officer",
-    "team-3-description": "Explicabo voluptatem mollitia et repellat qui dolorum quasi",
+    "team-3-description": "With over 15 years of church service experience and a Master's degree from Rikkyo University's Graduate School of Christian Studies. Possesses 3+ years of web development experience and expertise in developing digital solutions for religious organizations.",
     "team-3-image": "/img/team/team-3.jpg",
     "team-3-social-x": "",
     "team-3-social-facebook": "",
@@ -117,12 +129,12 @@
   },
   "footer": {
     "title": "Seiyou",
-    "description": "Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.",
+    "description": "Empowering business digital transformation through innovative technology, delivering premium IT solutions for our clients",
     "social-x": "",
     "social-facebook": "",
     "social-instagram": "",
     "social-linkedin": "",
-    "copyright.line1": "Copyright \u00A9 2023-",
+    "copyright.line1": "Copyright © 2023-",
     "copyright.line2": "Seiyou Co, Ltd. All Rights Reserved."
   }
 }

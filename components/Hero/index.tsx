@@ -85,7 +85,7 @@ export const Hero: FC<Props> = ({ translations }) => {
             >
               {translations.description}
             </p>
-            <a
+            {/* <a
               href="#about"
               className={clsx(
                 "!text-[var(--default-color)]",
@@ -103,7 +103,7 @@ export const Hero: FC<Props> = ({ translations }) => {
               )}
             >
               {translations.button}
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

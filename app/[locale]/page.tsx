@@ -16,9 +16,9 @@ export async function generateMetadata({
   const messages = await loadMessages(locale);
 
   return {
-    title: messages.header.title,
-    description: messages.header.description,
-    keywords: messages.header.keywords,
+    title: `${messages.header["menu-home"]} - ${messages.head.title}`,
+    description: messages.head.description,
+    keywords: messages.head.keywords,
     authors: [{ name: "Jun Wu" }],
     icons: {
       icon: "/favicon.ico",

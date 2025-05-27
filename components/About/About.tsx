@@ -7,7 +7,6 @@ import {
   UserGroupIcon,
 } from "@heroicons/react/24/outline";
 import clsx from "clsx";
-import Image from "next/image";
 import { useState, useEffect, type FC } from "react";
 import { Icon } from "@/components/common";
 
@@ -48,7 +47,8 @@ export const About: FC<Props> = ({ translations }) => {
 
       <div
         className={clsx(
-          "max-w-[960px]",
+          // "max-w-[960px]",
+          "max-w-2/3",
           "[--bs-gutter-x:1.5rem] [--bs-gutter-y:0]",
           "w-full",
           "px-[calc(var(--bs-gutter-x)*.5)]",
@@ -65,7 +65,7 @@ export const About: FC<Props> = ({ translations }) => {
             "-ml-[calc(var(--bs-gutter-x)*.5)]",
           )}
         >
-          <div
+          {/* <div
             className={clsx(
               "opacity-100",
               "transform-none",
@@ -99,7 +99,7 @@ export const About: FC<Props> = ({ translations }) => {
                 "!h-auto !left-auto !right-auto !top-auto !bottom-auto !static",
               )}
             />
-          </div>
+          </div> */}
           <div
             className={clsx(
               "opacity-100",
@@ -110,8 +110,9 @@ export const About: FC<Props> = ({ translations }) => {
               "duration-600",
               "pointer-events-auto",
               "flex-[0_0_auto]",
-              "w-1/2",
-              "max-w-full",
+              // "w-1/2",
+              "w-full",
+              // "max-w-full",
               "px-[calc(var(--bs-gutter-x)*.5)]",
               "mt-[var(--bs-gutter-y)]",
             )}
@@ -119,7 +120,10 @@ export const About: FC<Props> = ({ translations }) => {
             data-aos-delay="100"
           >
             <ul className={clsx("list-none", "p-0")}>
-              <li className={clsx("flex", "items-start", "mt-10")}>
+              <li
+                className={clsx("flex", "items-start", "mt-10")}
+                data-aos="fade-up"
+              >
                 <div
                   className={clsx(
                     "flex-shrink-0 text-5xl text-[var(--accent-color)] mr-5 leading-none",
@@ -143,7 +147,10 @@ export const About: FC<Props> = ({ translations }) => {
                   </p>
                 </div>
               </li>
-              <li className={clsx("flex", "items-start", "mt-10")}>
+              <li
+                className={clsx("flex", "items-start", "mt-10")}
+                data-aos="fade-up"
+              >
                 <div
                   className={clsx(
                     "flex-shrink-0 text-5xl text-[var(--accent-color)] mr-5 leading-none",
@@ -167,7 +174,10 @@ export const About: FC<Props> = ({ translations }) => {
                   </p>
                 </div>
               </li>
-              <li className={clsx("flex", "items-start", "mt-10")}>
+              <li
+                className={clsx("flex", "items-start", "mt-10")}
+                data-aos="fade-up"
+              >
                 <div
                   className={clsx(
                     "flex-shrink-0 text-5xl text-[var(--accent-color)] mr-5 leading-none",

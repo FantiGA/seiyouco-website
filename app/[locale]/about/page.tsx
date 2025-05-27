@@ -1,7 +1,7 @@
 import { loadMessages, generateStaticParams } from "@/utils/i18n";
 import { Locale } from "@/utils/i18n";
 import { Metadata } from "next";
-import { About, ClientPage, Team } from "@/components";
+import { About, ClientPage, History, Team } from "@/components";
 
 interface PageProps {
   params: Promise<{ locale: Locale }>;
@@ -16,8 +16,8 @@ export async function generateMetadata({
   const messages = await loadMessages(locale);
 
   return {
-    title: messages.about.title,
-    description: messages.about.description,
+    title: `${messages.about.title} - ${messages.head.title}`,
+    description: messages.head.description,
     keywords: messages.head.keywords,
     authors: [{ name: "Jun Wu" }],
     icons: {
@@ -33,6 +33,7 @@ export default async function AboutPage({ params }: PageProps) {
   return (
     <ClientPage initialTranslations={messages} isHomePage={false}>
       <About translations={messages.about} />
+      <History translations={messages.history} />
       <Team translations={messages.team} />
     </ClientPage>
   );

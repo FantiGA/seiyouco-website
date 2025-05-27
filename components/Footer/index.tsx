@@ -1,14 +1,8 @@
 import type { TranslationSection } from "@/types";
 import clsx from "clsx";
 import type { FC } from "react";
-import {
-  Icon,
-  XIcon,
-  InstagramIcon,
-  FacebookIcon,
-  LinkedInIcon,
-} from "@/components/common";
 
+/* 
 interface SocialProps {
   name: string;
   icon: FC;
@@ -56,6 +50,7 @@ const Social: FC<SocialProps> = ({ name, icon, url }) => {
     </a>
   );
 };
+ */
 
 interface Props {
   translations: TranslationSection<"footer">;
@@ -88,7 +83,7 @@ export const Footer: FC<Props> = ({ translations }) => {
           "mx-auto",
         )}
       >
-        <h3
+        {/* <h3
           className={clsx("text-4xl", "font-bold", "relative", "p-0", "mb-4")}
         >
           {translations.title}
@@ -121,7 +116,7 @@ export const Footer: FC<Props> = ({ translations }) => {
               url={translations["social-linkedin"]}
             />
           )}
-        </div>
+        </div> */}
         <div
           className={clsx(
             "max-w-[1140px]",
@@ -133,11 +128,12 @@ export const Footer: FC<Props> = ({ translations }) => {
           )}
         >
           <div
-            className={clsx(
-              "pt-6",
-              "border-t",
-              "border-[color-mix(in_srgb,var(--default-color),transparent_90%)]",
-            )}
+            className={
+              clsx()
+              // "pt-6",
+              // "border-t",
+              // "border-[color-mix(in_srgb,var(--default-color),transparent_90%)]",
+            }
           >
             {translations["copyright.line1"]}
             {`${new Date().getFullYear()} ${translations["copyright.line2"]}`}

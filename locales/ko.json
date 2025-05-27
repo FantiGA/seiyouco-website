@@ -1,8 +1,8 @@
 {
   "head": {
-    "title": "TICF (한국어)",
-    "keywords": "기독교 교회, 일본 기독교 교회, 도쿄 기독교 교회, 중국인 기독교 교회, 교회, 이케부쿠로 기독교 교회, 우에노 기독교 교회, 기독교, 중국인 교회, 일본 중국인 기독교 교회, 이중 언어 교회, 삼중 언어 교회",
-    "description": "TICF는 매주 일요일 중국어와 일본어로 이중 언어 예배를 제공하는 국제적인 개신교 교회입니다."
+    "title": "성양 - 혁신적인 IT 솔루션 제공업체",
+    "keywords": "IT 솔루션, 시스템 개발, 전자 결제, 국제 결제, 디지털 전환, 일본 IT 기업, 도쿄 IT 기업, 기업 관리 시스템, 업무 프로세스 시스템, 종교 단체 지원",
+    "description": "성양은 시스템 개발, 전자 결제, 국제 결제 등 기업의 디지털 전환을 지원하는 종합 IT 솔루션 기업입니다."
   },
   "language": {
     "zh-CN": "简体中文",
@@ -18,26 +18,26 @@
     "menu-about": "회사 소개",
     "menu-services": "서비스",
     "menu-team": "팀",
-    "menu-contact": "연락처",
+    "menu-contact": "문의하기",
     "menu-careers": "채용정보"
   },
   "hero": {
-    "title": "저희 웹사이트에 오신 것을 환영합니다",
-    "description": "저희는 Tailwind CSS를 사용하여 웹사이트를 제작하는 재능 있는 디자이너 팀입니다",
-    "button": "시작하기"
+    "title": "혁신적인 기술로 미래를 연결하다",
+    "description": "기업의 디지털 전환을 지원하는 종합 IT 솔루션",
+    "button": "자세히 보기"
   },
   "about": {
     "title": "회사 소개",
-    "description": "저희는 Tailwind CSS를 사용하여 웹사이트를 제작하는 재능 있는 디자이너 팀입니다",
-    "item-title-1": "전문 팀의 우수한 서비스",
-    "item-description-1": "저희는 고객에게 최상의 서비스와 솔루션을 제공하기 위해 노력합니다",
-    "item-title-2": "혁신적인 기술로 발전",
-    "item-description-2": "혁신적인 기술을 통해 비즈니스 발전과 진보를 지속적으로 추진합니다",
+    "description": "성양은 기업의 디지털 전환을 지원하는 종합 IT 솔루션 기업입니다",
+    "item-title-1": "전문 팀의 품질 서비스",
+    "item-description-1": "경험이 풍부한 기술 팀이 전문적이고 신뢰할 수 있는 IT 솔루션을 제공합니다",
+    "item-title-2": "혁신 기술 주도 발전",
+    "item-description-2": "지속적인 혁신을 핵심으로 하여 첨단 기술을 통해 기업의 성장을 지원합니다",
     "item-title-3": "고객 중심 서비스 철학",
-    "item-description-3": "항상 고객의 요구를 최우선으로 하여 최상의 서비스 경험을 제공합니다"
+    "item-description-3": "고객의 니즈에 초점을 맞추어 맞춤형 솔루션과 종합적인 기술 지원을 제공합니다"
   },
   "stats": {
-    "stat-1-title": "고객",
+    "stat-1-title": "고객사",
     "stat-1-value": 232,
     "stat-2-title": "프로젝트",
     "stat-2-value": 521,
@@ -50,7 +50,7 @@
     "title": "서비스",
     "description": "종합적인 전문 서비스를 제공합니다",
     "service-1-title": "IT 시스템 개발",
-    "service-1-description": "기업 관리 시스템 및 업무 프로세스 시스템 등 고성능과 신뢰성을 갖춘 IT 시스템 개발 서비스를 제공합니다.",
+    "service-1-description": "기업 관리 시스템과 업무 프로세스 시스템 등 고성능, 신뢰성 있는 IT 시스템 개발 서비스를 제공합니다.",
     "service-1-icon": "globe-alt",
     "service-2-title": "전자 결제 시스템",
     "service-2-description": "안전하고 편리한 전자 결제 시스템 개발, 다양한 결제 방식을 지원하여 다양한 결제 시나리오에 대응합니다.",
@@ -62,34 +62,46 @@
     "service-4-description": "웹사이트 구축, 이벤트 관리, 회원 서비스 등 종교 단체를 위한 종합적인 기술 지원과 서비스를 제공합니다.",
     "service-4-icon": "cloud",
     "service-5-title": "기술 컨설팅",
-    "service-5-description": "적절한 기술적 결정을 지원하는 전문적인 기술 컨설팅 서비스를 제공합니다.",
+    "service-5-description": "적절한 기술 판단을 지원하는 전문적인 기술 컨설팅 서비스를 제공합니다.",
     "service-5-icon": "chat-bubble-bottom-center-text",
     "service-6-title": "유지보수 지원",
     "service-6-description": "시스템의 안정적인 지속적인 운영을 보장하는 종합적인 기술 지원과 유지보수 서비스를 제공합니다.",
     "service-6-icon": "musical-note"
   },
+  "history": {
+    "title": "연혁",
+    "description": "우리의 성장과 발전의 흔적",
+    "item-title-1": "2023년 4월",
+    "item-description-1": "주식회사 성양을 설립하여 창업의 길을 걷기 시작하다.",
+    "item-title-2": "2023년 6월",
+    "item-description-2": "첫 해외 수주를 획득하여 글로벌 확장을 시작하다.",
+    "item-title-3": "2025년 4월",
+    "item-description-3": "종교 단체 지원 서비스를 시작하여 종교 활동의 발전에 기여하다.",
+    "item-title-4": "2025년 5월",
+    "item-description-4": "IT 시스템 개발 사업을 확장하여 종합적인 기술 솔루션을 제공하다."
+  },
   "team": {
     "title": "팀",
-    "description": "저희는 전문적이고 경험이 풍부한 팀을 보유하고 있습니다",
-    "team-1-name": "양 학도",
-    "team-1-position": "CEO",
-    "team-1-description": "풍부한 관리 경험과 업계 통찰력을 보유",
+    "description": "전문적이고 경험이 풍부한 팀을 보유하고 있습니다",
+    "team-1-name": "Xuetao Yang (양 학도)",
+    "team-1-position": "최고경영자",
+    "team-1-description": "보험 업계에서 풍부한 관리 경험을 보유하고 있으며, AIG 아메리칸 인터내셔널 그룹과 리버티 뮤추얼 보험(중국) 본사에서 근무한 후, 차이나 타이핑 재산보험의 전략 고객부 이사를 역임했습니다. 인터넷 보험 서비스 회사와 보험 중개 회사를 성공적으로 설립하여, 대형 온라인 플랫폼, 국제 기업, 주요 고객을 위한 전문적인 보험 솔루션 제공에 주력하고 있습니다.",
     "team-1-image": "/img/team/team-1.jpg",
     "team-1-social-x": "",
     "team-1-social-facebook": "",
     "team-1-social-instagram": "",
     "team-1-social-linkedin": "",
-    "team-2-name": "오 군",
-    "team-2-position": "CTO",
-    "team-2-description": "혁신적인 솔루션에 중점을 둔 기술 전문가",
+    "team-2-name": "Jun Wu (우 준)",
+    "team-2-position": "최고기술책임자",
+    "team-2-description": "IT 업계에서 25년 이상의 실무 경험을 보유하고 있으며, 풀스택 개발 20년 이상, UX 디자인 10년 이상의 경력을 갖추고 있습니다. 텐센트와 VIPSHOP(중국 대형 전자상거래 플랫폼)의 시니어 엔지니어를 거쳐, 진강국제그룹 제품개발부 시니어 디렉터로 활약했습니다.",
     "team-2-image": "/img/team/team-2.jpg",
     "team-2-social-x": "https://x.com/fantiga",
     "team-2-social-facebook": "https://facebook.com/fantiga",
     "team-2-social-instagram": "https://instagram.com/fantiga",
     "team-2-social-linkedin": "https://linkedin.com/in/fantiga",
-    "team-3-name": "학락",
-    "team-3-position": "COO",
-    "team-3-description": "회사의 일상적인 운영과 비즈니스 발전을 담당",
+    "team-3-name": "Yiwei Yue (웨이 이웨이)",
+    "team-3-position": "최고운영책임자",
+    "team-3-description": "15년 이상의 교회 봉사 경험을 보유하고 있으며, 릿쿄대학 기독교연구과 석사 과정을 졸업했습니다. 3년 이상의 웹 개발 경험을 갖추고 있으며, 종교 단체를 위한 디지털 솔루션 개발에 전문성을 가지고 있습니다.",
     "team-3-image": "/img/team/team-3.jpg",
     "team-3-social-x": "",
     "team-3-social-facebook": "",
@@ -97,9 +109,9 @@
     "team-3-social-linkedin": ""
   },
   "contact": {
-    "title": "연락처",
-    "description": "귀하와의 소통을 기대합니다",
-    "map-url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12956.010348132288!2d139.6605155!3d35.7261549!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018ed6cc7051291%3A0xfc3cfeeed2df6495!2z44OR44Os44O744OJ44O844Or6LGK546J5YyX!5e0!3m2!1sko!2sjp!4v1748316613954!5m2!1sko!2sjp",
+    "title": "문의하기",
+    "description": "고객과의 소통을 기다립니다",
+    "map-url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12956.010348132288!2d139.6605155!3d35.7261549!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018ed6cc7051291%3A0xfc3cfeeed2df6495!2z44OR44Os44O744OJ44O844Or6LGK546J5YyX!5e0!3m2!1sko!2sjp!4v1748316612345!5m2!1sko!2sjp",
     "address-title": "주소",
     "address-value": "〒176-0012 도쿄도 네리마구 토요타마키타 3-1-3 401",
     "email-title": "이메일",
@@ -110,19 +122,19 @@
   "careers": {
     "title": "채용정보",
     "description": "우리와 함께 미래를 만들어가세요",
-    "item-title-1": "행정 전문가",
-    "item-description-1": "회사의 일상적인 행정 업무를 담당하고, 각 부서의 업무를 지원하여 회사 운영을 원활하게 합니다. 요구사항: 중일영 3개국어 유창, 2년 이상의 행정 경험, 오피스 소프트웨어 숙련, 우수한 커뮤니케이션 능력.",
+    "item-title-1": "총무 담당",
+    "item-description-1": "회사의 일상적인 총무 업무를 담당하고, 각 부서의 업무를 지원하여 회사의 운영을 원활하게 진행합니다. 요구사항: 중일영 3개국어 능통, 2년 이상의 총무 경험, 오피스 소프트웨어 숙련, 우수한 커뮤니케이션 능력.",
     "item-title-2": "UX 디자이너",
-    "item-description-2": "제품 사용자 경험 디자인을 담당하고, 직관적이고 아름답고 사용하기 쉬운 인터페이스를 만듭니다. 요구사항: 3년 이상의 UI/UX 디자인 경험, Figma 숙련, 우수한 디자인 감각, 팀 협업 능력."
+    "item-description-2": "제품의 사용자 경험 디자인을 담당하고, 직관적이고 아름답고 사용하기 쉬운 인터페이스를 만듭니다. 요구사항: 3년 이상의 UI/UX 디자인 경험, Figma 숙련, 우수한 디자인 감각, 팀 협업 능력."
   },
   "footer": {
-    "title": "Seiyou",
-    "description": "고객에게 최상의 서비스와 솔루션을 제공하기 위해 노력합니다",
+    "title": "성양",
+    "description": "혁신적인 기술로 기업의 디지털 전환을 지원하고, 고객에게 최고 품질의 IT 솔루션을 제공합니다",
     "social-x": "",
     "social-facebook": "",
     "social-instagram": "",
     "social-linkedin": "",
-    "copyright.line1": "저작권 © 2023-",
-    "copyright.line2": "Seiyou Co, Ltd. 모든 권리 보유."
+    "copyright.line1": "Copyright © 2023-",
+    "copyright.line2": "Seiyou Co, Ltd. All Rights Reserved."
   }
 }

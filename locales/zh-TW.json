@@ -1,8 +1,8 @@
 {
   "head": {
-    "title": "TICF (繁體中文)",
-    "keywords": "基督教教會, 日本基督教教會, 東京基督教教會, 華人基督教教會, 教會, 池袋基督教教會, 上野基督教教會, 基督教, 華人教會, 日本華人基督教教會, 雙語教會, 三語教會",
-    "description": "TICF是一個國際性的新教教會，每週日提供中文和日語的雙語服務。"
+    "title": "晟楊 - 創新IT解決方案提供商",
+    "keywords": "IT解決方案, 系統開發, 電子支付, 跨境結算, 數位化轉型, 日本IT公司, 東京IT公司, 企業管理系統, 業務流程系統, 宗教團體支援",
+    "description": "晟楊是一家專注於IT解決方案的日本企業，提供系統開發、電子支付、跨境結算等全方位服務，助力企業實現數位化轉型。"
   },
   "language": {
     "zh-CN": "简体中文",
@@ -22,26 +22,26 @@
     "menu-careers": "招聘"
   },
   "hero": {
-    "title": "歡迎訪問我們的網站",
-    "description": "我們是一支充滿才華的設計師團隊，使用Tailwind CSS製作網站",
-    "button": "開始使用"
+    "title": "創新科技，連接未來",
+    "description": "為企業提供全方位的IT解決方案，助力數位化轉型",
+    "button": "了解更多"
   },
   "about": {
     "title": "關於我們",
-    "description": "我們是一支充滿才華的設計師團隊，使用Tailwind CSS製作網站",
+    "description": "晟楊是一家專注於IT解決方案的日本企業，致力於為企業提供全方位的數位化轉型服務",
     "item-title-1": "專業團隊提供優質服務",
-    "item-description-1": "我們致力於為客戶提供最優質的服務和解決方案",
+    "item-description-1": "我們擁有一支經驗豐富的技術團隊，為客戶提供專業、可靠的IT解決方案",
     "item-title-2": "創新技術驅動發展",
-    "item-description-2": "通過創新技術，我們不斷推動業務發展和進步",
+    "item-description-2": "持續創新是我們的核心理念，透過先進技術助力企業實現業務成長",
     "item-title-3": "客戶至上服務理念",
-    "item-description-3": "始終將客戶需求放在首位，提供最優質的服務體驗"
+    "item-description-3": "以客戶需求為中心，提供客製化的解決方案和全方位的技術支援"
   },
   "stats": {
     "stat-1-title": "客戶",
     "stat-1-value": 232,
     "stat-2-title": "專案",
     "stat-2-value": 521,
-    "stat-3-title": "支援時間",
+    "stat-3-title": "支援時數",
     "stat-3-value": 1463,
     "stat-4-title": "員工",
     "stat-4-value": 15
@@ -50,30 +50,42 @@
     "title": "服務",
     "description": "我們提供全方位的專業服務",
     "service-1-title": "IT系統開發",
-    "service-1-description": "提供專業的IT系統開發服務，包括企業管理系統、業務流程系統等，確保系統的高性能和可靠性。",
+    "service-1-description": "提供專業的IT系統開發服務，包括企業管理系統、業務流程系統等，確保系統的高效能和可靠性。",
     "service-1-icon": "globe-alt",
     "service-2-title": "電子支付系統",
     "service-2-description": "開發安全、便捷的電子支付系統，支援多種支付方式，滿足不同場景的支付需求。",
     "service-2-icon": "device-phone-mobile",
     "service-3-title": "跨境結算服務",
-    "service-3-description": "提供專業的跨境結算解決方案，幫助企業實現安全、高效的跨境資金流轉。",
+    "service-3-description": "提供專業的跨境結算解決方案，協助企業實現安全、高效的跨境資金流轉。",
     "service-3-icon": "cursor-arrow-rays",
     "service-4-title": "宗教團體支援服務",
-    "service-4-description": "為宗教團體提供全方位的技術支持和服務，包括網站建設、活動管理、會員服務等。",
+    "service-4-description": "為宗教團體提供全方位的技術支援和服務，包括網站建置、活動管理、會員服務等。",
     "service-4-icon": "cloud",
     "service-5-title": "技術諮詢",
-    "service-5-description": "提供專業的技術諮詢服務，幫助您做出明智的技術決策。",
+    "service-5-description": "提供專業的技術諮詢服務，協助您做出明智的技術決策。",
     "service-5-icon": "chat-bubble-bottom-center-text",
     "service-6-title": "維護支援",
-    "service-6-description": "提供全面的技術支援和維護服務，確保您的系統持續穩定運行。",
+    "service-6-description": "提供全面的技術支援和維護服務，確保您的系統持續穩定運作。",
     "service-6-icon": "musical-note"
+  },
+  "history": {
+    "title": "發展歷程",
+    "description": "見證我們的成長與進步",
+    "item-title-1": "2023年4月",
+    "item-description-1": "株式會社晟楊正式成立，開啟創業征程。",
+    "item-title-2": "2023年6月",
+    "item-description-2": "成功獲得首筆海外訂單，開啟國際化發展。",
+    "item-title-3": "2025年4月",
+    "item-description-3": "推出宗教團體支援服務，助力宗教事業發展。",
+    "item-title-4": "2025年5月",
+    "item-description-4": "開展IT系統開發業務，提供全方位技術解決方案。"
   },
   "team": {
     "title": "團隊",
     "description": "我們擁有一支專業且富有經驗的團隊",
     "team-1-name": "楊 學濤",
     "team-1-position": "執行長",
-    "team-1-description": "擁有豐富的管理經驗和行業洞察力",
+    "team-1-description": "擁有豐富的保險產業管理經驗，曾任職於AIG美亞保險、Liberty Mutual美國利寶保險（中國）總部，並擔任China Taiping太平財產保險策略客戶部總監。成功創辦網路保險服務公司和保險經紀公司，專注於為大型網路平台、國際企業和重點客戶提供專業保險解決方案。",
     "team-1-image": "/img/team/team-1.jpg",
     "team-1-social-x": "",
     "team-1-social-facebook": "",
@@ -81,15 +93,15 @@
     "team-1-social-linkedin": "",
     "team-2-name": "吳 軍",
     "team-2-position": "技術長",
-    "team-2-description": "技術專家，專注於創新解決方案",
+    "team-2-description": "擁有25年以上IT產業實務經驗，20年以上全端開發經驗，10年以上UX設計經驗。曾任騰訊和唯品會（中國知名電商平台）資深工程師，以及錦江國際集團產品開發部資深總監。",
     "team-2-image": "/img/team/team-2.jpg",
     "team-2-social-x": "https://x.com/fantiga",
     "team-2-social-facebook": "https://facebook.com/fantiga",
     "team-2-social-instagram": "https://instagram.com/fantiga",
     "team-2-social-linkedin": "https://linkedin.com/in/fantiga",
-    "team-3-name": "學樂",
+    "team-3-name": "岳 一偉",
     "team-3-position": "營運長",
-    "team-3-description": "負責公司日常營運和業務發展",
+    "team-3-description": "擁有15年以上教會服務經驗，畢業於立教大學基督教研究科碩士課程。具備3年以上Web開發經驗，精通宗教團體數位化解決方案開發。",
     "team-3-image": "/img/team/team-3.jpg",
     "team-3-social-x": "",
     "team-3-social-facebook": "",
@@ -113,16 +125,16 @@
     "item-title-1": "行政專員",
     "item-description-1": "負責公司日常行政事務，協助各部門工作，確保公司營運順暢。要求：中日英三語流利，2年以上行政工作經驗，熟練使用辦公軟體，良好的溝通能力。",
     "item-title-2": "使用者體驗設計師",
-    "item-description-2": "負責產品使用者體驗設計，創建直觀、美觀且易用的使用者介面。要求：3年以上UI/UX設計經驗，熟練使用Figma，良好的設計審美，團隊協作能力。"
+    "item-description-2": "負責產品使用者體驗設計，建立直觀、美觀且易用的使用者介面。要求：3年以上UI/UX設計經驗，熟練使用Figma，良好的設計審美，團隊協作能力。"
   },
   "footer": {
-    "title": "Seiyou",
-    "description": "致力於為客戶提供最優質的服務和解決方案",
+    "title": "晟楊",
+    "description": "以創新科技助力企業數位化轉型，為客戶提供最優質的IT解決方案",
     "social-x": "",
     "social-facebook": "",
     "social-instagram": "",
     "social-linkedin": "",
-    "copyright.line1": "版權所有 © 2023-",
-    "copyright.line2": "Seiyou Co, Ltd. 保留所有權利。"
+    "copyright.line1": "Copyright © 2023-",
+    "copyright.line2": "Seiyou Co, Ltd. All Rights Reserved."
   }
 }

@@ -1,8 +1,8 @@
 {
   "head": {
-    "title": "TICF (中文)",
-    "keywords": "基督教教会, 日本基督教教会, 东京基督教教会, 华人基督教教会, 教会, 池袋基督教教会, 上野基督教教会, 基督教, 华人教会, 日本华人基督教教会, 双语教会, 三语教会",
-    "description": "TICF是一个国际性的新教教会，每周日提供中文和日语的双语服务。"
+    "title": "晟杨 - 创新IT解决方案提供商",
+    "keywords": "IT解决方案, 系统开发, 电子支付, 跨境结算, 数字化转型, 日本IT公司, 东京IT公司, 企业管理系统, 业务流程系统, 宗教团体支援",
+    "description": "晟杨是一家专注于IT解决方案的日本企业，提供系统开发、电子支付、跨境结算等全方位服务，助力企业实现数字化转型。"
   },
   "language": {
     "zh-CN": "简体中文",
@@ -22,19 +22,19 @@
     "menu-careers": "招聘"
   },
   "hero": {
-    "title": "欢迎访问我们的网站",
-    "description": "我们是一支充满才华的设计师团队，使用Tailwind CSS制作网站",
-    "button": "开始使用"
+    "title": "创新科技，连接未来",
+    "description": "为企业提供全方位的IT解决方案，助力数字化转型",
+    "button": "了解更多"
   },
   "about": {
     "title": "关于我们",
-    "description": "我们是一支充满才华的设计师团队，使用Tailwind CSS制作网站",
+    "description": "晟杨是一家专注于IT解决方案的日本企业，致力于为企业提供全方位的数字化转型服务",
     "item-title-1": "专业团队提供优质服务",
-    "item-description-1": "我们致力于为客户提供最优质的服务和解决方案",
+    "item-description-1": "我们拥有一支经验丰富的技术团队，为客户提供专业、可靠的IT解决方案",
     "item-title-2": "创新技术驱动发展",
-    "item-description-2": "通过创新技术，我们不断推动业务发展和进步",
+    "item-description-2": "持续创新是我们的核心理念，通过先进技术助力企业实现业务增长",
     "item-title-3": "客户至上服务理念",
-    "item-description-3": "始终将客户需求放在首位，提供最优质的服务体验"
+    "item-description-3": "以客户需求为中心，提供定制化的解决方案和全方位的技术支持"
   },
   "stats": {
     "stat-1-title": "客户",
@@ -68,12 +68,24 @@
     "service-6-description": "提供全面的技术支持和维护服务，确保您的系统持续稳定运行。",
     "service-6-icon": "musical-note"
   },
+  "history": {
+    "title": "发展历程",
+    "description": "见证我们的成长与进步",
+    "item-title-1": "2023年4月",
+    "item-description-1": "株式会社晟杨正式成立，开启创业征程。",
+    "item-title-2": "2023年6月",
+    "item-description-2": "成功获得首笔海外订单，开启国际化发展。",
+    "item-title-3": "2025年4月",
+    "item-description-3": "推出宗教团体支援服务，助力宗教事业发展。",
+    "item-title-4": "2025年5月",
+    "item-description-4": "开展IT系统开发业务，提供全方位技术解决方案。"
+  },
   "team": {
     "title": "团队",
     "description": "我们拥有一支专业且富有经验的团队",
     "team-1-name": "杨 学涛",
     "team-1-position": "CEO",
-    "team-1-description": "拥有丰富的管理经验和行业洞察力",
+    "team-1-description": "拥有丰富的保险行业管理经验，曾任职于AIG美亚保险、Liberty Mutual美国利宝保险（中国）总部，并担任China Taiping太平财产保险战略客户部总监。成功创办互联网保险服务公司和保险经纪公司，专注于为大型网络平台、国际企业和重点客户提供专业保险解决方案。",
     "team-1-image": "/img/team/team-1.jpg",
     "team-1-social-x": "",
     "team-1-social-facebook": "",
@@ -81,15 +93,15 @@
     "team-1-social-linkedin": "",
     "team-2-name": "吴 军",
     "team-2-position": "CTO",
-    "team-2-description": "技术专家，专注于创新解决方案",
+    "team-2-description": "拥有25年以上IT行业实战经验，20年以上全栈开发经验，10年以上UX设计经验。曾任腾讯和唯品会（中国知名电商平台）高级工程师，以及锦江国际集团产品开发部高级总监。",
     "team-2-image": "/img/team/team-2.jpg",
     "team-2-social-x": "https://x.com/fantiga",
     "team-2-social-facebook": "https://facebook.com/fantiga",
     "team-2-social-instagram": "https://instagram.com/fantiga",
     "team-2-social-linkedin": "https://linkedin.com/in/fantiga",
-    "team-3-name": "学乐",
+    "team-3-name": "岳 一伟",
     "team-3-position": "COO",
-    "team-3-description": "负责公司日常运营和业务发展",
+    "team-3-description": "拥有15年以上教会服务经验，毕业于立教大学基督教研究科硕士课程。具备3年以上Web开发经验，精通宗教团体数字化解决方案开发。",
     "team-3-image": "/img/team/team-3.jpg",
     "team-3-social-x": "",
     "team-3-social-facebook": "",
@@ -116,13 +128,13 @@
     "item-description-2": "负责产品用户体验设计，创建直观、美观且易用的用户界面。要求：3年以上UI/UX设计经验，熟练使用Figma，良好的设计审美，团队协作能力。"
   },
   "footer": {
-    "title": "Seiyou",
-    "description": "致力于为客户提供最优质的服务和解决方案",
+    "title": "晟杨",
+    "description": "以创新科技助力企业数字化转型，为客户提供最优质的IT解决方案",
     "social-x": "",
     "social-facebook": "",
     "social-instagram": "",
     "social-linkedin": "",
-    "copyright.line1": "版权所有 © 2023-",
-    "copyright.line2": "Seiyou Co, Ltd. 保留所有权利。"
+    "copyright.line1": "Copyright © 2023-",
+    "copyright.line2": "Seiyou Co, Ltd. All Rights Reserved."
   }
 }

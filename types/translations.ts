@@ -50,7 +50,19 @@ export type TranslationKeys = {
     | "service-6-title"
     | "service-6-description"
     | "service-6-icon";
-
+  history:
+    | "title"
+    | "description"
+    | "item-title-1"
+    | "item-description-1"
+    | "item-title-2"
+    | "item-description-2"
+    | "item-title-3"
+    | "item-description-3"
+    | "item-title-4"
+    | "item-description-4"
+    | "item-title-5"
+    | "item-description-5";
   team:
     | "title"
     | "description"
