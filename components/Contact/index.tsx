@@ -90,7 +90,13 @@ export const Contact: FC<Props> = ({ translations }) => {
         data-aos-delay="100"
       >
         <div className={clsx("mb-6")} data-aos="fade-up" data-aos-delay="200">
-          Maps
+          <iframe
+            src={translations["map-url"]}
+            allowFullScreen={true}
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className={clsx("w-full h-[270px]")}
+          />
         </div>
         <div className="grid lg:grid-cols-3 gap-6">
           <Card

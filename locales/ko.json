@@ -98,7 +98,7 @@
   "contact": {
     "title": "연락처",
     "description": "귀하와의 소통을 기대합니다",
-    "map-url": "",
+    "map-url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12956.010348132288!2d139.6605155!3d35.7261549!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018ed6cc7051291%3A0xfc3cfeeed2df6495!2z44OR44Os44O744OJ44O844Or6LGK546J5YyX!5e0!3m2!1sko!2sjp!4v1748316613954!5m2!1sko!2sjp",
     "address-title": "주소",
     "address-value": "도쿄도 도시마구 이케부쿠로 2-1-1",
     "email-title": "이메일",
