@@ -11,7 +11,7 @@ import {
 } from "@heroicons/react/24/outline";
 import clsx from "clsx";
 import type { FC } from "react";
-import { Icon } from "@/components/common/Icon";
+import { Icon } from "@/components/common";
 
 interface CardProps {
   title: string;

@@ -9,7 +9,7 @@ import {
 import clsx from "clsx";
 import Image from "next/image";
 import { useState, useEffect, type FC } from "react";
-import { Icon } from "@/components/common/Icon";
+import { Icon } from "@/components/common";
 
 interface Props {
   translations: TranslationSection<"about">;

@@ -10,7 +10,7 @@ import {
   InstagramIcon,
   FacebookIcon,
   LinkedInIcon,
-} from "@/components/common/Icon";
+} from "@/components/common";
 
 interface SocialProps {
   name: string;
