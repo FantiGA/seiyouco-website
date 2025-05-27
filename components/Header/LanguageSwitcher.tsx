@@ -6,6 +6,7 @@ import clsx from "clsx";
 import type { TranslationSection } from "@/types";
 import { locales, type Locale } from "@/utils/i18n";
 import { LanguageIcon } from "@heroicons/react/24/outline";
+import { Icon } from "../common";
 
 interface Props {
   languageTranslations: TranslationSection<"language">;
@@ -81,7 +82,7 @@ export const LanguageSwitcher: FC<Props> = ({ languageTranslations }) => {
           "hover:text-[var(--nav-hover-color)]",
         )}
       >
-        <LanguageIcon className="size-6 mr-1" />
+        <Icon icon={LanguageIcon} className="size-6 mr-1" />
         {getLanguageName(currentLocale as Locale)}
         <i className="bi bi-chevron-down ml-1"></i>
       </button>
