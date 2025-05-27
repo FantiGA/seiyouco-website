@@ -202,44 +202,6 @@ export const Header: FC<Props> = ({
             </li>
             <li className={clsx("nowrap px-3.5 py-4", "relative")}>
               <Link
-                href={`/${locale}/about#team`}
-                className={clsx(
-                  isActive(`/${locale}/about#team`)
-                    ? "text-[var(--nav-hover-color)]"
-                    : "!text-[var(--nav-color)]",
-                  "text-sm",
-                  "px-0.5",
-                  "[font-family:var(--nav-font)]",
-                  "font-normal",
-                  "flex",
-                  "items-center",
-                  "justify-between",
-                  "whitespace-nowrap",
-                  "transition-all",
-                  "duration-300",
-                  "relative",
-                  "uppercase",
-                  "before:content-['']",
-                  "before:absolute",
-                  "before:h-0.5",
-                  "before:-bottom-1.5",
-                  "before:left-0",
-                  "before:bg-[var(--accent-color)]",
-                  "before:transition-all",
-                  "before:duration-300",
-                  "before:ease-in-out",
-                  isActive(`/${locale}/about#team`)
-                    ? "before:visible before:w-full"
-                    : "before:invisible before:w-0",
-                  "hover:before:visible",
-                  "hover:before:w-full",
-                )}
-              >
-                {translations["menu-team"]}
-              </Link>
-            </li>
-            <li className={clsx("nowrap px-3.5 py-4", "relative")}>
-              <Link
                 href={`/${locale}/contact`}
                 className={clsx(
                   isActive(`/${locale}/contact`)
