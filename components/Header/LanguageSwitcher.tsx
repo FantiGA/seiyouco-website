@@ -20,10 +20,17 @@ export const LanguageSwitcher: FC<Props> = ({ languageTranslations }) => {
 
   const handleLanguageChange = useCallback(
     (locale: Locale) => {
-      router.push(`/${locale}`);
+      // Get the current path without the locale prefix
+      const pathWithoutLocale = pathname.replace(
+        /^\/[a-z]{2}(?:-[A-Z]{2})?(?=\/|$)/,
+        "",
+      );
+      // Construct the new path with the selected locale
+      const newPath = `/${locale}${pathWithoutLocale}`;
+      router.push(newPath);
       setIsLanguageMenuOpen(false);
     },
-    [router],
+    [router, pathname],
   );
 
   const getLanguageName = (locale: Locale) => {
