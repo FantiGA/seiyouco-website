@@ -70,6 +70,7 @@ export const Header: FC<Props> = ({
             "leading-none items-center flex",
             "ml-4 sm:ml-4 md:ml-4 lg:ml-4 xl:ml-4",
           )}
+          aria-label={translations.title}
         >
           <Image
             src="/img/logo.svg"
@@ -77,6 +78,7 @@ export const Header: FC<Props> = ({
             width={48}
             height={48}
             priority
+            aria-hidden="true"
           />
         </Link>
 
@@ -94,6 +96,7 @@ export const Header: FC<Props> = ({
             "duration-300 lg:duration-0",
             "z-[9997] lg:z-[996]",
           )}
+          aria-label="Main navigation"
         >
           <ul
             className={clsx(
@@ -111,6 +114,7 @@ export const Header: FC<Props> = ({
               "border border-[color-mix(in_srgb,var(--default-color),transparent_90%)] lg:border-0",
               "transition-all duration-300 lg:transition-none",
             )}
+            role="menubar"
           >
             <li
               className={clsx(
@@ -324,14 +328,24 @@ export const Header: FC<Props> = ({
               "z-[9999]",
             )}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+            aria-expanded={isMenuOpen}
+            aria-controls="main-menu"
           >
-            <Icon icon={XMarkIcon} className={clsx("size-8")} />
+            <Icon
+              icon={XMarkIcon}
+              className={clsx("size-8")}
+              aria-hidden="true"
+            />
           </button>
         </nav>
 
         <button
           className={clsx("block lg:hidden", "text-2xl mr-3")}
           onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={isMenuOpen}
+          aria-controls="main-menu"
         >
           <Icon
             icon={isMenuOpen ? XMarkIcon : Bars3Icon}
@@ -341,6 +355,7 @@ export const Header: FC<Props> = ({
               "text-[var(--contrast-color)]",
               "group-hover:text-[var(--accent-color)]",
             )}
+            aria-hidden="true"
           />
         </button>
       </div>

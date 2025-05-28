@@ -6,6 +6,12 @@ const nextConfig: NextConfig = {
   output: "export",
   images: {
     unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "**",
+      },
+    ],
   },
   webpack: (config) => {
     config.resolve.alias = {
@@ -14,6 +20,12 @@ const nextConfig: NextConfig = {
     };
     return config;
   },
+  // Enable compression
+  compress: true,
+  // Enable strict mode
+  reactStrictMode: true,
+  // Enable source maps in production
+  productionBrowserSourceMaps: true,
 };
 
 export default nextConfig;
