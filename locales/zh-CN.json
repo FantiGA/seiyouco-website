@@ -38,6 +38,7 @@
   },
   "detail": {
     "title": "公司概况",
+    "description": "公司概况",
     "item-title-1": "公司名称",
     "item-description-1": "株式会社晟杨",
     "item-title-2": "创业",
@@ -95,7 +96,6 @@
   },
   "history": {
     "title": "发展历程",
-    "description": "见证我们的成长与进步",
     "item-title-1": "2023年4月",
     "item-description-1": "株式会社晟杨正式成立，开启创业征程。",
     "item-title-2": "2023年6月",

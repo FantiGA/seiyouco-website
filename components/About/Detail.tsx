@@ -75,7 +75,7 @@ export const Detail: FC<Props> = ({ translations }) => {
             data-aos-delay="100"
           >
             <ul className={clsx("list-none", "p-0")} data-aos="fade-up">
-              {Array.from({ length: 11 }).map((_, index) => (
+              {[...Array(11)].map((_, index) => (
                 <li
                   key={index}
                   className={clsx(
@@ -83,6 +83,7 @@ export const Detail: FC<Props> = ({ translations }) => {
                     "items-start",
                     "mt-1",
                     "bg-[color-mix(in_srgb,var(--accent-color),transparent_95%)]",
+                    "rounded-md",
                   )}
                 >
                   <div className={clsx("h-full w-80", "px-10 py-4")}>

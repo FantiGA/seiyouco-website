@@ -52,7 +52,6 @@ export type TranslationKeys = {
     | "service-6-icon";
   history:
     | "title"
-    | "description"
     | "item-title-1"
     | "item-description-1"
     | "item-title-2"
@@ -65,6 +64,7 @@ export type TranslationKeys = {
     | "item-description-5";
   detail:
     | "title"
+    | "description"
     | "item-title-1"
     | "item-description-1"
     | "item-title-2"

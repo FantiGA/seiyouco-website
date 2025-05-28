@@ -26,7 +26,6 @@ export const History: FC<Props> = ({ translations }) => {
         <h2 className={clsx("text-4xl font-bold mb-4 uppercase")}>
           {translations.title}
         </h2>
-        <p>{translations.description}</p>
       </div>
 
       <div
