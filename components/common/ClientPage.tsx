@@ -42,7 +42,13 @@ export function ClientPage({
         isScrolled={isScrolled}
         languageTranslations={translations["language"]}
       />
-      <main className={clsx(!isHomePage && "mt-28")}>
+      <main
+        className={clsx(
+          !isHomePage && "mt-28",
+          !isHomePage && "px-[calc(var(--bs-gutter-x)*.5)]",
+          "w-full",
+        )}
+      >
         {children || <Hero translations={translations["hero"]} />}
       </main>
       <Footer translations={translations["footer"]} />

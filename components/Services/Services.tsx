@@ -93,6 +93,8 @@ export const Services: FC<Props> = ({ translations }) => {
     <section
       id="services"
       className={clsx(
+        "container mx-auto",
+        "max-w-11/12 sm:max-w-[720px] md:max-w-[960px] lg:max-w-[1140px] xl:max-w-[1320px]",
         "text-[var(--default-color)] bg-[var(--background-color)] py-16 scroll-mt-20 overflow-clip",
       )}
     >
@@ -103,9 +105,6 @@ export const Services: FC<Props> = ({ translations }) => {
           "ease-in-out duration-600",
           "pointer-events-auto",
           "text-center pb-16 relative",
-          "max-w-[1140px]",
-          "[--bs-gutter-x:1.5rem] [--bs-gutter-y:0]",
-          "w-full px-[calc(var(--bs-gutter-x)*.5)] mx-auto",
         )}
         data-aos="fade-up"
       >
@@ -116,7 +115,7 @@ export const Services: FC<Props> = ({ translations }) => {
       </div>
       <div
         className={clsx(
-          "max-w-[1140px]",
+          "max-w-full sm:max-w-3/4 md:max-w-11/12",
           "[--bs-gutter-x:1.5rem] [--bs-gutter-y:0]",
           "w-full px-[calc(var(--bs-gutter-x)*.5)] mx-auto",
         )}

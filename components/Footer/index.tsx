@@ -75,12 +75,11 @@ export const Footer: FC<Props> = ({ translations }) => {
     >
       <div
         className={clsx(
-          "max-w-[1140px]",
-          "[--bs-gutter-x:1.5rem]",
-          "[--bs-gutter-y:0]",
+          "container",
+          "max-w-[540px] sm:max-w-[720px] md:max-w-[960px] lg:max-w-[1140px] xl:max-w-[1320px]",
+          "mx-auto",
           "w-full",
           "px-[calc(var(--bs-gutter-x)*.5)]",
-          "mx-auto",
         )}
       >
         {/* <h3
@@ -118,26 +117,15 @@ export const Footer: FC<Props> = ({ translations }) => {
           )}
         </div> */}
         <div
-          className={clsx(
-            "max-w-[1140px]",
-            "[--bs-gutter-x:1.5rem]",
-            "[--bs-gutter-y:0]",
-            "w-full",
-            "px-[calc(var(--bs-gutter-x)*.5)]",
-            "mx-auto",
-          )}
+          className={
+            clsx()
+            // "pt-6",
+            // "border-t",
+            // "border-[color-mix(in_srgb,var(--default-color),transparent_90%)]",
+          }
         >
-          <div
-            className={
-              clsx()
-              // "pt-6",
-              // "border-t",
-              // "border-[color-mix(in_srgb,var(--default-color),transparent_90%)]",
-            }
-          >
-            {translations["copyright.line1"]}
-            {`${new Date().getFullYear()} ${translations["copyright.line2"]}`}
-          </div>
+          {translations["copyright.line1"]}
+          {`${new Date().getFullYear()} ${translations["copyright.line2"]}`}
         </div>
       </div>
     </footer>

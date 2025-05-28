@@ -44,11 +44,6 @@ export const Hero: FC<Props> = ({ translations }) => {
           "duration-600",
           "pointer-events-auto",
           "text-center",
-          "max-w-[1140px]",
-          "[--bs-gutter-x:1.5rem] [--bs-gutter-y:0]",
-          "w-full",
-          "px-[calc(var(--bs-gutter-x)*.5)]",
-          "mx-auto",
         )}
         data-aos="fade-up"
         data-aos-delay="200"
@@ -67,19 +62,18 @@ export const Hero: FC<Props> = ({ translations }) => {
           <div
             className={clsx(
               "flex-[0_0_auto]",
-              "w-2/3",
-              "max-w-full",
+              "w-full",
               "px-[calc(var(--bs-gutter-x)*.5)]",
               "mt-[var(--bs-gutter-y)]",
             )}
           >
-            <h2 className={clsx("m-0", "text-5xl", "font-bold")}>
+            <h2 className={clsx("m-0", "text-4xl lg:text-5xl", "font-bold")}>
               {translations.title}
             </h2>
             <p
               className={clsx(
                 "mt-2.5",
-                "text-2xl",
+                "text-base lg:text-2xl",
                 "text-[var(--heading-color)]",
               )}
             >

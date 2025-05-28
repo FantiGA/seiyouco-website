@@ -66,20 +66,25 @@ export const LanguageSwitcher: FC<Props> = ({ languageTranslations }) => {
       <button
         onClick={() => setIsLanguageMenuOpen(!isLanguageMenuOpen)}
         className={clsx(
-          "!text-[var(--nav-color)]",
-          "text-sm",
+          "!text-[var(--nav-color)] lg:!text-[var(--nav-color)]",
+          "[font-family:var(--nav-font)] font-normal",
+          "text-base lg:text-base",
           "px-0.5",
-          "[font-family:var(--nav-font)]",
-          "font-normal",
-          "flex",
-          "items-center",
-          "justify-between",
+          "flex items-center justify-start",
           "whitespace-nowrap",
-          "transition-all",
-          "duration-300",
+          "transition-all duration-300",
           "relative",
+          "w-full lg:w-auto",
           "uppercase",
-          "hover:text-[var(--nav-hover-color)]",
+          "before:content-['']",
+          "before:absolute",
+          "before:h-0.5",
+          "before:-bottom-1.5",
+          "before:left-0",
+          "before:bg-[var(--accent-color)]",
+          "before:transition-all",
+          "before:duration-300",
+          "before:ease-in-out",
         )}
       >
         <Icon icon={LanguageIcon} className="size-6 mr-1" />
@@ -90,14 +95,15 @@ export const LanguageSwitcher: FC<Props> = ({ languageTranslations }) => {
         <div
           className={clsx(
             "absolute",
-            "right-0",
+            "right-auto lg:right-0",
             "mt-2",
             "w-36",
-            "bg-white",
+            "bg-[var(--nav-dropdown-background-color)]",
+            "text-[var(--nav-dropdown-color)]",
             "rounded-md",
-            "shadow-lg",
+            "shadow-sm lg:shadow-lg",
             "py-1",
-            "z-50",
+            "z-[9999]",
           )}
         >
           {locales.map((locale) => (
@@ -111,9 +117,9 @@ export const LanguageSwitcher: FC<Props> = ({ languageTranslations }) => {
                 "px-4",
                 "py-2",
                 "text-sm",
-                "text-gray-700",
-                "hover:bg-gray-100",
-                locale === currentLocale && "bg-gray-100",
+                "hover:bg-[var(--nav-dropdown-hover-background-color)]",
+                locale === currentLocale &&
+                  "text-[var(--accent-color)] bg-[var(--nav-dropdown-background-color)]",
               )}
             >
               {getLanguageName(locale)}

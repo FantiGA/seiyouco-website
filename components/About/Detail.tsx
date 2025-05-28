@@ -23,6 +23,8 @@ export const Detail: FC<Props> = ({ translations }) => {
     <section
       id="about"
       className={clsx(
+        "container mx-auto",
+        "max-w-11/12 sm:max-w-[720px] md:max-w-[960px] lg:max-w-[1140px] xl:max-w-[1320px]",
         "text-[var(--default-color)] bg-[var(--background-color)] py-[60px] scroll-mt-20 overflow-clip",
       )}
       data-aos="fade-up"
@@ -40,7 +42,7 @@ export const Detail: FC<Props> = ({ translations }) => {
 
       <div
         className={clsx(
-          "max-w-2/3",
+          "max-w-full sm:max-w-3/4 md:max-w-2/3 xl:max-w-1/2",
           "[--bs-gutter-x:1.5rem] [--bs-gutter-y:0]",
           "w-full",
           "px-[calc(var(--bs-gutter-x)*.5)]",
@@ -81,6 +83,7 @@ export const Detail: FC<Props> = ({ translations }) => {
                   className={clsx(
                     "flex",
                     "items-start",
+                    "flex-col md:flex-row",
                     "mt-1",
                     "bg-[color-mix(in_srgb,var(--accent-color),transparent_95%)]",
                     "rounded-md",

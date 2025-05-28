@@ -73,9 +73,6 @@ export const Stats: FC<Props> = ({ translations }) => {
           "ease-in-out",
           "duration-600",
           "pointer-events-auto",
-          "max-w-[1140px]",
-          "[--bs-gutter-x:1.5rem] [--bs-gutter-y:0]",
-          "w-full px-[calc(var(--bs-gutter-x)*.5)] mx-auto",
         )}
         data-aos="fade-up"
         data-aos-delay="100"
