@@ -28,28 +28,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 
   return (
     <html lang={locale}>
-      <head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#000000" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="robots" content="index, follow" />
-        <meta name="googlebot" content="index, follow" />
-        <link rel="canonical" href={`https://seiyouco.com${pathname}`} />
-        <link
-          rel="alternate"
-          hrefLang="x-default"
-          href="https://seiyouco.com/en"
-        />
-        {locales.map((locale) => (
-          <link
-            key={locale}
-            rel="alternate"
-            hrefLang={locale}
-            href={`https://seiyouco.com/${locale}`}
-          />
-        ))}
-      </head>
       <body
         className={`${roboto.variable} ${poppins.variable}`}
         data-aos-easing="ease-in-out"

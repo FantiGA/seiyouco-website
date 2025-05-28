@@ -77,7 +77,6 @@ export const Header: FC<Props> = ({
             width={48}
             height={48}
             priority
-            loading="eager"
           />
         </Link>
 

@@ -1,19 +1,19 @@
 import type { NextConfig } from "next";
 
-const config: NextConfig = {
+const nextConfig: NextConfig = {
+  trailingSlash: true,
+  // Enable static export
+  output: "export",
   images: {
-    domains: ["seiyouco.com"],
-    formats: ["image/avif", "image/webp"],
+    unoptimized: true,
   },
-  experimental: {
-    optimizePackageImports: ["@heroicons/react"],
+  webpack: (config) => {
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      "@": __dirname,
+    };
+    return config;
   },
-  compiler: {
-    removeConsole: process.env.NODE_ENV === "production",
-  },
-  poweredByHeader: false,
-  compress: true,
-  reactStrictMode: true,
 };
 
-export default config;
+export default nextConfig;
