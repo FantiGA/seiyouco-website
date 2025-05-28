@@ -1,7 +1,7 @@
 import { loadMessages, generateStaticParams } from "@/utils/i18n";
 import { Locale } from "@/utils/i18n";
 import { Metadata } from "next";
-import { About, ClientPage, History, Team } from "@/components";
+import { About, ClientPage, Detail, History, Team } from "@/components";
 
 interface PageProps {
   params: Promise<{ locale: Locale }>;
@@ -33,6 +33,7 @@ export default async function AboutPage({ params }: PageProps) {
   return (
     <ClientPage initialTranslations={messages} isHomePage={false}>
       <About translations={messages.about} />
+      <Detail translations={messages.detail} />
       <History translations={messages.history} />
       <Team translations={messages.team} />
     </ClientPage>
