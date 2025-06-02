@@ -89,7 +89,7 @@ export const Detail: FC<Props> = ({ translations }) => {
                     "rounded-md",
                   )}
                 >
-                  <div className={clsx("h-full w-80", "px-10 py-4")}>
+                  <div className={clsx("h-full w-96", "px-10 py-4")}>
                     <h5
                       className={clsx(
                         "text-base",
