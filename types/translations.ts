@@ -138,6 +138,7 @@ export type TranslationKeys = {
     | "social-facebook"
     | "social-instagram"
     | "social-linkedin"
+    | "social-github"
     | "copyright.line1"
     | "copyright.line2";
 };

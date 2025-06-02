@@ -47,7 +47,7 @@
     "item-title-4": "자본금",
     "item-description-4": "500만 엔(2025년 5월 30일 현재)",
     "item-title-5": "사업 내용",
-    "item-description-5": "IT 시스템 및 플랫폼의 기획, 개발, 판매, 운영, 유지보수 및 관련 사업。<br />전자상거래(EC) 플랫폼의 기획, 개발, 운영 및 관련 사업。<br />의류 판매 및 수출입 사업。",
+    "item-description-5": "IT 시스템 및 플랫폼의 기획, 개발, 판매, 운영, 유지보수 및 관련 사업.<br />전자상거래(EC) 플랫폼의 기획, 개발, 운영 및 관련 사업.<br />의류 판매 및 수출입 사업.",
     "item-title-6": "대표자",
     "item-description-6": "대표이사 CEO<br />양 학도",
     "item-title-7": "본사 주소",
@@ -158,6 +158,7 @@
     "social-facebook": "",
     "social-instagram": "",
     "social-linkedin": "",
+    "social-github": "https://github.com/FantiGA/seiyouco-website",
     "copyright.line1": "Copyright © 2023-",
     "copyright.line2": "Seiyou Co, Ltd. All Rights Reserved."
   }
