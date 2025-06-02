@@ -86,4 +86,4 @@
 
 ## ライセンス
 
-[MIT](LICENSE) © 2024 [株式会社晟楊](https://seiyouco.com)
+[MIT](LICENSE) © 2025 [株式会社晟楊](https://seiyouco.com)

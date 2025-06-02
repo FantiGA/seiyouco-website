@@ -86,4 +86,4 @@ The project supports multiple languages using `next-intl`. Translation files are
 
 ## License
 
-[MIT](LICENSE) © 2024 [Seiyou Co., Ltd.](https://seiyouco.com)
+[MIT](LICENSE) © 2025 [Seiyou Co., Ltd.](https://seiyouco.com)
