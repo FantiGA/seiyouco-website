@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Seiyou Co., Ltd. Official Website
 
-## Getting Started
+**English** | [日本語](README.ja.md) | [简体中文](README.zh-CN.md)
 
-First, run the development server:
+[![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Seiyou Co., Ltd. Official Website](#seiyou-co-ltd-official-website)
+  - [Overview](#overview)
+  - [Installation](#installation)
+  - [Configuration](#configuration)
+  - [Components](#components)
+  - [Multi-language Support](#multi-language-support)
+  - [Maintainers](#maintainers)
+  - [License](#license)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Overview
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Welcome to the Seiyou Co., Ltd. Official Website project.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project is built using `Next.js`, `React`, `TypeScript`, and `Tailwind CSS`, supporting multiple languages including English, Chinese, Japanese, and Korean.
 
-## Learn More
+## Installation
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone the repository:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```sh
+   git clone https://github.com/FantiGA/seiyouco-website.git
+   cd seiyouco-website
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. Install dependencies:
 
-## Deploy on Vercel
+   ```sh
+   npm install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. Run the development server:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```sh
+   npm run dev
+   ```
+
+4. Build the project:
+
+   ```sh
+   npm run build
+   ```
+
+## Configuration
+
+The project uses several configuration files:
+
+- `tsconfig.json`: TypeScript configuration
+- `.prettierrc.mjs`: Prettier code formatting rules
+- `eslint.config.mjs`: ESLint configuration
+- `next.config.ts`: Next.js configuration
+- `postcss.config.mjs`: PostCSS configuration
+
+## Components
+
+The project is organized into several component directories:
+
+- `common/`: Shared components
+- `Services/`: Service-related components
+- `Hero/`: Main hero section components
+- `Header/`: Navigation and header components
+- `Careers/`: Career-related components
+- `Contact/`: Contact information components
+- `Footer/`: Footer components
+- `About/`: About page components
+
+## Multi-language Support
+
+The project supports multiple languages using `next-intl`. Translation files are located in the `locales` directory:
+
+- `en.json`: English translations
+- `ja.json`: Japanese translations
+- `ko.json`: Korean translations
+- `zh-CN.json`: Simplified Chinese translations
+- `zh-HK.json`: Traditional Chinese (Hong Kong) translations
+- `zh-TW.json`: Traditional Chinese (Taiwan) translations
+
+## Maintainers
+
+[@FantiGA](https://github.com/FantiGA)
+
+## License
+
+[MIT](LICENSE) © 2024 [Seiyou Co., Ltd.](https://seiyouco.com)
