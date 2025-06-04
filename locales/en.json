@@ -23,12 +23,12 @@
   },
   "hero": {
     "title": "Innovative Technology, Connected Future",
-    "description": "Providing comprehensive IT solutions for your digital transformation",
+    "description": "Providing comprehensive IT solutions for your digital transformation.",
     "button": "Learn More"
   },
   "about": {
     "title": "Corporate Philosophy",
-    "description": "Seiyou is a Japanese IT company specializing in comprehensive digital transformation solutions for businesses",
+    "description": "Seiyou is a Japanese IT company specializing in comprehensive digital transformation solutions for businesses.",
     "item-title-1": "Professional Team, Quality Service",
     "item-description-1": "Our experienced technical team provides professional and reliable IT solutions",
     "item-title-2": "Innovation-Driven Development",
@@ -59,39 +59,9 @@
     "item-title-10": "Number of Employees",
     "item-description-10": "2 (as of May 30, 2025)",
     "item-title-11": "Annual Revenue",
-    "item-description-11": "10.08 million yen (Fiscal Year ending March 2025)"
-  },
-  "stats": {
-    "stat-1-title": "Clients",
-    "stat-1-value": 232,
-    "stat-2-title": "Projects",
-    "stat-2-value": 521,
-    "stat-3-title": "Hours Of Support",
-    "stat-3-value": 1463,
-    "stat-4-title": "Workers",
-    "stat-4-value": 15
-  },
-  "services": {
-    "title": "Services",
-    "description": "We provide comprehensive professional services",
-    "service-1-title": "IT System Development",
-    "service-1-description": "Professional IT system development services, including enterprise management systems and business process systems, ensuring high performance and reliability.",
-    "service-1-icon": "globe-alt",
-    "service-2-title": "Electronic Payment Systems",
-    "service-2-description": "Development of secure and convenient electronic payment systems, supporting multiple payment methods to meet various payment scenarios.",
-    "service-2-icon": "device-phone-mobile",
-    "service-3-title": "Cross-border Settlement Services",
-    "service-3-description": "Professional cross-border settlement solutions, helping businesses achieve secure and efficient cross-border fund transfers.",
-    "service-3-icon": "cursor-arrow-rays",
-    "service-4-title": "Religious Organization Support",
-    "service-4-description": "Comprehensive technical support and services for religious organizations, including website development, event management, and member services.",
-    "service-4-icon": "cloud",
-    "service-5-title": "Technical Consulting",
-    "service-5-description": "Professional technical consulting services to help you make informed technology decisions.",
-    "service-5-icon": "chat-bubble-bottom-center-text",
-    "service-6-title": "Maintenance Support",
-    "service-6-description": "Comprehensive technical support and maintenance services to ensure your systems run smoothly and continuously.",
-    "service-6-icon": "musical-note"
+    "item-description-11": "10.08 million yen (Fiscal Year ending March 2025)",
+    "item-title-12": "Bank",
+    "item-description-12": "GMO Aozora Net Bank, Ltd."
   },
   "history": {
     "title": "Our Journey",
@@ -131,6 +101,38 @@
     "team-3-social-facebook": "",
     "team-3-social-instagram": "",
     "team-3-social-linkedin": ""
+  },
+  "stats": {
+    "stat-1-title": "Clients",
+    "stat-1-value": 232,
+    "stat-2-title": "Projects",
+    "stat-2-value": 521,
+    "stat-3-title": "Hours Of Support",
+    "stat-3-value": 1463,
+    "stat-4-title": "Workers",
+    "stat-4-value": 15
+  },
+  "services": {
+    "title": "Services",
+    "description": "We provide comprehensive professional services",
+    "service-1-title": "IT System Development",
+    "service-1-description": "Professional IT system development services, including enterprise management systems and business process systems, ensuring high performance and reliability.",
+    "service-1-icon": "globe-alt",
+    "service-2-title": "Electronic Payment Systems",
+    "service-2-description": "Development of secure and convenient electronic payment systems, supporting multiple payment methods to meet various payment scenarios.",
+    "service-2-icon": "device-phone-mobile",
+    "service-3-title": "Cross-border Settlement Services",
+    "service-3-description": "Professional cross-border settlement solutions, helping businesses achieve secure and efficient cross-border fund transfers.",
+    "service-3-icon": "cursor-arrow-rays",
+    "service-4-title": "Religious Organization Support",
+    "service-4-description": "Comprehensive technical support and services for religious organizations, including website development, event management, and member services.",
+    "service-4-icon": "cloud",
+    "service-5-title": "Technical Consulting",
+    "service-5-description": "Professional technical consulting services to help you make informed technology decisions.",
+    "service-5-icon": "chat-bubble-bottom-center-text",
+    "service-6-title": "Maintenance Support",
+    "service-6-description": "Comprehensive technical support and maintenance services to ensure your systems run smoothly and continuously.",
+    "service-6-icon": "musical-note"
   },
   "contact": {
     "title": "Contact",

@@ -23,12 +23,12 @@
   },
   "hero": {
     "title": "創新科技，連接未來",
-    "description": "為企業提供全方位的IT解決方案，助力數位化轉型",
+    "description": "為企業提供全方位的IT解決方案，助力數位化轉型。",
     "button": "了解更多"
   },
   "about": {
     "title": "企業理念",
-    "description": "株式會社晟楊是一家專注於IT解決方案的日本企業，致力於為企業提供全方位的數位化轉型服務",
+    "description": "株式會社晟楊是一家專注於IT解決方案的日本企業，致力於為企業提供全方位的數位化轉型服務。",
     "item-title-1": "專業團隊提供優質服務",
     "item-description-1": "我們擁有一支經驗豐富的技術團隊，為客戶提供專業、可靠的IT解決方案",
     "item-title-2": "創新技術驅動發展",
@@ -59,39 +59,9 @@
     "item-title-10": "員工人數",
     "item-description-10": "2名（2025年5月30日現在）",
     "item-title-11": "營業額",
-    "item-description-11": "1,008萬日圓（2025年3月期）"
-  },
-  "stats": {
-    "stat-1-title": "客戶",
-    "stat-1-value": 232,
-    "stat-2-title": "專案",
-    "stat-2-value": 521,
-    "stat-3-title": "支援時數",
-    "stat-3-value": 1463,
-    "stat-4-title": "員工",
-    "stat-4-value": 15
-  },
-  "services": {
-    "title": "服務",
-    "description": "我們提供全方位的專業服務",
-    "service-1-title": "IT系統開發",
-    "service-1-description": "提供專業的IT系統開發服務，包括企業管理系統、業務流程系統等，確保系統的高效能和可靠性。",
-    "service-1-icon": "globe-alt",
-    "service-2-title": "電子支付系統",
-    "service-2-description": "開發安全、便捷的電子支付系統，支援多種支付方式，滿足不同場景的支付需求。",
-    "service-2-icon": "device-phone-mobile",
-    "service-3-title": "跨境結算服務",
-    "service-3-description": "提供專業的跨境結算解決方案，協助企業實現安全、高效的跨境資金流轉。",
-    "service-3-icon": "cursor-arrow-rays",
-    "service-4-title": "宗教團體支援服務",
-    "service-4-description": "為宗教團體提供全方位的技術支援和服務，包括網站建置、活動管理、會員服務等。",
-    "service-4-icon": "cloud",
-    "service-5-title": "技術諮詢",
-    "service-5-description": "提供專業的技術諮詢服務，協助您做出明智的技術決策。",
-    "service-5-icon": "chat-bubble-bottom-center-text",
-    "service-6-title": "維護支援",
-    "service-6-description": "提供全面的技術支援和維護服務，確保您的系統持續穩定運作。",
-    "service-6-icon": "musical-note"
+    "item-description-11": "1,008萬日圓（2025年3月期）",
+    "item-title-12": "往來銀行",
+    "item-description-12": "GMO青空網路銀行株式會社"
   },
   "history": {
     "title": "發展歷程",
@@ -132,6 +102,38 @@
     "team-3-social-instagram": "",
     "team-3-social-linkedin": ""
   },
+  "stats": {
+    "stat-1-title": "客戶",
+    "stat-1-value": 232,
+    "stat-2-title": "專案",
+    "stat-2-value": 521,
+    "stat-3-title": "支援時數",
+    "stat-3-value": 1463,
+    "stat-4-title": "員工",
+    "stat-4-value": 15
+  },
+  "services": {
+    "title": "服務",
+    "description": "我們提供全方位的專業服務",
+    "service-1-title": "IT系統開發",
+    "service-1-description": "提供專業的IT系統開發服務，包括企業管理系統、業務流程系統等，確保系統的高效能和可靠性。",
+    "service-1-icon": "globe-alt",
+    "service-2-title": "電子支付系統",
+    "service-2-description": "開發安全、便捷的電子支付系統，支援多種支付方式，滿足不同場景的支付需求。",
+    "service-2-icon": "device-phone-mobile",
+    "service-3-title": "跨境結算服務",
+    "service-3-description": "提供專業的跨境結算解決方案，協助企業實現安全、高效的跨境資金流轉。",
+    "service-3-icon": "cursor-arrow-rays",
+    "service-4-title": "宗教團體支援服務",
+    "service-4-description": "為宗教團體提供全方位的技術支援和服務，包括網站建置、活動管理、會員服務等。",
+    "service-4-icon": "cloud",
+    "service-5-title": "技術諮詢",
+    "service-5-description": "提供專業的技術諮詢服務，協助您做出明智的技術決策。",
+    "service-5-icon": "chat-bubble-bottom-center-text",
+    "service-6-title": "維護支援",
+    "service-6-description": "提供全面的技術支援和維護服務，確保您的系統持續穩定運作。",
+    "service-6-icon": "musical-note"
+  },
   "contact": {
     "title": "聯絡我們",
     "description": "我們期待與您溝通交流",
@@ -145,7 +147,7 @@
   },
   "careers": {
     "title": "招賢納士",
-    "description": "加入我們，共創美好未來",
+    "description": "加入我們，共創美好未來。",
     "item-title-1": "行政專員",
     "item-description-1": "負責公司日常行政事務，協助各部門工作，確保公司營運順暢。要求：中日英三語流利，2年以上行政工作經驗，熟練使用辦公軟體，良好的溝通能力。",
     "item-title-2": "使用者體驗設計師",

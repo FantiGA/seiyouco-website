@@ -23,12 +23,12 @@
   },
   "hero": {
     "title": "革新的な技術で、未来をつなぐ",
-    "description": "企業のデジタル変革を支援する総合ITソリューション",
+    "description": "企業のデジタル変革を支援する総合ITソリューション。",
     "button": "詳しく見る"
   },
   "about": {
     "title": "企業理念",
-    "description": "株式会社晟楊は、企業のデジタル変革を支援する総合ITソリューション企業です",
+    "description": "株式会社晟楊は、企業のデジタル変革を支援する総合ITソリューション企業です。",
     "item-title-1": "専門チームによる質の高いサービス",
     "item-description-1": "経験豊富な技術チームが、専門的で信頼性の高いITソリューションを提供いたします",
     "item-title-2": "革新的な技術による発展",
@@ -59,39 +59,9 @@
     "item-title-10": "従業員数",
     "item-description-10": "単体：2名（2025年5月30日現在）",
     "item-title-11": "売上高",
-    "item-description-11": "単体：1,008万円（2025年3月期）"
-  },
-  "stats": {
-    "stat-1-title": "クライアント",
-    "stat-1-value": 232,
-    "stat-2-title": "プロジェクト",
-    "stat-2-value": 521,
-    "stat-3-title": "サポート時間",
-    "stat-3-value": 1463,
-    "stat-4-title": "スタッフ",
-    "stat-4-value": 15
-  },
-  "services": {
-    "title": "サービス",
-    "description": "総合的な専門サービスを提供いたします",
-    "service-1-title": "ITシステム開発",
-    "service-1-description": "企業管理システムや業務プロセスシステムなど、高性能で信頼性の高いITシステム開発サービスを提供いたします。",
-    "service-1-icon": "globe-alt",
-    "service-2-title": "電子決済システム",
-    "service-2-description": "安全で便利な電子決済システムの開発、複数の決済方法をサポートし、様々な決済シーンに対応いたします。",
-    "service-2-icon": "device-phone-mobile",
-    "service-3-title": "国際決済サービス",
-    "service-3-description": "安全で効率的な国際資金移動を実現する、専門的な国際決済ソリューションを提供いたします。",
-    "service-3-icon": "cursor-arrow-rays",
-    "service-4-title": "宗教団体支援サービス",
-    "service-4-description": "ウェブサイト構築、イベント管理、会員サービスなど、宗教団体向けの総合的な技術支援とサービスを提供いたします。",
-    "service-4-icon": "cloud",
-    "service-5-title": "技術コンサルティング",
-    "service-5-description": "適切な技術判断をサポートする、専門的な技術コンサルティングサービスを提供いたします。",
-    "service-5-icon": "chat-bubble-bottom-center-text",
-    "service-6-title": "保守サポート",
-    "service-6-description": "システムの安定した継続的な運用を確保する、総合的な技術サポートと保守サービスを提供いたします。",
-    "service-6-icon": "musical-note"
+    "item-description-11": "単体：1,008万円（2025年3月期）",
+    "item-title-12": "取引銀行",
+    "item-description-12": "GMOあおぞらネット銀行株式会社"
   },
   "history": {
     "title": "沿革",
@@ -132,6 +102,38 @@
     "team-3-social-instagram": "",
     "team-3-social-linkedin": ""
   },
+  "stats": {
+    "stat-1-title": "クライアント",
+    "stat-1-value": 232,
+    "stat-2-title": "プロジェクト",
+    "stat-2-value": 521,
+    "stat-3-title": "サポート時間",
+    "stat-3-value": 1463,
+    "stat-4-title": "スタッフ",
+    "stat-4-value": 15
+  },
+  "services": {
+    "title": "サービス",
+    "description": "総合的な専門サービスを提供いたします",
+    "service-1-title": "ITシステム開発",
+    "service-1-description": "企業管理システムや業務プロセスシステムなど、高性能で信頼性の高いITシステム開発サービスを提供いたします。",
+    "service-1-icon": "globe-alt",
+    "service-2-title": "電子決済システム",
+    "service-2-description": "安全で便利な電子決済システムの開発、複数の決済方法をサポートし、様々な決済シーンに対応いたします。",
+    "service-2-icon": "device-phone-mobile",
+    "service-3-title": "国際決済サービス",
+    "service-3-description": "安全で効率的な国際資金移動を実現する、専門的な国際決済ソリューションを提供いたします。",
+    "service-3-icon": "cursor-arrow-rays",
+    "service-4-title": "宗教団体支援サービス",
+    "service-4-description": "ウェブサイト構築、イベント管理、会員サービスなど、宗教団体向けの総合的な技術支援とサービスを提供いたします。",
+    "service-4-icon": "cloud",
+    "service-5-title": "技術コンサルティング",
+    "service-5-description": "適切な技術判断をサポートする、専門的な技術コンサルティングサービスを提供いたします。",
+    "service-5-icon": "chat-bubble-bottom-center-text",
+    "service-6-title": "保守サポート",
+    "service-6-description": "システムの安定した継続的な運用を確保する、総合的な技術サポートと保守サービスを提供いたします。",
+    "service-6-icon": "musical-note"
+  },
   "contact": {
     "title": "お問い合わせ",
     "description": "お客様とのコミュニケーションをお待ちしております",
@@ -145,7 +147,7 @@
   },
   "careers": {
     "title": "採用情報",
-    "description": "私たちと一緒に未来を創りましょう",
+    "description": "私たちと一緒に未来を創りましょう。",
     "item-title-1": "総務担当",
     "item-description-1": "会社の日常的な総務業務を担当し、各部門の業務をサポートし、会社の運営を円滑に進めます。要件：中日英三ヶ国語に堪能、2年以上の総務経験、オフィスソフトの熟練、優れたコミュニケーション能力。",
     "item-title-2": "UXデザイナー",
