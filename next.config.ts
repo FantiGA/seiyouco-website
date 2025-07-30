@@ -26,6 +26,10 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   // Enable source maps in production
   productionBrowserSourceMaps: true,
+  // Skip trailing slash redirect for static export
+  skipTrailingSlashRedirect: true,
+  // Skip middleware URL normalization for static export
+  skipMiddlewareUrlNormalize: true,
 };
 
 export default nextConfig;
